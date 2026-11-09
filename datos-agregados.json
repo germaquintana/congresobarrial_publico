@@ -1,20 +1,25 @@
 {
   "titulo": "Congreso Barrial de Recoleta — datos agregados de trabajo",
   "corte": "2026-11-09",
-  "publicacion": "DATOS_AGREGADOS_PRELIMINARES_NO_VALIDADOS",
+  "publicacion": "CONTEOS_MATRIZ_MADRE_PRELIMINARES",
   "fuente": "Repo privado congresobarrial; snapshots de 2026-11-06 y resumen territorial 2026-11-09",
   "sha_fuente_indicadores": "4aa65ed6308d8aca6c15d622fa649e99ea663b29",
   "sha_fuente_resumen": "fd9829d80b16c9ab3202f332ea5b87d1f3759251",
   "metodo": "Se publican únicamente inventarios numéricos, categorías agregadas históricas y temas generales detectados automáticamente en síntesis. Se omiten textos individuales, lugares específicos, nombres y vínculos privados. Los temas no son votos ni conclusiones aprobadas.",
   "totales": {
-    "uv": 24,
-    "archivos": 416,
-    "carpetas": 197,
-    "jornadas": 17,
-    "filas_csv_historico": 872,
-    "csv_uv": 15,
-    "paquetes_validados": 0,
-    "matriz_fusionada_ids": 1567
+    "uv_etiquetas_matriz": 25,
+    "uv_carpetas_inventariadas": 24,
+    "archivos_inventariados": 416,
+    "filas_matriz": 1570,
+    "problemas": 788,
+    "oportunidades": 299,
+    "lugares": 278,
+    "actores": 205,
+    "privacidad_marcada": 78,
+    "revision_relectura": 45,
+    "sin_auditar": 310,
+    "consistentes_fuente": 1215,
+    "paquetes_validados": 0
   },
   "dimensiones": [
     {
@@ -71,1572 +76,5490 @@
   "uvs": [
     {
       "uv": "5",
-      "archivo_indexados": 5,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 76,
+      "tipo": {
+        "Problema": 36,
+        "Oportunidad": 15,
+        "Lugar importante": 15,
+        "Actor": 10
       },
-      "fuentes_textuales_seleccionadas": 19,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-15"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 33
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "5 archivos indexados; 19 segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 26
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Movilidad y tránsito"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 11
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 4
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Aseo y residuos",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "19 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 32
+        },
+        {
+          "etiqueta": "GRUPO 1-LUNA",
+          "n": 25
+        },
+        {
+          "etiqueta": "G2",
+          "n": 17
+        },
+        {
+          "etiqueta": "G01",
+          "n": 1
+        },
+        {
+          "etiqueta": "G0X",
+          "n": 1
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 18
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 8
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 12
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 8
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 9
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 10
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 10
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 74,
+        "REQUIERE RELECTURA": 2
+      },
+      "privacidad_marcada": 5,
+      "registro_provisional": false
     },
     {
       "uv": "6",
-      "archivo_indexados": 7,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 80,
+      "tipo": {
+        "Problema": 33,
+        "Lugar importante": 20,
+        "Oportunidad": 17,
+        "Actor": 10
       },
-      "fuentes_textuales_seleccionadas": 32,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-16"
+      "temas": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 24
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "7 archivos indexados; 32 segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 22
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 10
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Aseo y residuos",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "32 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Aseo y residuos",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 6
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 30
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 29
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 21
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 9
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 7
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 5
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 6
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 4
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 4
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 13
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 13
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 8
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 8
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 80
+      },
+      "privacidad_marcada": 4,
+      "registro_provisional": false
     },
     {
       "uv": "7",
-      "archivo_indexados": 0,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 105,
+      "tipo": {
+        "Oportunidad": 16,
+        "Lugar importante": 15,
+        "Problema": 56,
+        "Actor": 18
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-28"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 43
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "0 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 25
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 14
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 11
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "CONGRESO BARRIAL UV7",
+          "n": 43
+        },
+        {
+          "etiqueta": "MESA 1",
+          "n": 37
+        },
+        {
+          "etiqueta": "MESA 4",
+          "n": 25
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 8
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 7
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 24
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 10
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 8
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 7
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 11
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 9
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 8
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 3
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 3
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 15
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 15
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 100,
+        "REQUIERE RELECTURA": 5
+      },
+      "privacidad_marcada": 5,
+      "registro_provisional": false
     },
     {
       "uv": "9",
-      "archivo_indexados": 0,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 78,
+      "tipo": {
+        "Problema": 41,
+        "Lugar importante": 14,
+        "Oportunidad": 14,
+        "Actor": 9
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-29"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 31
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "0 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 18
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 5
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "MESA 2",
+          "n": 31
+        },
+        {
+          "etiqueta": "MEZA 1",
+          "n": 26
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 21
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 18
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 8
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 5
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 11
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 6
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 6
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 8
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 78
+      },
+      "privacidad_marcada": 1,
+      "registro_provisional": false
     },
     {
       "uv": "10",
-      "archivo_indexados": 3,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 66,
+      "tipo": {
+        "Lugar importante": 16,
+        "Actor": 14,
+        "Oportunidad": 8,
+        "Problema": 28
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-26"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 27
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "3 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 23
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 7
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
-        },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "MESA 2",
+          "n": 35
+        },
+        {
+          "etiqueta": "MESA 1",
+          "n": 31
+        }
+      ],
+      "por_tipo": {
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 8
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 8
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 8
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 13
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 13
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 14
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 6
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 8
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 2
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 66
+      },
+      "privacidad_marcada": 2,
+      "registro_provisional": false
     },
     {
       "uv": "11",
-      "archivo_indexados": 3,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 80,
+      "tipo": {
+        "Lugar importante": 18,
+        "Problema": 37,
+        "Oportunidad": 11,
+        "Actor": 14
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-27"
+      "temas": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 24
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "3 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 23
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 16
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 30
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 27
+        },
+        {
+          "etiqueta": "G02",
+          "n": 23
+        }
+      ],
+      "por_tipo": {
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 5
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 9
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 12
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 10
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 9
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 9
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 9
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 7
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 11
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 11
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 79,
+        "REQUIERE RELECTURA": 1
+      },
+      "privacidad_marcada": 0,
+      "registro_provisional": false
     },
     {
       "uv": "12",
-      "archivo_indexados": 5,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 97,
+      "tipo": {
+        "Oportunidad": 21,
+        "Problema": 52,
+        "Lugar importante": 11,
+        "Actor": 13
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-09-01"
+      "temas": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 31
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "5 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 19
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 15
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 15
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 8
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "LA QUINTRALA",
+          "n": 41
+        },
+        {
+          "etiqueta": "SAN JUAN / JARDÍN LA SERENA",
+          "n": 35
+        },
+        {
+          "etiqueta": "VILLA JARDIN LA SERENA",
+          "n": 21
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 10
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 8
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 10
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 13
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 10
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 9
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 7
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 9
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 8
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 7
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 6
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 4
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 7
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 12
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 12
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 83,
+        "REQUIERE RELECTURA": 14
+      },
+      "privacidad_marcada": 8,
+      "registro_provisional": false
     },
     {
       "uv": "13",
-      "archivo_indexados": 20,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 58,
+      "tipo": {
+        "Actor": 12,
+        "Problema": 31,
+        "Oportunidad": 11,
+        "Lugar importante": 4
       },
-      "fuentes_textuales_seleccionadas": 16,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-09-04"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 26
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "20 archivos indexados; 16 segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 12
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 11
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Seguridad y convivencia",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 3
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "16 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 24
+        },
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 22
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 12
+        }
+      ],
+      "por_tipo": {
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 7
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 12
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 5
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 4
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 58
+      },
+      "privacidad_marcada": 4,
+      "registro_provisional": false
     },
     {
       "uv": "14",
-      "archivo_indexados": 6,
-      "csv_historico_filas": null,
-      "csv_historico_tipos": {
-        "problemas": null,
-        "oportunidades": null,
-        "lugares": null,
-        "actores": null
+      "total": 55,
+      "tipo": {
+        "Problema": 35,
+        "Oportunidad": 12,
+        "Lugar importante": 4,
+        "Actor": 4
       },
-      "fuentes_textuales_seleccionadas": 17,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-09-04"
+      "temas": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 13
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "6 archivos indexados; 17 segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 12
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 12
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 9
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 6
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "Sin clasificación CSV histórica disponible"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "Sin clasificación CSV histórica disponible"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "17 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 25
+        },
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 13
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 12
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 11
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 9
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 9
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 6
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 4
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 55
+      },
+      "privacidad_marcada": 3,
+      "registro_provisional": false
     },
     {
       "uv": "15",
-      "archivo_indexados": 11,
-      "csv_historico_filas": 42,
-      "csv_historico_tipos": {
-        "problemas": 18,
-        "oportunidades": 12,
-        "lugares": 4,
-        "actores": 8
+      "total": 42,
+      "tipo": {
+        "Oportunidad": 12,
+        "Problema": 18,
+        "Lugar importante": 4,
+        "Actor": 8
       },
-      "fuentes_textuales_seleccionadas": 31,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-01"
+      "temas": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "11 archivos indexados; 31 segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 10
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 6
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "4 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "31 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 18
+        },
+        {
+          "etiqueta": "G2",
+          "n": 16
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 8
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 3
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 23,
+        "REQUIERE RELECTURA": 19
+      },
+      "privacidad_marcada": 3,
+      "registro_provisional": false
+    },
+    {
+      "uv": "20",
+      "total": 3,
+      "tipo": {
+        "Problema": 3
+      },
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 2
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 1
+        }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G04 PRUEBA",
+          "n": 2
+        },
+        {
+          "etiqueta": "PRUEBA",
+          "n": 1
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 3
+      },
+      "privacidad_marcada": 0,
+      "registro_provisional": true
     },
     {
       "uv": "21",
-      "archivo_indexados": 13,
-      "csv_historico_filas": 48,
-      "csv_historico_tipos": {
-        "problemas": 28,
-        "oportunidades": 10,
-        "lugares": 4,
-        "actores": 6
+      "total": 48,
+      "tipo": {
+        "Oportunidad": 10,
+        "Lugar importante": 4,
+        "Problema": 28,
+        "Actor": 6
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-09-30"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 13
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "13 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 12
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 5
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "6 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "4 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente",
-            "Espacio público e infraestructura"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 4
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 25
+        },
+        {
+          "etiqueta": "MESA N2",
+          "n": 23
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 11
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 6
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 9
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 48
+      },
+      "privacidad_marcada": 3,
+      "registro_provisional": false
     },
     {
       "uv": "22",
-      "archivo_indexados": 15,
-      "csv_historico_filas": 73,
-      "csv_historico_tipos": {
-        "problemas": 37,
-        "oportunidades": 9,
-        "lugares": 13,
-        "actores": 14
+      "total": 73,
+      "tipo": {
+        "Lugar importante": 13,
+        "Oportunidad": 9,
+        "Problema": 37,
+        "Actor": 14
       },
-      "fuentes_textuales_seleccionadas": 33,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-10-02"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 33
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "15 archivos indexados; 33 segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 17
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Aseo y residuos",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 3
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "14 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "13 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "33 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia",
-            "Aseo y residuos",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 22
+        },
+        {
+          "etiqueta": "G 01",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 4",
+          "n": 17
+        }
+      ],
+      "por_tipo": {
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 10
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 10
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 14
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Iluminación",
+              "n": 9
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 5
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 9
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 9
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 73
+      },
+      "privacidad_marcada": 2,
+      "registro_provisional": false
     },
     {
       "uv": "25",
-      "archivo_indexados": 13,
-      "csv_historico_filas": 49,
-      "csv_historico_tipos": {
-        "problemas": 26,
-        "oportunidades": 6,
-        "lugares": 10,
-        "actores": 7
+      "total": 49,
+      "tipo": {
+        "Problema": 26,
+        "Actor": 7,
+        "Oportunidad": 6,
+        "Lugar importante": 10
       },
-      "fuentes_textuales_seleccionadas": 26,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-21"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 18
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "13 archivos indexados; 26 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 7
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "7 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "10 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "26 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "SAN MARTIN",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 14
+        },
+        {
+          "etiqueta": "G03",
+          "n": 11
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 8
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 7
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 5
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 6
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 5
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 49
+      },
+      "privacidad_marcada": 0,
+      "registro_provisional": false
     },
     {
       "uv": "26A",
-      "archivo_indexados": 17,
-      "csv_historico_filas": 66,
-      "csv_historico_tipos": {
-        "problemas": 28,
-        "oportunidades": 20,
-        "lugares": 10,
-        "actores": 8
+      "total": 66,
+      "tipo": {
+        "Problema": 28,
+        "Lugar importante": 10,
+        "Oportunidad": 20,
+        "Actor": 8
       },
-      "fuentes_textuales_seleccionadas": 24,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-20"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 24
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "17 archivos indexados; 24 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 13
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Movilidad y tránsito"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 11
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "10 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "24 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Movilidad y tránsito"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G02",
+          "n": 28
+        },
+        {
+          "etiqueta": "G01",
+          "n": 22
+        },
+        {
+          "etiqueta": "G03",
+          "n": 16
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 9
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 8
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 9
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 5
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 5
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 5
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 65,
+        "REQUIERE RELECTURA": 1
+      },
+      "privacidad_marcada": 4,
+      "registro_provisional": false
     },
     {
       "uv": "26B",
-      "archivo_indexados": 15,
-      "csv_historico_filas": 20,
-      "csv_historico_tipos": {
-        "problemas": 7,
-        "oportunidades": 4,
-        "lugares": 9,
-        "actores": 0
+      "total": 20,
+      "tipo": {
+        "Oportunidad": 4,
+        "Lugar importante": 9,
+        "Problema": 7
       },
-      "fuentes_textuales_seleccionadas": 20,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-20"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 9
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "15 archivos indexados; 20 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 5
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
-        },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [],
-          "estado": "Sin contenido temático verificado"
-        },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "9 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "20 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Medioambiente"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 3
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G01",
+          "n": 20
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 18,
+        "Sin auditar": 2
+      },
+      "privacidad_marcada": 1,
+      "registro_provisional": false
     },
     {
       "uv": "27",
-      "archivo_indexados": 28,
-      "csv_historico_filas": 46,
-      "csv_historico_tipos": {
-        "problemas": 29,
-        "oportunidades": 7,
-        "lugares": 6,
-        "actores": 4
+      "total": 46,
+      "tipo": {
+        "Problema": 29,
+        "Oportunidad": 7,
+        "Lugar importante": 6,
+        "Actor": 4
       },
-      "fuentes_textuales_seleccionadas": 33,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-21"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 20
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "28 archivos indexados; 33 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 5
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "4 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "6 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "33 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Medioambiente",
-            "Movilidad y tránsito",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G03",
+          "n": 17
+        },
+        {
+          "etiqueta": "G01",
+          "n": 15
+        },
+        {
+          "etiqueta": "G02",
+          "n": 14
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 13
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 5
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 5
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 4
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 46
+      },
+      "privacidad_marcada": 0,
+      "registro_provisional": false
     },
     {
       "uv": "28",
-      "archivo_indexados": 28,
-      "csv_historico_filas": 43,
-      "csv_historico_tipos": {
-        "problemas": 25,
-        "oportunidades": 7,
-        "lugares": 6,
-        "actores": 5
+      "total": 43,
+      "tipo": {
+        "Problema": 25,
+        "Lugar importante": 6,
+        "Actor": 5,
+        "Oportunidad": 7
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-18"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 17
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "28 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 10
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 3
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "5 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "6 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Medioambiente",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G 02",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 03",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 04",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 01",
+          "n": 10
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 11
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 10
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 8
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 2
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 43
+      },
+      "privacidad_marcada": 0,
+      "registro_provisional": false
     },
     {
       "uv": "29",
-      "archivo_indexados": 29,
-      "csv_historico_filas": 86,
-      "csv_historico_tipos": {
-        "problemas": 36,
-        "oportunidades": 22,
-        "lugares": 15,
-        "actores": 13
+      "total": 86,
+      "tipo": {
+        "Oportunidad": 22,
+        "Problema": 36,
+        "Lugar importante": 15,
+        "Actor": 13
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-18"
+      "temas": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 22
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "29 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 21
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 15
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 8
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 7
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "13 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 7
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "15 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente",
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 6
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G2",
+          "n": 34
+        },
+        {
+          "etiqueta": "G1",
+          "n": 26
+        },
+        {
+          "etiqueta": "G3",
+          "n": 26
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 7
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 13
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 6
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 11
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 3
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 3
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 3
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 3
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 12
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 12
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 86
+      },
+      "privacidad_marcada": 8,
+      "registro_provisional": false
     },
     {
       "uv": "30",
-      "archivo_indexados": 13,
-      "csv_historico_filas": 26,
-      "csv_historico_tipos": {
-        "problemas": 16,
-        "oportunidades": 9,
-        "lugares": 1,
-        "actores": 0
+      "total": 26,
+      "tipo": {
+        "Problema": 16,
+        "Lugar importante": 1,
+        "Oportunidad": 9
       },
-      "fuentes_textuales_seleccionadas": 12,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-18"
+      "temas": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "13 archivos indexados; 12 segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 8
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 3
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
-        },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "1 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "12 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Medioambiente",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G01",
+          "n": 26
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 7
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 3
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "Sin auditar": 23,
+        "REQUIERE RELECTURA": 3
+      },
+      "privacidad_marcada": 1,
+      "registro_provisional": false
     },
     {
       "uv": "31",
-      "archivo_indexados": 29,
-      "csv_historico_filas": 88,
-      "csv_historico_tipos": {
-        "problemas": 37,
-        "oportunidades": 18,
-        "lugares": 18,
-        "actores": 15
+      "total": 88,
+      "tipo": {
+        "Oportunidad": 18,
+        "Actor": 15,
+        "Lugar importante": 18,
+        "Problema": 37
       },
-      "fuentes_textuales_seleccionadas": 14,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-07"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 31
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "29 archivos indexados; 14 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 20
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 19
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 12
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "15 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 2
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "14 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G01",
+          "n": 40
+        },
+        {
+          "etiqueta": "G03",
+          "n": 17
+        },
+        {
+          "etiqueta": "G04",
+          "n": 16
+        },
+        {
+          "etiqueta": "G02",
+          "n": 15
+        }
+      ],
+      "por_tipo": {
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 5
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 8
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 5
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 8
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 5
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 9
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 9
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 5
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 13
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 11
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 10
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 11
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 8
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 7
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "CONSISTENTE": 88
+      },
+      "privacidad_marcada": 3,
+      "registro_provisional": false
     },
     {
       "uv": "32",
-      "archivo_indexados": 24,
-      "csv_historico_filas": 53,
-      "csv_historico_tipos": {
-        "problemas": 25,
-        "oportunidades": 4,
-        "lugares": 18,
-        "actores": 6
+      "total": 53,
+      "tipo": {
+        "Problema": 25,
+        "Actor": 6,
+        "Lugar importante": 18,
+        "Oportunidad": 4
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-04"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 16
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "24 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 12
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 11
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "6 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Seguridad y convivencia",
-            "Medioambiente",
-            "Espacio público e infraestructura",
-            "Organización y vida comunitaria"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G02",
+          "n": 22
+        },
+        {
+          "etiqueta": "G01",
+          "n": 18
+        },
+        {
+          "etiqueta": "G03",
+          "n": 13
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 11
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 10
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 5
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 3
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 5
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 5
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 11
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 11
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 1
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 1
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "Sin auditar": 53
+      },
+      "privacidad_marcada": 2,
+      "registro_provisional": false
     },
     {
       "uv": "33",
-      "archivo_indexados": 14,
-      "csv_historico_filas": 59,
-      "csv_historico_tipos": {
-        "problemas": 34,
-        "oportunidades": 10,
-        "lugares": 15,
-        "actores": 0
+      "total": 59,
+      "tipo": {
+        "Problema": 34,
+        "Lugar importante": 15,
+        "Oportunidad": 10
       },
-      "fuentes_textuales_seleccionadas": 24,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-09-03"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 17
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "14 archivos indexados; 24 segmentos seleccionados"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 14
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 8
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Medioambiente"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 5
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "15 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "24 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Espacio público e infraestructura",
-            "Movilidad y tránsito",
-            "Medioambiente"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 3
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G01",
+          "n": 39
+        },
+        {
+          "etiqueta": "G02",
+          "n": 20
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 8
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 8
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 5
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 5
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 5
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 3
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 3
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 3
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 2
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 5
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 5
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 4
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 2
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "Sin auditar": 59
+      },
+      "privacidad_marcada": 6,
+      "registro_provisional": false
     },
     {
       "uv": "34",
-      "archivo_indexados": 25,
-      "csv_historico_filas": 74,
-      "csv_historico_tipos": {
-        "problemas": 37,
-        "oportunidades": 16,
-        "lugares": 14,
-        "actores": 7
+      "total": 74,
+      "tipo": {
+        "Problema": 37,
+        "Lugar importante": 14,
+        "Oportunidad": 16,
+        "Actor": 7
       },
-      "fuentes_textuales_seleccionadas": null,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-04"
+      "temas": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 28
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "25 archivos indexados; sin segmentos seleccionados"
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 13
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 10
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Comercio y economía"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 9
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "7 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 2
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "14 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "No hay segmentos seleccionados en el corte documentado"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Espacio público e infraestructura",
-            "Seguridad y convivencia",
-            "Comercio y economía"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G01",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 17
+        },
+        {
+          "etiqueta": "G04",
+          "n": 17
+        },
+        {
+          "etiqueta": "G03",
+          "n": 16
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 11
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 10
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 7
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 9
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 6
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 5
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 4
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 4
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 1
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 8
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 4
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 8
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 4
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 6
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 4
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 4
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 1
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 1
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 1
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 3
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 2
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 2
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 2
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 2
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "Sin auditar": 74
+      },
+      "privacidad_marcada": 8,
+      "registro_provisional": false
     },
     {
       "uv": "35",
-      "archivo_indexados": 34,
-      "csv_historico_filas": 99,
-      "csv_historico_tipos": {
-        "problemas": 53,
-        "oportunidades": 20,
-        "lugares": 18,
-        "actores": 8
+      "total": 99,
+      "tipo": {
+        "Problema": 53,
+        "Oportunidad": 20,
+        "Lugar importante": 18,
+        "Actor": 8
       },
-      "fuentes_textuales_seleccionadas": 27,
-      "dimensiones": {
-        "B01": {
-          "tipo": "Referencia documental",
-          "dato": "2026-08-04"
+      "temas": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 25
         },
-        "B02": {
-          "tipo": "Cobertura documental",
-          "dato": "34 archivos indexados; 27 segmentos seleccionados"
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 25
         },
-        "B03": {
-          "tipo": "Temáticas identificadas en síntesis de problemas",
-          "temas": [
-            "Aseo y residuos"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 21
         },
-        "B04": {
-          "tipo": "Cartografía participativa",
-          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
         },
-        "B05": {
-          "tipo": "Temáticas identificadas en síntesis de propuestas",
-          "temas": [
-            "Cuidados y servicios"
-          ],
-          "estado": "Codificación preliminar"
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 9
         },
-        "B06": {
-          "tipo": "Actores",
-          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
         },
-        "B07": {
-          "tipo": "Lugares",
-          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
-        },
-        "B08": {
-          "tipo": "Aportes por mesa",
-          "dato": "27 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
-        },
-        "B09": {
-          "tipo": "Áreas temáticas de la muestra",
-          "temas": [
-            "Aseo y residuos",
-            "Cuidados y servicios"
-          ],
-          "estado": "Clasificación orientativa automática; no representa prioridades"
-        },
-        "B10": {
-          "tipo": "Fuentes y control",
-          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 3
         }
-      }
+      ],
+      "grupos": [
+        {
+          "etiqueta": "G04",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 22
+        },
+        {
+          "etiqueta": "G01",
+          "n": 21
+        },
+        {
+          "etiqueta": "G03",
+          "n": 18
+        },
+        {
+          "etiqueta": "G05",
+          "n": 14
+        }
+      ],
+      "por_tipo": {
+        "Problema": {
+          "temas": [
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 20
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 9
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 9
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 7
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 4
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 3
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 13
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 7
+            },
+            {
+              "etiqueta": "Ruidos y convivencia",
+              "n": 7
+            },
+            {
+              "etiqueta": "Estacionamientos",
+              "n": 4
+            },
+            {
+              "etiqueta": "Personas en situación de calle",
+              "n": 4
+            },
+            {
+              "etiqueta": "Veredas y pavimentos",
+              "n": 4
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 3
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 3
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 2
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 1
+            },
+            {
+              "etiqueta": "Bienestar animal",
+              "n": 1
+            },
+            {
+              "etiqueta": "Vivienda y habitabilidad",
+              "n": 1
+            }
+          ]
+        },
+        "Oportunidad": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 7
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 7
+            },
+            {
+              "etiqueta": "Aseo y medio ambiente",
+              "n": 3
+            },
+            {
+              "etiqueta": "Movilidad y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Seguridad y convivencia",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 7
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 6
+            },
+            {
+              "etiqueta": "Áreas verdes y arbolado",
+              "n": 2
+            },
+            {
+              "etiqueta": "Movilidad, tránsito y transporte",
+              "n": 2
+            },
+            {
+              "etiqueta": "Aseo, residuos y salubridad",
+              "n": 1
+            },
+            {
+              "etiqueta": "Iluminación",
+              "n": 1
+            },
+            {
+              "etiqueta": "Seguridad y prevención",
+              "n": 1
+            }
+          ]
+        },
+        "Lugar importante": {
+          "temas": [
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 8
+            },
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 7
+            },
+            {
+              "etiqueta": "Vivienda y entorno urbano",
+              "n": 2
+            },
+            {
+              "etiqueta": "Actividad económica y comercio",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 8
+            },
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 7
+            },
+            {
+              "etiqueta": "Patrimonio y entorno construido",
+              "n": 2
+            },
+            {
+              "etiqueta": "Comercio y actividad económica",
+              "n": 1
+            }
+          ]
+        },
+        "Actor": {
+          "temas": [
+            {
+              "etiqueta": "Desarrollo social y comunitario",
+              "n": 7
+            },
+            {
+              "etiqueta": "Infraestructura y espacio público",
+              "n": 1
+            }
+          ],
+          "subtemas": [
+            {
+              "etiqueta": "Organización y vida comunitaria",
+              "n": 7
+            },
+            {
+              "etiqueta": "Espacio público y equipamiento",
+              "n": 1
+            }
+          ]
+        }
+      },
+      "auditoria": {
+        "Sin auditar": 99
+      },
+      "privacidad_marcada": 5,
+      "registro_provisional": false
     }
-  ]
+  ],
+  "fuente_madre": {
+    "spreadsheet_id": "1KecTjqU4Kx5tJLNPl4Z5D1sxlgC05PxWHh5xwuI0jpQ",
+    "hoja": "DATOS",
+    "rango": "A1:AF1571",
+    "registros_con_id": 1570,
+    "ids_unicos": 1570,
+    "uv_etiquetas": 25,
+    "uv20": "Tres registros UV20: verificar la correspondencia territorial antes de tratarla como una jornada adicional"
+  },
+  "distribucion_tematica": [
+    {
+      "etiqueta": "Infraestructura y espacio público",
+      "n": 518
+    },
+    {
+      "etiqueta": "Desarrollo social y comunitario",
+      "n": 357
+    },
+    {
+      "etiqueta": "Aseo y medio ambiente",
+      "n": 284
+    },
+    {
+      "etiqueta": "Seguridad y convivencia",
+      "n": 190
+    },
+    {
+      "etiqueta": "Movilidad y transporte",
+      "n": 117
+    },
+    {
+      "etiqueta": "Actividad económica y comercio",
+      "n": 76
+    },
+    {
+      "etiqueta": "Vivienda y entorno urbano",
+      "n": 28
+    }
+  ],
+  "estados_auditoria": {
+    "Sin auditar": 310,
+    "CONSISTENTE": 1215,
+    "REQUIERE RELECTURA": 45
+  }
 }
