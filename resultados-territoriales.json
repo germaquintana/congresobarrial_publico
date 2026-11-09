@@ -1,0 +1,2382 @@
+{
+  "version": "2.0",
+  "fecha_corte": "2026-11-09",
+  "estado": "DEVOLUCION_PRELIMINAR_NO_VALIDADA",
+  "aprobacion_institucional": false,
+  "origen": {
+    "resumen_sha": "fd9829d80b16c9ab3202f332ea5b87d1f3759251",
+    "indice_sha": "7e723e3f84157f0482e2dd15485c21d644dd23c4"
+  },
+  "nota": "Compilación de síntesis ya procesadas en el proyecto original. No equivale a actas aprobadas ni representa participación total. Se reducen nombres y ubicaciones específicas; fuentes originales quedan en el repositorio privado.",
+  "dimensiones": [
+    {
+      "id": "B01",
+      "nombre": "Jornada e identidad territorial",
+      "pregunta": "¿Cuándo y dónde se realizó la jornada?"
+    },
+    {
+      "id": "B02",
+      "nombre": "Metodología e instrumentos",
+      "pregunta": "¿Qué documentos e instrumentos fueron examinados?"
+    },
+    {
+      "id": "B03",
+      "nombre": "Problemas reportados",
+      "pregunta": "¿Qué preocupaciones se expresaron?"
+    },
+    {
+      "id": "B04",
+      "nombre": "Cartografía participativa",
+      "pregunta": "¿Qué información geográfica se recogió en los mapas?"
+    },
+    {
+      "id": "B05",
+      "nombre": "Propuestas y oportunidades",
+      "pregunta": "¿Qué alternativas y acciones propuso la comunidad?"
+    },
+    {
+      "id": "B06",
+      "nombre": "Actores mencionados",
+      "pregunta": "¿Qué organizaciones o instituciones aparecen?"
+    },
+    {
+      "id": "B07",
+      "nombre": "Lugares relevantes",
+      "pregunta": "¿Qué espacios o equipamientos se mencionaron?"
+    },
+    {
+      "id": "B08",
+      "nombre": "Aportes por mesa",
+      "pregunta": "¿Qué temas aparecen en cada mesa o exposición?"
+    },
+    {
+      "id": "B09",
+      "nombre": "Temas transversales",
+      "pregunta": "¿Qué ejes se repiten en los registros procesados?"
+    },
+    {
+      "id": "B10",
+      "nombre": "Fuentes y seguimiento",
+      "pregunta": "¿De dónde proviene cada resultado y qué falta cotejar?"
+    }
+  ],
+  "uvs": [
+    {
+      "uv": "5",
+      "fuente_tipo": "codificacion_de_texto_no_validada",
+      "archivos": 5,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 19,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-15 · Escuela María Goretti",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "5 archivos indexados; 19 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Deterioro y obstáculos para movilidad accesible; Depósito de residuos en esquinas reportado",
+          "elementos": [
+            "Deterioro y obstáculos para movilidad accesible",
+            "Depósito de residuos en esquinas reportado",
+            "Riesgos peatonales reportados en entorno de sector referido",
+            "Depósito de residuos en esquinas reportado"
+          ],
+          "conteo": 8,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Aumentar aprovechamiento de talleres y actividades comunitarias; Fomentar reciclaje y educación comunitaria",
+          "elementos": [
+            "Aumentar aprovechamiento de talleres y actividades comunitarias",
+            "Fomentar reciclaje y educación comunitaria",
+            "Recuperar y reabrir plazas y canchas",
+            "Fomentar reciclaje y educación comunitaria"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Se mencionan organizaciones sociales y de talleres sin atribuir compromisos",
+          "elementos": [],
+          "conteo": 1,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Plaza identificada como espacio comunitario; Jardines infantiles, colegio e iglesias mencionados como recursos",
+          "elementos": [],
+          "conteo": 3,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Exposiciones codificadas",
+          "resumen": "19 segmentos seleccionados, no personas",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Ejes temáticos de los registros",
+          "resumen": "Residuos; Movilidad; Espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "6",
+      "fuente_tipo": "codificacion_de_texto_no_validada",
+      "archivos": 7,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 32,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-16 · Sede Dora",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "7 archivos indexados; 32 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Veredas y calles deterioradas; Uso conflictivo de juegos y plazas",
+          "elementos": [
+            "Veredas y calles deterioradas",
+            "Uso conflictivo de juegos y plazas",
+            "Oscuridad asociada a vegetación",
+            "Uso conflictivo de juegos y plazas"
+          ],
+          "conteo": 12,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Apoyo comunitario a personas mayores; Plan de mantención y barrido",
+          "elementos": [
+            "Apoyo comunitario a personas mayores",
+            "Plan de mantención y barrido",
+            "Coordinación vecinal y municipal sostenida",
+            "Plan de mantención y barrido"
+          ],
+          "conteo": 11,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Juntas vecinales y comercio de barrio",
+          "elementos": [],
+          "conteo": 1,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Red de juntas de vecinos; Tres canchas mencionadas sin verificación independiente",
+          "elementos": [],
+          "conteo": 5,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Exposiciones codificadas",
+          "resumen": "32 segmentos seleccionados, no personas",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "CODIFICACION_PRELIMINAR",
+          "etiqueta": "Ejes temáticos de los registros",
+          "resumen": "Cuidados; Representación; Organización",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "7",
+      "fuente_tipo": "solo_inventario",
+      "archivos": 0,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-28 · Capilla Lo Aranguis",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "0 archivos indexados; sin segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Exposiciones aún sin codificar",
+          "resumen": "No hay contenido textual de mesa analizado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Integración por construir",
+          "resumen": "Sin temas clasificados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "9",
+      "fuente_tipo": "solo_inventario",
+      "archivos": 0,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-29 · Luz del Alba",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "0 archivos indexados; sin segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Exposiciones aún sin codificar",
+          "resumen": "No hay contenido textual de mesa analizado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Integración por construir",
+          "resumen": "Sin temas clasificados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "10",
+      "fuente_tipo": "solo_inventario",
+      "archivos": 3,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-26 · sector referido (solo rótulo de sede)",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "3 archivos indexados; sin segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Exposiciones aún sin codificar",
+          "resumen": "No hay contenido textual de mesa analizado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Integración por construir",
+          "resumen": "Sin temas clasificados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "11",
+      "fuente_tipo": "solo_inventario",
+      "archivos": 3,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "REFERENCIA_DOCUMENTAL",
+          "etiqueta": "Jornada identificada en documentos",
+          "resumen": "2026-10-27 · JJVV sector referido (solo rótulo de sede)",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "INVENTARIO_DOCUMENTAL",
+          "etiqueta": "Instrumentos y alcance documentados",
+          "resumen": "3 archivos indexados; sin segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "PENDIENTE_COTEJO",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Fuente temática aún no examinada",
+          "resumen": "No se ha extraído contenido para esta dimensión",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Exposiciones aún sin codificar",
+          "resumen": "No hay contenido textual de mesa analizado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Integración por construir",
+          "resumen": "Sin temas clasificados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "TRAZABILIDAD_PENDIENTE",
+          "etiqueta": "Trazabilidad y contraste pendientes",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "12",
+      "fuente_tipo": "solo_inventario",
+      "archivos": 5,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-09-01 Escuela España",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "5 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuente temática no examinada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuente temática no examinada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuente temática no examinada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuente temática no examinada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Exposiciones no examinadas",
+          "resumen": "0 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin síntesis extraíble",
+          "resumen": "Falta evidencia",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por contrastar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "13",
+      "fuente_tipo": "codificacion_de_texto_no_validada",
+      "archivos": 20,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 16,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-09-04 Sede Social Villa Carlos Cortés",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "20 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Se reporta baja organización comunitaria; Se reporta deterioro de equipamiento recreativo",
+          "elementos": [
+            "Se reporta baja organización comunitaria",
+            "Se reporta deterioro de equipamiento recreativo",
+            "Se reporta oscuridad y percepción de inseguridad",
+            "Se reporta deterioro de equipamiento recreativo"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Se propone coordinación entre sectores vecinales; Se propone ampliar una experiencia local de comité de seguridad",
+          "elementos": [
+            "Se propone coordinación entre sectores vecinales",
+            "Se propone ampliar una experiencia local de comité de seguridad",
+            "Se solicitan medidas para reducir velocidad en pasajes",
+            "Se propone ampliar una experiencia local de comité de seguridad"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Se mencionan agrupaciones culturales y deportivas como redes comunitarias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Se identifican sedes y espacios comunitarios",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "16 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes documentados",
+          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por contrastar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "14",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 6,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": 17,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-09-04 Sede Social Villa Carlos Cortés",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "6 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Obstrucción peatonal por estacionamiento de vehículos pesados; Falta de organización vecinal y sede",
+          "elementos": [
+            "Obstrucción peatonal por estacionamiento de vehículos pesados",
+            "Falta de organización vecinal y sede",
+            "Escasez de áreas verdes, iluminación y dispositivos de calmado de tránsito",
+            "Falta de organización vecinal y sede"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Señalética y reductores de velocidad en vías mencionadas; Poda por interferencia con iluminación",
+          "elementos": [
+            "Señalética y reductores de velocidad en vías mencionadas",
+            "Poda por interferencia con iluminación",
+            "Activación de pérgola y feria comunitaria",
+            "Poda por interferencia con iluminación"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin registro en selección codificada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Espacio recreativo en sector sector referido, situación de tenencia no comprobada; sector referido mencionada como espacio a recuperar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "17 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes documentados",
+          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por contrastar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "15",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 11,
+      "filas_csv_historicas": 42,
+      "segmentos_seleccionados": 31,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-10-01 Parroquia Nuestra Señora del Carmen",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "11 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Ocupación de vías por vehículos, según relato comunitario; Deterioro y dificultades de uso de espacios públicos",
+          "elementos": [
+            "Ocupación de vías por vehículos, según relato comunitario",
+            "Deterioro y dificultades de uso de espacios públicos"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Fiscalización e iluminación de entorno educacional propuestas; Mantención de áreas verdes solicitada",
+          "elementos": [
+            "Fiscalización e iluminación de entorno educacional propuestas",
+            "Mantención de áreas verdes solicitada",
+            "Punto limpio para voluminosos y escombros propuesto",
+            "Mantención de áreas verdes solicitada"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin registro en selección codificada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Conectividad, parque y acceso a teleférico reconocidos como activos; Conectividad y cercanía al cerro valoradas",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "31 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes documentados",
+          "resumen": "Seguridad y espacio público; Aseo y residuos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por contrastar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "21",
+      "fuente_tipo": "clasificacion_csv_no_adjudicada",
+      "archivos": 13,
+      "filas_csv_historicas": 48,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-09-30 Liceo Héroe Arturo Pérez Canto",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "13 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV disponibles",
+          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
+          "elementos": [
+            "Seguridad y convivencia (11 filas clasificadas)",
+            "Aseo y medio ambiente (6 filas clasificadas)",
+            "Infraestructura y espacio público (6 filas clasificadas)",
+            "Seguridad y convivencia",
+            "Aseo y medio ambiente"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV disponibles",
+          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
+          "elementos": [
+            "Infraestructura y espacio público (5 filas clasificadas)",
+            "Aseo y medio ambiente (2 filas clasificadas)",
+            "Seguridad y convivencia (1 filas clasificadas)",
+            "Infraestructura y espacio público",
+            "Aseo y medio ambiente"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV disponibles",
+          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV disponibles",
+          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Exposiciones no examinadas",
+          "resumen": "0 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes documentados",
+          "resumen": "Seguridad y convivencia; Movilidad y transporte",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Discrepancias por resolver",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        }
+      }
+    },
+    {
+      "uv": "22",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 15,
+      "filas_csv_historicas": 73,
+      "segmentos_seleccionados": 33,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de fuente documental",
+          "resumen": "2026-10-02 Escuela Marta Colvin",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Alcance documentado",
+          "resumen": "15 archivos catalogados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Dificultades de disponibilidad de sede social según relato; Problemas de iluminación reportados",
+          "elementos": [
+            "Dificultades de disponibilidad de sede social según relato",
+            "Problemas de iluminación reportados"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Recuento cartográfico no contrastado",
+          "resumen": "Originales por verificar",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "Reactivación de la organización vecinal; Propuesta de punto limpio y medidas de seguridad vial",
+          "elementos": [
+            "Reactivación de la organización vecinal",
+            "Propuesta de punto limpio y medidas de seguridad vial"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin registro en selección codificada",
+          "resumen": "No se acredita ausencia en la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes registrados",
+          "resumen": "escuela espacio protector; capilla y plazas como espacios de encuentro",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "33 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes documentados",
+          "resumen": "organizacion; residuos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por contrastar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "25",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 13,
+      "filas_csv_historicas": 49,
+      "segmentos_seleccionados": 26,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Referencias de fecha y sede",
+          "resumen": "2026-08-21 JJVV San Martín",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "13 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Basura dispersa y acumulación de residuos; Inseguridad y delincuencia reportada",
+          "elementos": [
+            "Basura dispersa y acumulación de residuos",
+            "Inseguridad y delincuencia reportada",
+            "Deterioro de calles y pavimentos",
+            "Inseguridad y delincuencia reportada"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Tres mapas observados; recuento pendiente",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Activación de biblioteca barrial proyectada; Mayor uso recreativo de cancha, plaza y sede",
+          "elementos": [
+            "Activación de biblioteca barrial proyectada",
+            "Mayor uso recreativo de cancha, plaza y sede",
+            "Educación comunitaria de limpieza",
+            "Mayor uso recreativo de cancha, plaza y sede"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "No registrado en selección codificada",
+          "resumen": "No concluyente sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "No registrado en selección codificada",
+          "resumen": "No concluyente sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de mesas codificados",
+          "resumen": "26 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Discrepancias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "26A",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 17,
+      "filas_csv_historicas": 66,
+      "segmentos_seleccionados": 24,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Referencias de fecha y sede",
+          "resumen": "2026-08-20 Escuela Rafael Valentín Valdivieso",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "17 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Problemas de seguridad reportados en paraderos; Dificultades de acceso oportuno a servicios de atención",
+          "elementos": [
+            "Problemas de seguridad reportados en paraderos",
+            "Dificultades de acceso oportuno a servicios de atención"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía sin recuento acreditado",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Propuestas sobre identidad y denominación territorial; Reconocimiento de la memoria comunitaria",
+          "elementos": [
+            "Propuestas sobre identidad y denominación territorial",
+            "Reconocimiento de la memoria comunitaria"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Se menciona colaboración comunitaria para actividades solidarias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Se reconocen servicios de salud y organización comunitaria como lugares relevantes; Se destacan áreas verdes, escuelas y equipamiento sanitario",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de mesas codificados",
+          "resumen": "24 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Infraestructura; Identidad y memoria",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Revisión documental pendiente",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "26B",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 15,
+      "filas_csv_historicas": 20,
+      "segmentos_seleccionados": 20,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Referencias de fecha y sede",
+          "resumen": "2026-08-20 Escuela Rafael Valentín Valdivieso",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "15 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Insuficiencia de iluminación y necesidad de poda; Vegetación retirada por obras de alcantarillado sin reposición relatada",
+          "elementos": [
+            "Insuficiencia de iluminación y necesidad de poda",
+            "Vegetación retirada por obras de alcantarillado sin reposición relatada",
+            "Vehículos abandonados en pasajes",
+            "Vegetación retirada por obras de alcantarillado sin reposición relatada"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía sin recuento acreditado",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Solicitan esterilización de animales del sector; Solicitan ordenar y revisar tendidos",
+          "elementos": [
+            "Solicitan esterilización de animales del sector",
+            "Solicitan ordenar y revisar tendidos",
+            "Solicitan atención, esterilización y adopción de gatos",
+            "Solicitan ordenar y revisar tendidos"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Se reconoce colaboración de equipo territorial y programa comunitario, sin atribuir compromisos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "establecimientos de salud, establecimientos educacionales y comercios se mencionan como recursos territoriales",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de mesas codificados",
+          "resumen": "20 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Alumbrado; Espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Revisión documental pendiente",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "27",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 28,
+      "filas_csv_historicas": 46,
+      "segmentos_seleccionados": 33,
+      "dimensiones": {
+        "B01": {
+          "estado": "DIFERENCIA_DOCUMENTAL",
+          "etiqueta": "Fecha y sede por conciliar",
+          "resumen": "2026-08-21 / 2026-08-13 (en conflicto) Sede Roosevelt",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "28 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Dificultades de abastecimiento de agua en sector alto; Acumulación de residuos y microbasurales",
+          "elementos": [
+            "Dificultades de abastecimiento de agua en sector alto",
+            "Acumulación de residuos y microbasurales",
+            "Escaleras y evacuación de aguas lluvias deficientes",
+            "Acumulación de residuos y microbasurales"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía sin recuento acreditado",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes identificados",
+          "resumen": "Implementar medidas para moderar velocidad; Recuperar espacios de encuentro comunitario",
+          "elementos": [
+            "Implementar medidas para moderar velocidad",
+            "Recuperar espacios de encuentro comunitario",
+            "Flexibilizar horarios de actividades para mejorar participación",
+            "Recuperar espacios de encuentro comunitario"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "No registrado en selección codificada",
+          "resumen": "No concluyente sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "No registrado en selección codificada",
+          "resumen": "No concluyente sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de mesas codificados",
+          "resumen": "33 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Movilidad y seguridad vial; Aseo y residuos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Discrepancias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "28",
+      "fuente_tipo": "clasificacion_csv_no_adjudicada",
+      "archivos": 28,
+      "filas_csv_historicas": 43,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Referencias de fecha y sede",
+          "resumen": "2026-08-18 Escuela Rafael Valentín Valdivieso",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "28 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
+          "elementos": [
+            "Infraestructura y espacio público (11 filas de tema/tipo)",
+            "Aseo y medio ambiente (10 filas de tema/tipo)",
+            "Seguridad y convivencia (3 filas de tema/tipo)",
+            "Infraestructura y espacio público",
+            "Aseo y medio ambiente"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía sin recuento acreditado",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "elementos": [
+            "Desarrollo social y comunitario (4 filas de tema/tipo)",
+            "Infraestructura y espacio público (3 filas de tema/tipo)",
+            "Desarrollo social y comunitario",
+            "Infraestructura y espacio público"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Exposiciones no codificadas",
+          "resumen": "0 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Discrepancias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        }
+      }
+    },
+    {
+      "uv": "29",
+      "fuente_tipo": "clasificacion_csv_no_adjudicada",
+      "archivos": 29,
+      "filas_csv_historicas": 86,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Referencias de fecha y sede",
+          "resumen": "2026-08-18 Escuela Rafael Valentín Valdivieso",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos disponibles",
+          "resumen": "29 archivos listados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Aseo y medio ambiente; Seguridad y convivencia",
+          "elementos": [
+            "Aseo y medio ambiente (13 filas de tema/tipo)",
+            "Seguridad y convivencia (6 filas de tema/tipo)",
+            "Vivienda y entorno urbano (5 filas de tema/tipo)",
+            "Aseo y medio ambiente",
+            "Seguridad y convivencia"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía sin recuento acreditado",
+          "resumen": "No se infieren frecuencias",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
+          "elementos": [
+            "Infraestructura y espacio público (9 filas de tema/tipo)",
+            "Desarrollo social y comunitario (4 filas de tema/tipo)",
+            "Aseo y medio ambiente (4 filas de tema/tipo)",
+            "Infraestructura y espacio público",
+            "Desarrollo social y comunitario"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías temáticas del CSV",
+          "resumen": "Aseo y medio ambiente; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Exposiciones no codificadas",
+          "resumen": "0 segmentos seleccionados",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Temas del material procesado",
+          "resumen": "Infraestructura y espacio público; Movilidad y transporte",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Discrepancias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        }
+      }
+    },
+    {
+      "uv": "30",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 13,
+      "filas_csv_historicas": 26,
+      "segmentos_seleccionados": 12,
+      "dimensiones": {
+        "B01": {
+          "estado": "DIFERENCIA_DOCUMENTAL",
+          "etiqueta": "Fecha/sede discordantes",
+          "resumen": "2026-08-18 / 2026-08-13 (en conflicto) Escuela Rafael Valentín Valdivieso",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "13 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Dificultades de abastecimiento de agua y residuos en laderas, según exposición; Percepción de baja asistencia sin porcentaje acreditado",
+          "elementos": [
+            "Dificultades de abastecimiento de agua y residuos en laderas, según exposición",
+            "Percepción de baja asistencia sin porcentaje acreditado"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Propuesta de continuidad y coordinación de iniciativas comunitarias; Actividad educativa anunciada, realización por verificar",
+          "elementos": [
+            "Propuesta de continuidad y coordinación de iniciativas comunitarias",
+            "Actividad educativa anunciada, realización por verificar"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin código en la selección examinada",
+          "resumen": "Sin conclusión sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Se describe espacio comunitario visitado, sin delimitación cartográfica",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "12 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "Participación comunitaria; Movilidad",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Diferencias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "31",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 29,
+      "filas_csv_historicas": 88,
+      "segmentos_seleccionados": 14,
+      "dimensiones": {
+        "B01": {
+          "estado": "DIFERENCIA_DOCUMENTAL",
+          "etiqueta": "Fecha/sede discordantes",
+          "resumen": "2026-08-07 / 2026-08-13 (en conflicto) Espacio Blanco / Mustakis (en conflicto)",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "29 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "seguridad y oscuridad en espacios públicos; basura, poda e iluminación como dificultades de uso cotidiano",
+          "elementos": [
+            "seguridad y oscuridad en espacios públicos",
+            "basura, poda e iluminación como dificultades de uso cotidiano",
+            "visibilidad e iluminación deficientes en cruces del sector",
+            "basura, poda e iluminación como dificultades de uso cotidiano"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "reciclaje y recuperación de plazas y espacios interiores; potencial de ciclovía y cerros como activos del entorno",
+          "elementos": [
+            "reciclaje y recuperación de plazas y espacios interiores",
+            "potencial de ciclovía y cerros como activos del entorno",
+            "recuperación de espacios interiores descuidados como áreas verdes",
+            "potencial de ciclovía y cerros como activos del entorno"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "organizaciones comunitarias y deportivas mencionadas",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "cerros, ciclovía y estaciones de metro como referencias del entorno",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "14 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Diferencias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "32",
+      "fuente_tipo": "clasificacion_csv_no_adjudicada",
+      "archivos": 24,
+      "filas_csv_historicas": 53,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de referencia",
+          "resumen": "2026-08-04 Sede específica por UV pendiente de cotejo",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "24 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
+          "elementos": [
+            "Seguridad y convivencia (11 filas de tema/tipo)",
+            "Aseo y medio ambiente (7 filas de tema/tipo)",
+            "Infraestructura y espacio público (3 filas de tema/tipo)",
+            "Seguridad y convivencia",
+            "Aseo y medio ambiente"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "elementos": [
+            "Desarrollo social y comunitario (1 filas de tema/tipo)",
+            "Infraestructura y espacio público (1 filas de tema/tipo)",
+            "Aseo y medio ambiente (1 filas de tema/tipo)",
+            "Desarrollo social y comunitario",
+            "Infraestructura y espacio público"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Digitalización no codificada",
+          "resumen": "0 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "Seguridad y convivencia; Infraestructura y espacio público",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Diferencias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        }
+      }
+    },
+    {
+      "uv": "33",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 14,
+      "filas_csv_historicas": 59,
+      "segmentos_seleccionados": 24,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de referencia",
+          "resumen": "2026-09-03 Biblioteca Pablo Neruda",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "14 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Deterioro de veredas y carencia de iluminación peatonal; Basura, congestión y poda pendiente",
+          "elementos": [
+            "Deterioro de veredas y carencia de iluminación peatonal",
+            "Basura, congestión y poda pendiente",
+            "Riesgo de incendio por maleza del cerro",
+            "Basura, congestión y poda pendiente"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Incrementar espacios verdes interiores; Remodelar plaza y habilitar juegos/vegetación en entorno urbano",
+          "elementos": [
+            "Incrementar espacios verdes interiores",
+            "Remodelar plaza y habilitar juegos/vegetación en entorno urbano",
+            "Plan anual de despeje preventivo de maleza en septiembre y octubre",
+            "Remodelar plaza y habilitar juegos/vegetación en entorno urbano"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin código en la selección examinada",
+          "resumen": "Sin conclusión sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "cerros del entorno, acceso cerros del entorno y equipamientos comunitarios; Valoración de inmuebles y patrimonio cultural del barrio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "24 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "patrimonio_equipamiento; infraestructura_seguridad",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fuentes por cotejar",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    },
+    {
+      "uv": "34",
+      "fuente_tipo": "clasificacion_csv_no_adjudicada",
+      "archivos": 25,
+      "filas_csv_historicas": 74,
+      "segmentos_seleccionados": 0,
+      "dimensiones": {
+        "B01": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Fecha y sede de referencia",
+          "resumen": "2026-08-04 Sede específica por UV pendiente de cotejo",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "25 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Infraestructura y espacio público; Seguridad y convivencia",
+          "elementos": [
+            "Infraestructura y espacio público (11 filas de tema/tipo)",
+            "Seguridad y convivencia (10 filas de tema/tipo)",
+            "Aseo y medio ambiente (7 filas de tema/tipo)",
+            "Infraestructura y espacio público",
+            "Seguridad y convivencia"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
+          "elementos": [
+            "Infraestructura y espacio público (6 filas de tema/tipo)",
+            "Actividad económica y comercio (4 filas de tema/tipo)",
+            "Aseo y medio ambiente (2 filas de tema/tipo)",
+            "Infraestructura y espacio público",
+            "Actividad económica y comercio"
+          ],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Categorías CSV",
+          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Digitalización no codificada",
+          "resumen": "0 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "Aseo y medio ambiente; Desarrollo social y comunitario",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Diferencias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+        }
+      }
+    },
+    {
+      "uv": "35",
+      "fuente_tipo": "codificacion_textual_no_validada",
+      "archivos": 34,
+      "filas_csv_historicas": 99,
+      "segmentos_seleccionados": 27,
+      "dimensiones": {
+        "B01": {
+          "estado": "DIFERENCIA_DOCUMENTAL",
+          "etiqueta": "Fecha y sede de referencia",
+          "resumen": "2026-08-04 / 2026-08-13 (por cotejar) Liceo Juan Verdaguer (referencia)",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B02": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Instrumentos conocidos",
+          "resumen": "34 archivos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B03": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Molestias por ruido y horarios de funcionamiento reportadas; Problemas de basura y saneamiento mencionados",
+          "elementos": [
+            "Molestias por ruido y horarios de funcionamiento reportadas",
+            "Problemas de basura y saneamiento mencionados"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B04": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Cartografía por contrastar",
+          "resumen": "Sin recuento acreditado",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B05": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Aportes de digitalización",
+          "resumen": "Propuestas de revisión de regulación de actividades comerciales; Propuesta de seguimiento de responsabilidades de establecimientos",
+          "elementos": [
+            "Propuestas de revisión de regulación de actividades comerciales",
+            "Propuesta de seguimiento de responsabilidades de establecimientos"
+          ],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B06": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin código en la selección examinada",
+          "resumen": "Sin conclusión sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B07": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Sin código en la selección examinada",
+          "resumen": "Sin conclusión sobre la sesión completa",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B08": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Mesas codificadas",
+          "resumen": "27 fragmentos",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B09": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Ejes temáticos documentados",
+          "resumen": "Ruido y horarios; Basura y saneamiento",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        },
+        "B10": {
+          "estado": "POR_VERIFICAR",
+          "etiqueta": "Diferencias documentales",
+          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+        }
+      }
+    }
+  ]
+}
