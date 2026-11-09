@@ -1,0 +1,1642 @@
+{
+  "titulo": "Congreso Barrial de Recoleta — datos agregados de trabajo",
+  "corte": "2026-11-09",
+  "publicacion": "DATOS_AGREGADOS_PRELIMINARES_NO_VALIDADOS",
+  "fuente": "Repo privado congresobarrial; snapshots de 2026-11-06 y resumen territorial 2026-11-09",
+  "sha_fuente_indicadores": "4aa65ed6308d8aca6c15d622fa649e99ea663b29",
+  "sha_fuente_resumen": "fd9829d80b16c9ab3202f332ea5b87d1f3759251",
+  "metodo": "Se publican únicamente inventarios numéricos, categorías agregadas históricas y temas generales detectados automáticamente en síntesis. Se omiten textos individuales, lugares específicos, nombres y vínculos privados. Los temas no son votos ni conclusiones aprobadas.",
+  "totales": {
+    "uv": 24,
+    "archivos": 416,
+    "carpetas": 197,
+    "jornadas": 17,
+    "filas_csv_historico": 872,
+    "csv_uv": 15,
+    "paquetes_validados": 0,
+    "matriz_fusionada_ids": 1567
+  },
+  "dimensiones": [
+    {
+      "id": "B01",
+      "nombre": "Jornada e identidad territorial",
+      "pregunta": "¿Cuándo y dónde se realizó la jornada?"
+    },
+    {
+      "id": "B02",
+      "nombre": "Metodología e instrumentos",
+      "pregunta": "¿Qué documentos e instrumentos fueron examinados?"
+    },
+    {
+      "id": "B03",
+      "nombre": "Problemas reportados",
+      "pregunta": "¿Qué preocupaciones se expresaron?"
+    },
+    {
+      "id": "B04",
+      "nombre": "Cartografía participativa",
+      "pregunta": "¿Qué información geográfica se recogió en los mapas?"
+    },
+    {
+      "id": "B05",
+      "nombre": "Propuestas y oportunidades",
+      "pregunta": "¿Qué alternativas y acciones propuso la comunidad?"
+    },
+    {
+      "id": "B06",
+      "nombre": "Actores mencionados",
+      "pregunta": "¿Qué organizaciones o instituciones aparecen?"
+    },
+    {
+      "id": "B07",
+      "nombre": "Lugares relevantes",
+      "pregunta": "¿Qué espacios o equipamientos se mencionaron?"
+    },
+    {
+      "id": "B08",
+      "nombre": "Aportes por mesa",
+      "pregunta": "¿Qué temas aparecen en cada mesa o exposición?"
+    },
+    {
+      "id": "B09",
+      "nombre": "Temas transversales",
+      "pregunta": "¿Qué ejes se repiten en los registros procesados?"
+    },
+    {
+      "id": "B10",
+      "nombre": "Fuentes y seguimiento",
+      "pregunta": "¿De dónde proviene cada resultado y qué falta cotejar?"
+    }
+  ],
+  "uvs": [
+    {
+      "uv": "5",
+      "archivo_indexados": 5,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": 19,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-15"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "5 archivos indexados; 19 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Movilidad y tránsito"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Aseo y residuos",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "19 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "6",
+      "archivo_indexados": 7,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": 32,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-16"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "7 archivos indexados; 32 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Aseo y residuos",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "32 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Aseo y residuos",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "7",
+      "archivo_indexados": 0,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-28"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "0 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "9",
+      "archivo_indexados": 0,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-29"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "0 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "10",
+      "archivo_indexados": 3,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-26"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "3 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "11",
+      "archivo_indexados": 3,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-27"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "3 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "12",
+      "archivo_indexados": 5,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-09-01"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "5 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "13",
+      "archivo_indexados": 20,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": 16,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-09-04"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "20 archivos indexados; 16 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Seguridad y convivencia",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "16 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "14",
+      "archivo_indexados": 6,
+      "csv_historico_filas": null,
+      "csv_historico_tipos": {
+        "problemas": null,
+        "oportunidades": null,
+        "lugares": null,
+        "actores": null
+      },
+      "fuentes_textuales_seleccionadas": 17,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-09-04"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "6 archivos indexados; 17 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "Sin clasificación CSV histórica disponible"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "17 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "Sin CSV histórico leído para esta UV; revisar actas y otras fuentes"
+        }
+      }
+    },
+    {
+      "uv": "15",
+      "archivo_indexados": 11,
+      "csv_historico_filas": 42,
+      "csv_historico_tipos": {
+        "problemas": 18,
+        "oportunidades": 12,
+        "lugares": 4,
+        "actores": 8
+      },
+      "fuentes_textuales_seleccionadas": 31,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-01"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "11 archivos indexados; 31 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "4 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "31 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "21",
+      "archivo_indexados": 13,
+      "csv_historico_filas": 48,
+      "csv_historico_tipos": {
+        "problemas": 28,
+        "oportunidades": 10,
+        "lugares": 4,
+        "actores": 6
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-09-30"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "13 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "6 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "4 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente",
+            "Espacio público e infraestructura"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "22",
+      "archivo_indexados": 15,
+      "csv_historico_filas": 73,
+      "csv_historico_tipos": {
+        "problemas": 37,
+        "oportunidades": 9,
+        "lugares": 13,
+        "actores": 14
+      },
+      "fuentes_textuales_seleccionadas": 33,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-10-02"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "15 archivos indexados; 33 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Aseo y residuos",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "14 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "13 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "33 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia",
+            "Aseo y residuos",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "25",
+      "archivo_indexados": 13,
+      "csv_historico_filas": 49,
+      "csv_historico_tipos": {
+        "problemas": 26,
+        "oportunidades": 6,
+        "lugares": 10,
+        "actores": 7
+      },
+      "fuentes_textuales_seleccionadas": 26,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-21"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "13 archivos indexados; 26 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "7 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "10 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "26 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "26A",
+      "archivo_indexados": 17,
+      "csv_historico_filas": 66,
+      "csv_historico_tipos": {
+        "problemas": 28,
+        "oportunidades": 20,
+        "lugares": 10,
+        "actores": 8
+      },
+      "fuentes_textuales_seleccionadas": 24,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-20"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "17 archivos indexados; 24 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Movilidad y tránsito"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "10 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "24 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Movilidad y tránsito"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "26B",
+      "archivo_indexados": 15,
+      "csv_historico_filas": 20,
+      "csv_historico_tipos": {
+        "problemas": 7,
+        "oportunidades": 4,
+        "lugares": 9,
+        "actores": 0
+      },
+      "fuentes_textuales_seleccionadas": 20,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-20"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "15 archivos indexados; 20 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [],
+          "estado": "Sin contenido temático verificado"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "9 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "20 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Medioambiente"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "27",
+      "archivo_indexados": 28,
+      "csv_historico_filas": 46,
+      "csv_historico_tipos": {
+        "problemas": 29,
+        "oportunidades": 7,
+        "lugares": 6,
+        "actores": 4
+      },
+      "fuentes_textuales_seleccionadas": 33,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-21"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "28 archivos indexados; 33 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "4 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "6 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "33 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Medioambiente",
+            "Movilidad y tránsito",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "28",
+      "archivo_indexados": 28,
+      "csv_historico_filas": 43,
+      "csv_historico_tipos": {
+        "problemas": 25,
+        "oportunidades": 7,
+        "lugares": 6,
+        "actores": 5
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-18"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "28 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "5 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "6 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Medioambiente",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "29",
+      "archivo_indexados": 29,
+      "csv_historico_filas": 86,
+      "csv_historico_tipos": {
+        "problemas": 36,
+        "oportunidades": 22,
+        "lugares": 15,
+        "actores": 13
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-18"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "29 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "13 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "15 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente",
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "30",
+      "archivo_indexados": 13,
+      "csv_historico_filas": 26,
+      "csv_historico_tipos": {
+        "problemas": 16,
+        "oportunidades": 9,
+        "lugares": 1,
+        "actores": 0
+      },
+      "fuentes_textuales_seleccionadas": 12,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-18"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "13 archivos indexados; 12 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "1 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "12 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Medioambiente",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "31",
+      "archivo_indexados": 29,
+      "csv_historico_filas": 88,
+      "csv_historico_tipos": {
+        "problemas": 37,
+        "oportunidades": 18,
+        "lugares": 18,
+        "actores": 15
+      },
+      "fuentes_textuales_seleccionadas": 14,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-07"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "29 archivos indexados; 14 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "15 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "14 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "32",
+      "archivo_indexados": 24,
+      "csv_historico_filas": 53,
+      "csv_historico_tipos": {
+        "problemas": 25,
+        "oportunidades": 4,
+        "lugares": 18,
+        "actores": 6
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-04"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "24 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "6 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Seguridad y convivencia",
+            "Medioambiente",
+            "Espacio público e infraestructura",
+            "Organización y vida comunitaria"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "33",
+      "archivo_indexados": 14,
+      "csv_historico_filas": 59,
+      "csv_historico_tipos": {
+        "problemas": 34,
+        "oportunidades": 10,
+        "lugares": 15,
+        "actores": 0
+      },
+      "fuentes_textuales_seleccionadas": 24,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-09-03"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "14 archivos indexados; 24 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Medioambiente"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "0 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "15 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "24 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Espacio público e infraestructura",
+            "Movilidad y tránsito",
+            "Medioambiente"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "34",
+      "archivo_indexados": 25,
+      "csv_historico_filas": 74,
+      "csv_historico_tipos": {
+        "problemas": 37,
+        "oportunidades": 16,
+        "lugares": 14,
+        "actores": 7
+      },
+      "fuentes_textuales_seleccionadas": null,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-04"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "25 archivos indexados; sin segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Comercio y economía"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "7 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "14 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "No hay segmentos seleccionados en el corte documentado"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Espacio público e infraestructura",
+            "Seguridad y convivencia",
+            "Comercio y economía"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    },
+    {
+      "uv": "35",
+      "archivo_indexados": 34,
+      "csv_historico_filas": 99,
+      "csv_historico_tipos": {
+        "problemas": 53,
+        "oportunidades": 20,
+        "lugares": 18,
+        "actores": 8
+      },
+      "fuentes_textuales_seleccionadas": 27,
+      "dimensiones": {
+        "B01": {
+          "tipo": "Referencia documental",
+          "dato": "2026-08-04"
+        },
+        "B02": {
+          "tipo": "Cobertura documental",
+          "dato": "34 archivos indexados; 27 segmentos seleccionados"
+        },
+        "B03": {
+          "tipo": "Temáticas identificadas en síntesis de problemas",
+          "temas": [
+            "Aseo y residuos"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B04": {
+          "tipo": "Cartografía participativa",
+          "dato": "Documentos cartográficos pendientes de cotejo y recuento acreditado"
+        },
+        "B05": {
+          "tipo": "Temáticas identificadas en síntesis de propuestas",
+          "temas": [
+            "Cuidados y servicios"
+          ],
+          "estado": "Codificación preliminar"
+        },
+        "B06": {
+          "tipo": "Actores",
+          "dato": "8 registros de tipo actor en CSV histórico (no personas únicas)"
+        },
+        "B07": {
+          "tipo": "Lugares",
+          "dato": "18 registros de tipo lugar en CSV histórico (no ubicaciones verificadas)"
+        },
+        "B08": {
+          "tipo": "Aportes por mesa",
+          "dato": "27 segmentos seleccionados en análisis de trabajo; no corresponden a asistentes"
+        },
+        "B09": {
+          "tipo": "Áreas temáticas de la muestra",
+          "temas": [
+            "Aseo y residuos",
+            "Cuidados y servicios"
+          ],
+          "estado": "Clasificación orientativa automática; no representa prioridades"
+        },
+        "B10": {
+          "tipo": "Fuentes y control",
+          "dato": "CSV histórico obsoleto: no acredita versión vigente; conciliación y validación pendientes"
+        }
+      }
+    }
+  ]
+}
