@@ -1,13 +1,13 @@
 {
-  "version": "2.0",
+  "version": "3.0",
   "fecha_corte": "2026-11-09",
-  "estado": "DEVOLUCION_PRELIMINAR_NO_VALIDADA",
+  "estado": "CLASIFICACION_MATRIZ_MADRE_PRELIMINAR",
   "aprobacion_institucional": false,
   "origen": {
     "resumen_sha": "fd9829d80b16c9ab3202f332ea5b87d1f3759251",
     "indice_sha": "7e723e3f84157f0482e2dd15485c21d644dd23c4"
   },
-  "nota": "Compilación de síntesis ya procesadas en el proyecto original. No equivale a actas aprobadas ni representa participación total. Se reducen nombres y ubicaciones específicas; fuentes originales quedan en el repositorio privado.",
+  "nota": "Conteos y subtemas desde DATOS. Las descripciones detalladas y coordenadas no se transfirieron. UV20 requiere conciliación.",
   "dimensiones": [
     {
       "id": "B01",
@@ -77,60 +77,75 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "5 archivos indexados; 19 segmentos seleccionados",
+          "resumen": "76 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Deterioro y obstáculos para movilidad accesible; Depósito de residuos en esquinas reportado",
+          "resumen": "36 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Deterioro y obstáculos para movilidad accesible",
-            "Depósito de residuos en esquinas reportado",
-            "Riesgos peatonales reportados en entorno de sector referido"
+            "Veredas y pavimentos (12 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Bienestar animal (3 registros)",
+            "Espacio público y equipamiento (3 registros)",
+            "Iluminación (3 registros)",
+            "Seguridad y prevención (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Personas en situación de calle (2 registros)",
+            "Movilidad, tránsito y transporte (1 registros)"
           ],
-          "conteo": 8,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 36,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "76 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Aumentar aprovechamiento de talleres y actividades comunitarias; Fomentar reciclaje y educación comunitaria",
+          "resumen": "15 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Aumentar aprovechamiento de talleres y actividades comunitarias",
-            "Fomentar reciclaje y educación comunitaria",
-            "Recuperar y reabrir plazas y canchas"
+            "Espacio público y equipamiento (8 registros)",
+            "Organización y vida comunitaria (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Veredas y pavimentos (1 registros)"
           ],
-          "conteo": 4,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Se mencionan organizaciones sociales y de talleres sin atribuir compromisos",
-          "elementos": [],
-          "conteo": 1,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "10 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (10 registros)"
+          ],
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Plaza identificada como espacio comunitario; Jardines infantiles, colegio e iglesias mencionados como recursos",
-          "elementos": [],
-          "conteo": 3,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "15 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (8 registros)",
+            "Espacio público y equipamiento (6 registros)",
+            "Personas en situación de calle (1 registros)"
+          ],
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "CODIFICACION_PRELIMINAR",
@@ -141,22 +156,89 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos de los registros",
-          "resumen": "Residuos; Movilidad; Espacio público",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (33 registros)",
+            "Desarrollo social y comunitario (26 registros)",
+            "Aseo y medio ambiente (11 registros)",
+            "Seguridad y convivencia (4 registros)",
+            "Movilidad y transporte (1 registros)",
+            "Vivienda y entorno urbano (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 76,
+      "tipos_matriz_madre": {
+        "Problema": 36,
+        "Oportunidad": 15,
+        "Lugar importante": 15,
+        "Actor": 10
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 33
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 26
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 11
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 4
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 5,
+      "control_auditoria": {
+        "CONSISTENTE": 74,
+        "REQUIERE RELECTURA": 2
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 32
+        },
+        {
+          "etiqueta": "GRUPO 1-LUNA",
+          "n": 25
+        },
+        {
+          "etiqueta": "G2",
+          "n": 17
+        },
+        {
+          "etiqueta": "G01",
+          "n": 1
+        },
+        {
+          "etiqueta": "G0X",
+          "n": 1
+        }
+      ]
     },
     {
       "uv": "6",
@@ -174,60 +256,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "7 archivos indexados; 32 segmentos seleccionados",
+          "resumen": "80 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Veredas y calles deterioradas; Uso conflictivo de juegos y plazas",
+          "resumen": "33 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Veredas y calles deterioradas",
-            "Uso conflictivo de juegos y plazas",
-            "Oscuridad asociada a vegetación"
+            "Movilidad, tránsito y transporte (6 registros)",
+            "Comercio y actividad económica (4 registros)",
+            "Personas en situación de calle (4 registros)",
+            "Seguridad y prevención (4 registros)",
+            "Estacionamientos (3 registros)",
+            "Veredas y pavimentos (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Aseo, residuos y salubridad (2 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Iluminación (2 registros)"
           ],
-          "conteo": 12,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 33,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "80 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Apoyo comunitario a personas mayores; Plan de mantención y barrido",
+          "resumen": "17 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Apoyo comunitario a personas mayores",
-            "Plan de mantención y barrido",
-            "Coordinación vecinal y municipal sostenida"
+            "Organización y vida comunitaria (8 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Seguridad y prevención (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)"
           ],
-          "conteo": 11,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 17,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Juntas vecinales y comercio de barrio",
-          "elementos": [],
-          "conteo": 1,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "10 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (8 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Red de juntas de vecinos; Tres canchas mencionadas sin verificación independiente",
-          "elementos": [],
-          "conteo": 5,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "20 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (13 registros)",
+            "Organización y vida comunitaria (4 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Seguridad y prevención (1 registros)"
+          ],
+          "conteo": 20,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "CODIFICACION_PRELIMINAR",
@@ -238,22 +340,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "CODIFICACION_PRELIMINAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos de los registros",
-          "resumen": "Cuidados; Representación; Organización",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Desarrollo social y comunitario (24 registros)",
+            "Infraestructura y espacio público (22 registros)",
+            "Aseo y medio ambiente (10 registros)",
+            "Movilidad y transporte (10 registros)",
+            "Seguridad y convivencia (8 registros)",
+            "Actividad económica y comercio (6 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 80,
+      "tipos_matriz_madre": {
+        "Problema": 33,
+        "Lugar importante": 20,
+        "Oportunidad": 17,
+        "Actor": 10
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 24
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 22
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 10
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 6
+        }
+      ],
+      "privacidad_marcada": 4,
+      "control_auditoria": {
+        "CONSISTENTE": 80
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 30
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 29
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 21
+        }
+      ]
     },
     {
       "uv": "7",
@@ -271,52 +431,77 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "0 archivos indexados; sin segmentos seleccionados",
+          "resumen": "105 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "56 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Veredas y pavimentos (11 registros)",
+            "Iluminación (9 registros)",
+            "Seguridad y prevención (8 registros)",
+            "Movilidad, tránsito y transporte (7 registros)",
+            "Aseo, residuos y salubridad (5 registros)",
+            "Espacio público y equipamiento (4 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Comercio y actividad económica (3 registros)",
+            "Personas en situación de calle (3 registros)",
+            "Ruidos y convivencia (2 registros)"
+          ],
+          "conteo": 56,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "105 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "16 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (8 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Iluminación (1 registros)",
+            "Ruidos y convivencia (1 registros)",
+            "Vivienda y habitabilidad (1 registros)"
+          ],
+          "conteo": 16,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "18 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (15 registros)",
+            "Espacio público y equipamiento (3 registros)"
+          ],
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "15 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (7 registros)",
+            "Organización y vida comunitaria (5 registros)",
+            "Áreas verdes y arbolado (3 registros)"
+          ],
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "FUENTE_NO_EXAMINADA",
@@ -327,22 +512,86 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Integración por construir",
-          "resumen": "Sin temas clasificados",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (43 registros)",
+            "Desarrollo social y comunitario (25 registros)",
+            "Aseo y medio ambiente (14 registros)",
+            "Seguridad y convivencia (11 registros)",
+            "Movilidad y transporte (7 registros)",
+            "Actividad económica y comercio (3 registros)",
+            "Vivienda y entorno urbano (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 105,
+      "tipos_matriz_madre": {
+        "Oportunidad": 16,
+        "Lugar importante": 15,
+        "Problema": 56,
+        "Actor": 18
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 43
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 25
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 14
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 11
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 5,
+      "control_auditoria": {
+        "CONSISTENTE": 100,
+        "REQUIERE RELECTURA": 5
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "CONGRESO BARRIAL UV7",
+          "n": 43
+        },
+        {
+          "etiqueta": "MESA 1",
+          "n": 37
+        },
+        {
+          "etiqueta": "MESA 4",
+          "n": 25
+        }
+      ]
     },
     {
       "uv": "9",
@@ -360,52 +609,76 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "0 archivos indexados; sin segmentos seleccionados",
+          "resumen": "78 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "41 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Veredas y pavimentos (11 registros)",
+            "Seguridad y prevención (7 registros)",
+            "Aseo, residuos y salubridad (5 registros)",
+            "Iluminación (4 registros)",
+            "Movilidad, tránsito y transporte (4 registros)",
+            "Espacio público y equipamiento (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Estacionamientos (1 registros)",
+            "Personas en situación de calle (1 registros)"
+          ],
+          "conteo": 41,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "78 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "14 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (5 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Organización y vida comunitaria (3 registros)",
+            "Seguridad y prevención (2 registros)",
+            "Iluminación (1 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "9 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (8 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 9,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "14 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (6 registros)",
+            "Organización y vida comunitaria (6 registros)",
+            "Áreas verdes y arbolado (2 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "FUENTE_NO_EXAMINADA",
@@ -416,22 +689,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Integración por construir",
-          "resumen": "Sin temas clasificados",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (31 registros)",
+            "Desarrollo social y comunitario (18 registros)",
+            "Aseo y medio ambiente (12 registros)",
+            "Seguridad y convivencia (10 registros)",
+            "Movilidad y transporte (5 registros)",
+            "Actividad económica y comercio (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 78,
+      "tipos_matriz_madre": {
+        "Problema": 41,
+        "Lugar importante": 14,
+        "Oportunidad": 14,
+        "Actor": 9
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 31
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 18
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 5
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 1,
+      "control_auditoria": {
+        "CONSISTENTE": 78
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "MESA 2",
+          "n": 31
+        },
+        {
+          "etiqueta": "MEZA 1",
+          "n": 26
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 21
+        }
+      ]
     },
     {
       "uv": "10",
@@ -449,52 +780,73 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "3 archivos indexados; sin segmentos seleccionados",
+          "resumen": "66 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "28 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Veredas y pavimentos (8 registros)",
+            "Iluminación (5 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Movilidad, tránsito y transporte (3 registros)",
+            "Ruidos y convivencia (2 registros)",
+            "Seguridad y prevención (2 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Personas en situación de calle (1 registros)"
+          ],
+          "conteo": 28,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "66 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "8 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (5 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
+          ],
+          "conteo": 8,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "14 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (13 registros)",
+            "Seguridad y prevención (1 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "16 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (8 registros)",
+            "Organización y vida comunitaria (8 registros)"
+          ],
+          "conteo": 16,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "FUENTE_NO_EXAMINADA",
@@ -505,22 +857,71 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Integración por construir",
-          "resumen": "Sin temas clasificados",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (27 registros)",
+            "Desarrollo social y comunitario (23 registros)",
+            "Aseo y medio ambiente (7 registros)",
+            "Seguridad y convivencia (5 registros)",
+            "Movilidad y transporte (4 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 66,
+      "tipos_matriz_madre": {
+        "Lugar importante": 16,
+        "Actor": 14,
+        "Oportunidad": 8,
+        "Problema": 28
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 27
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 23
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 7
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
+        }
+      ],
+      "privacidad_marcada": 2,
+      "control_auditoria": {
+        "CONSISTENTE": 66
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "MESA 2",
+          "n": 35
+        },
+        {
+          "etiqueta": "MESA 1",
+          "n": 31
+        }
+      ]
     },
     {
       "uv": "11",
@@ -538,52 +939,76 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "INVENTARIO_DOCUMENTAL",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos y alcance documentados",
-          "resumen": "3 archivos indexados; sin segmentos seleccionados",
+          "resumen": "80 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "37 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Aseo, residuos y salubridad (9 registros)",
+            "Veredas y pavimentos (9 registros)",
+            "Seguridad y prevención (7 registros)",
+            "Movilidad, tránsito y transporte (3 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Ruidos y convivencia (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Estacionamientos (1 registros)",
+            "Iluminación (1 registros)"
+          ],
+          "conteo": 37,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "PENDIENTE_COTEJO",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "No se dispone de recuento cartográfico acreditado",
+          "resumen": "80 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "11 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (5 registros)",
+            "Organización y vida comunitaria (4 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 11,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "14 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (11 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática aún no examinada",
-          "resumen": "No se ha extraído contenido para esta dimensión",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "18 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (9 registros)",
+            "Áreas verdes y arbolado (5 registros)",
+            "Espacio público y equipamiento (4 registros)"
+          ],
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "FUENTE_NO_EXAMINADA",
@@ -594,22 +1019,81 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "FUENTE_NO_EXAMINADA",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Integración por construir",
-          "resumen": "Sin temas clasificados",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Desarrollo social y comunitario (24 registros)",
+            "Infraestructura y espacio público (23 registros)",
+            "Aseo y medio ambiente (16 registros)",
+            "Seguridad y convivencia (9 registros)",
+            "Actividad económica y comercio (4 registros)",
+            "Movilidad y transporte (4 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "TRAZABILIDAD_PENDIENTE",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Trazabilidad y contraste pendientes",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 80,
+      "tipos_matriz_madre": {
+        "Lugar importante": 18,
+        "Problema": 37,
+        "Oportunidad": 11,
+        "Actor": 14
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 24
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 23
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 16
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
+        }
+      ],
+      "privacidad_marcada": 0,
+      "control_auditoria": {
+        "CONSISTENTE": 79,
+        "REQUIERE RELECTURA": 1
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 30
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 27
+        },
+        {
+          "etiqueta": "G02",
+          "n": 23
+        }
+      ]
     },
     {
       "uv": "12",
@@ -627,52 +1111,77 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "5 archivos catalogados",
+          "resumen": "97 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática no examinada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "52 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Movilidad, tránsito y transporte (9 registros)",
+            "Ruidos y convivencia (8 registros)",
+            "Comercio y actividad económica (7 registros)",
+            "Personas en situación de calle (7 registros)",
+            "Aseo, residuos y salubridad (6 registros)",
+            "Espacio público y equipamiento (6 registros)",
+            "Áreas verdes y arbolado (4 registros)",
+            "Estacionamientos (4 registros)",
+            "Seguridad y prevención (1 registros)"
+          ],
+          "conteo": 52,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "97 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática no examinada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "21 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (10 registros)",
+            "Áreas verdes y arbolado (5 registros)",
+            "Aseo, residuos y salubridad (2 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Bienestar animal (1 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 21,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática no examinada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "13 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (12 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 13,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Fuente temática no examinada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "11 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (7 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 11,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -683,22 +1192,81 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin síntesis extraíble",
-          "resumen": "Falta evidencia",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Desarrollo social y comunitario (31 registros)",
+            "Aseo y medio ambiente (19 registros)",
+            "Infraestructura y espacio público (15 registros)",
+            "Movilidad y transporte (15 registros)",
+            "Seguridad y convivencia (9 registros)",
+            "Actividad económica y comercio (8 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por contrastar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 97,
+      "tipos_matriz_madre": {
+        "Oportunidad": 21,
+        "Problema": 52,
+        "Lugar importante": 11,
+        "Actor": 13
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 31
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 19
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 15
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 15
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 8
+        }
+      ],
+      "privacidad_marcada": 8,
+      "control_auditoria": {
+        "CONSISTENTE": 83,
+        "REQUIERE RELECTURA": 14
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "LA QUINTRALA",
+          "n": 41
+        },
+        {
+          "etiqueta": "SAN JUAN / JARDÍN LA SERENA",
+          "n": 35
+        },
+        {
+          "etiqueta": "VILLA JARDIN LA SERENA",
+          "n": 21
+        }
+      ]
     },
     {
       "uv": "13",
@@ -716,60 +1284,75 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "20 archivos catalogados",
+          "resumen": "58 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Se reporta baja organización comunitaria; Se reporta deterioro de equipamiento recreativo",
+          "resumen": "31 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Se reporta baja organización comunitaria",
-            "Se reporta deterioro de equipamiento recreativo",
-            "Se reporta oscuridad y percepción de inseguridad"
+            "Espacio público y equipamiento (5 registros)",
+            "Iluminación (5 registros)",
+            "Seguridad y prevención (5 registros)",
+            "Aseo, residuos y salubridad (4 registros)",
+            "Personas en situación de calle (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Veredas y pavimentos (2 registros)",
+            "Bienestar animal (1 registros)",
+            "Estacionamientos (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 31,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "58 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Se propone coordinación entre sectores vecinales; Se propone ampliar una experiencia local de comité de seguridad",
+          "resumen": "11 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Se propone coordinación entre sectores vecinales",
-            "Se propone ampliar una experiencia local de comité de seguridad",
-            "Se solicitan medidas para reducir velocidad en pasajes"
+            "Espacio público y equipamiento (6 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Bienestar animal (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 11,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Se mencionan agrupaciones culturales y deportivas como redes comunitarias",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "12 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (7 registros)",
+            "Organización y vida comunitaria (4 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 12,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Se identifican sedes y espacios comunitarios",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "4 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (3 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -780,22 +1363,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes documentados",
-          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (26 registros)",
+            "Desarrollo social y comunitario (12 registros)",
+            "Aseo y medio ambiente (11 registros)",
+            "Seguridad y convivencia (5 registros)",
+            "Movilidad y transporte (3 registros)",
+            "Actividad económica y comercio (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por contrastar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 58,
+      "tipos_matriz_madre": {
+        "Actor": 12,
+        "Problema": 31,
+        "Oportunidad": 11,
+        "Lugar importante": 4
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 26
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 12
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 11
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 3
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 4,
+      "control_auditoria": {
+        "CONSISTENTE": 58
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 24
+        },
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 22
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 12
+        }
+      ]
     },
     {
       "uv": "14",
@@ -813,60 +1454,74 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "6 archivos catalogados",
+          "resumen": "55 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Obstrucción peatonal por estacionamiento de vehículos pesados; Falta de organización vecinal y sede",
+          "resumen": "35 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Obstrucción peatonal por estacionamiento de vehículos pesados",
-            "Falta de organización vecinal y sede",
-            "Escasez de áreas verdes, iluminación y dispositivos de calmado de tránsito"
+            "Movilidad, tránsito y transporte (9 registros)",
+            "Iluminación (6 registros)",
+            "Aseo, residuos y salubridad (5 registros)",
+            "Veredas y pavimentos (5 registros)",
+            "Áreas verdes y arbolado (4 registros)",
+            "Estacionamientos (3 registros)",
+            "Personas en situación de calle (1 registros)",
+            "Ruidos y convivencia (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 35,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "55 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Señalética y reductores de velocidad en vías mencionadas; Poda por interferencia con iluminación",
+          "resumen": "12 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Señalética y reductores de velocidad en vías mencionadas",
-            "Poda por interferencia con iluminación",
-            "Activación de pérgola y feria comunitaria"
+            "Seguridad y prevención (4 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Vivienda y habitabilidad (2 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 12,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin registro en selección codificada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "4 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (4 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Espacio recreativo en sector sector referido, situación de tenencia no comprobada; sector referido mencionada como espacio a recuperar",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "4 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (3 registros)",
+            "Aseo, residuos y salubridad (1 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -877,22 +1532,85 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes documentados",
-          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Aseo y medio ambiente (13 registros)",
+            "Infraestructura y espacio público (12 registros)",
+            "Movilidad y transporte (12 registros)",
+            "Desarrollo social y comunitario (9 registros)",
+            "Seguridad y convivencia (6 registros)",
+            "Vivienda y entorno urbano (2 registros)",
+            "Actividad económica y comercio (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por contrastar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 55,
+      "tipos_matriz_madre": {
+        "Problema": 35,
+        "Oportunidad": 12,
+        "Lugar importante": 4,
+        "Actor": 4
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 13
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 12
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 12
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 9
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 6
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 3,
+      "control_auditoria": {
+        "CONSISTENTE": 55
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 25
+        },
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 13
+        }
+      ]
     },
     {
       "uv": "15",
@@ -910,59 +1628,75 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "11 archivos catalogados",
+          "resumen": "42 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Ocupación de vías por vehículos, según relato comunitario; Deterioro y dificultades de uso de espacios públicos",
+          "resumen": "18 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Ocupación de vías por vehículos, según relato comunitario",
-            "Deterioro y dificultades de uso de espacios públicos"
+            "Ruidos y convivencia (4 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Seguridad y prevención (3 registros)",
+            "Estacionamientos (2 registros)",
+            "Iluminación (2 registros)",
+            "Personas en situación de calle (2 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Veredas y pavimentos (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "42 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Fiscalización e iluminación de entorno educacional propuestas; Mantención de áreas verdes solicitada",
+          "resumen": "12 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Fiscalización e iluminación de entorno educacional propuestas",
-            "Mantención de áreas verdes solicitada",
-            "Punto limpio para voluminosos y escombros propuesto"
+            "Áreas verdes y arbolado (4 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Seguridad y prevención (2 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 12,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin registro en selección codificada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "8 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (4 registros)",
+            "Organización y vida comunitaria (3 registros)",
+            "Áreas verdes y arbolado (1 registros)"
+          ],
+          "conteo": 8,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Conectividad, parque y acceso a teleférico reconocidos como activos; Conectividad y cercanía al cerro valoradas",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "4 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (3 registros)",
+            "Áreas verdes y arbolado (1 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -973,22 +1707,204 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes documentados",
-          "resumen": "Seguridad y espacio público; Aseo y residuos",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Aseo y medio ambiente (12 registros)",
+            "Infraestructura y espacio público (10 registros)",
+            "Seguridad y convivencia (9 registros)",
+            "Desarrollo social y comunitario (6 registros)",
+            "Movilidad y transporte (4 registros)",
+            "Actividad económica y comercio (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por contrastar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 42,
+      "tipos_matriz_madre": {
+        "Oportunidad": 12,
+        "Problema": 18,
+        "Lugar importante": 4,
+        "Actor": 8
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 10
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 9
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 6
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 3,
+      "control_auditoria": {
+        "CONSISTENTE": 23,
+        "REQUIERE RELECTURA": 19
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 18
+        },
+        {
+          "etiqueta": "G2",
+          "n": 16
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 8
+        }
+      ]
+    },
+    {
+      "uv": "20",
+      "fuente_tipo": "MATRIZ_MADRE",
+      "archivos": null,
+      "filas_csv_historicas": null,
+      "segmentos_seleccionados": null,
+      "dimensiones": {
+        "B01": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "Solo agrupación matriz madre.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        },
+        "B02": {
+          "estado": "INVENTARIO_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "3 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        },
+        "B03": {
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "3 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Veredas y pavimentos (2 registros)",
+            "Áreas verdes y arbolado (1 registros)"
+          ],
+          "conteo": 3,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
+        },
+        "B04": {
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "3 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        },
+        "B05": {
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "0 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [],
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
+        },
+        "B06": {
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "0 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [],
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
+        },
+        "B07": {
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "0 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [],
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
+        },
+        "B08": {
+          "estado": "FUENTE_NO_EXAMINADA",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "Solo agrupación matriz madre.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        },
+        "B09": {
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (2 registros)",
+            "Aseo y medio ambiente (1 registros)"
+          ],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        },
+        "B10": {
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
+          "etiqueta": "Sin síntesis adicional",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
+          "elementos": [],
+          "conteo": null,
+          "tipo_fuente": "MATRIZ_MADRE"
+        }
+      },
+      "registros_matriz_madre": 3,
+      "tipos_matriz_madre": {
+        "Problema": 3
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 2
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 0,
+      "control_auditoria": {
+        "CONSISTENTE": 3
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G04 PRUEBA",
+          "n": 2
+        },
+        {
+          "etiqueta": "PRUEBA",
+          "n": 1
+        }
+      ]
     },
     {
       "uv": "21",
@@ -1006,64 +1922,77 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "13 archivos catalogados",
+          "resumen": "48 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV disponibles",
-          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
+          "resumen": "28 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Seguridad y convivencia (11 filas clasificadas)",
-            "Aseo y medio ambiente (6 filas clasificadas)",
-            "Infraestructura y espacio público (6 filas clasificadas)",
-            "Seguridad y convivencia",
-            "Aseo y medio ambiente"
+            "Seguridad y prevención (9 registros)",
+            "Veredas y pavimentos (5 registros)",
+            "Aseo, residuos y salubridad (4 registros)",
+            "Movilidad, tránsito y transporte (4 registros)",
+            "Ruidos y convivencia (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)",
+            "Iluminación (1 registros)",
+            "Personas en situación de calle (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 28,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "48 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV disponibles",
-          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
+          "resumen": "10 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Infraestructura y espacio público (5 filas clasificadas)",
-            "Aseo y medio ambiente (2 filas clasificadas)",
-            "Seguridad y convivencia (1 filas clasificadas)",
-            "Infraestructura y espacio público",
-            "Aseo y medio ambiente"
+            "Espacio público y equipamiento (5 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV disponibles",
-          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "6 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (3 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Aseo, residuos y salubridad (1 registros)"
+          ],
+          "conteo": 6,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV disponibles",
-          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "4 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (2 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1074,22 +2003,76 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes documentados",
-          "resumen": "Seguridad y convivencia; Movilidad y transporte",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (13 registros)",
+            "Seguridad y convivencia (12 registros)",
+            "Aseo y medio ambiente (10 registros)",
+            "Movilidad y transporte (5 registros)",
+            "Actividad económica y comercio (4 registros)",
+            "Desarrollo social y comunitario (4 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Discrepancias por resolver",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         }
-      }
+      },
+      "registros_matriz_madre": 48,
+      "tipos_matriz_madre": {
+        "Oportunidad": 10,
+        "Lugar importante": 4,
+        "Problema": 28,
+        "Actor": 6
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 13
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 12
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 5
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 4
+        }
+      ],
+      "privacidad_marcada": 3,
+      "control_auditoria": {
+        "CONSISTENTE": 48
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 1",
+          "n": 25
+        },
+        {
+          "etiqueta": "MESA N2",
+          "n": 23
+        }
+      ]
     },
     {
       "uv": "22",
@@ -1107,58 +2090,75 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Alcance documentado",
-          "resumen": "15 archivos catalogados",
+          "resumen": "73 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Dificultades de disponibilidad de sede social según relato; Problemas de iluminación reportados",
+          "resumen": "37 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Dificultades de disponibilidad de sede social según relato",
-            "Problemas de iluminación reportados"
+            "Iluminación (9 registros)",
+            "Ruidos y convivencia (5 registros)",
+            "Organización y vida comunitaria (4 registros)",
+            "Seguridad y prevención (4 registros)",
+            "Aseo, residuos y salubridad (3 registros)",
+            "Movilidad, tránsito y transporte (3 registros)",
+            "Veredas y pavimentos (3 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 37,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Recuento cartográfico no contrastado",
-          "resumen": "Originales por verificar",
+          "resumen": "73 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "Reactivación de la organización vecinal; Propuesta de punto limpio y medidas de seguridad vial",
+          "resumen": "9 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Reactivación de la organización vecinal",
-            "Propuesta de punto limpio y medidas de seguridad vial"
+            "Espacio público y equipamiento (4 registros)",
+            "Aseo, residuos y salubridad (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 9,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin registro en selección codificada",
-          "resumen": "No se acredita ausencia en la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "14 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (9 registros)",
+            "Espacio público y equipamiento (5 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes registrados",
-          "resumen": "escuela espacio protector; capilla y plazas como espacios de encuentro",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "13 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (10 registros)",
+            "Organización y vida comunitaria (3 registros)"
+          ],
+          "conteo": 13,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1169,22 +2169,89 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes documentados",
-          "resumen": "organizacion; residuos",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (33 registros)",
+            "Desarrollo social y comunitario (17 registros)",
+            "Seguridad y convivencia (10 registros)",
+            "Aseo y medio ambiente (8 registros)",
+            "Movilidad y transporte (3 registros)",
+            "Actividad económica y comercio (1 registros)",
+            "Vivienda y entorno urbano (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por contrastar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 73,
+      "tipos_matriz_madre": {
+        "Lugar importante": 13,
+        "Oportunidad": 9,
+        "Problema": 37,
+        "Actor": 14
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 33
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 17
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 3
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 1
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 2,
+      "control_auditoria": {
+        "CONSISTENTE": 73
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "GRUPO 2",
+          "n": 22
+        },
+        {
+          "etiqueta": "G 01",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 3",
+          "n": 17
+        },
+        {
+          "etiqueta": "GRUPO 4",
+          "n": 17
+        }
+      ]
     },
     {
       "uv": "25",
@@ -1202,60 +2269,70 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "13 archivos listados",
+          "resumen": "49 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Basura dispersa y acumulación de residuos; Inseguridad y delincuencia reportada",
+          "resumen": "26 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Basura dispersa y acumulación de residuos",
-            "Inseguridad y delincuencia reportada",
-            "Deterioro de calles y pavimentos"
+            "Movilidad, tránsito y transporte (7 registros)",
+            "Aseo, residuos y salubridad (6 registros)",
+            "Seguridad y prevención (5 registros)",
+            "Veredas y pavimentos (5 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Iluminación (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 26,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Tres mapas observados; recuento pendiente",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "49 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Activación de biblioteca barrial proyectada; Mayor uso recreativo de cancha, plaza y sede",
+          "resumen": "6 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Activación de biblioteca barrial proyectada",
-            "Mayor uso recreativo de cancha, plaza y sede",
-            "Educación comunitaria de limpieza"
+            "Áreas verdes y arbolado (2 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Iluminación (2 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 6,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "No registrado en selección codificada",
-          "resumen": "No concluyente sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "7 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (4 registros)",
+            "Espacio público y equipamiento (3 registros)"
+          ],
+          "conteo": 7,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "No registrado en selección codificada",
-          "resumen": "No concluyente sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "10 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (5 registros)",
+            "Organización y vida comunitaria (3 registros)",
+            "Comercio y actividad económica (2 registros)"
+          ],
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1266,22 +2343,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (18 registros)",
+            "Aseo y medio ambiente (10 registros)",
+            "Desarrollo social y comunitario (7 registros)",
+            "Movilidad y transporte (7 registros)",
+            "Seguridad y convivencia (5 registros)",
+            "Actividad económica y comercio (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Discrepancias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 49,
+      "tipos_matriz_madre": {
+        "Problema": 26,
+        "Actor": 7,
+        "Oportunidad": 6,
+        "Lugar importante": 10
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 18
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 7
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 0,
+      "control_auditoria": {
+        "CONSISTENTE": 49
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "SAN MARTIN",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 14
+        },
+        {
+          "etiqueta": "G03",
+          "n": 11
+        }
+      ]
     },
     {
       "uv": "26A",
@@ -1299,58 +2434,78 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "17 archivos listados",
+          "resumen": "66 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Problemas de seguridad reportados en paraderos; Dificultades de acceso oportuno a servicios de atención",
+          "resumen": "28 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Problemas de seguridad reportados en paraderos",
-            "Dificultades de acceso oportuno a servicios de atención"
+            "Aseo, residuos y salubridad (9 registros)",
+            "Iluminación (5 registros)",
+            "Seguridad y prevención (5 registros)",
+            "Veredas y pavimentos (3 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Personas en situación de calle (2 registros)",
+            "Organización y vida comunitaria (1 registros)",
+            "Vivienda y habitabilidad (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 28,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía sin recuento acreditado",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "66 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Propuestas sobre identidad y denominación territorial; Reconocimiento de la memoria comunitaria",
+          "resumen": "20 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Propuestas sobre identidad y denominación territorial",
-            "Reconocimiento de la memoria comunitaria"
+            "Espacio público y equipamiento (5 registros)",
+            "Organización y vida comunitaria (5 registros)",
+            "Seguridad y prevención (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Iluminación (1 registros)",
+            "Patrimonio y entorno construido (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 20,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Se menciona colaboración comunitaria para actividades solidarias",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "8 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (6 registros)",
+            "Organización y vida comunitaria (2 registros)"
+          ],
+          "conteo": 8,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Se reconocen servicios de salud y organización comunitaria como lugares relevantes; Se destacan áreas verdes, escuelas y equipamiento sanitario",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "10 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (4 registros)",
+            "Comercio y actividad económica (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Organización y vida comunitaria (1 registros)"
+          ],
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1361,22 +2516,86 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Infraestructura; Identidad y memoria",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (24 registros)",
+            "Aseo y medio ambiente (13 registros)",
+            "Desarrollo social y comunitario (11 registros)",
+            "Seguridad y convivencia (8 registros)",
+            "Actividad económica y comercio (4 registros)",
+            "Movilidad y transporte (4 registros)",
+            "Vivienda y entorno urbano (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Revisión documental pendiente",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 66,
+      "tipos_matriz_madre": {
+        "Problema": 28,
+        "Lugar importante": 10,
+        "Oportunidad": 20,
+        "Actor": 8
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 24
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 13
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 11
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 4,
+      "control_auditoria": {
+        "CONSISTENTE": 65,
+        "REQUIERE RELECTURA": 1
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G02",
+          "n": 28
+        },
+        {
+          "etiqueta": "G01",
+          "n": 22
+        },
+        {
+          "etiqueta": "G03",
+          "n": 16
+        }
+      ]
     },
     {
       "uv": "26B",
@@ -1394,60 +2613,68 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "15 archivos listados",
+          "resumen": "20 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Insuficiencia de iluminación y necesidad de poda; Vegetación retirada por obras de alcantarillado sin reposición relatada",
+          "resumen": "7 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Insuficiencia de iluminación y necesidad de poda",
-            "Vegetación retirada por obras de alcantarillado sin reposición relatada",
-            "Vehículos abandonados en pasajes"
+            "Veredas y pavimentos (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Iluminación (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 7,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía sin recuento acreditado",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "20 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Solicitan esterilización de animales del sector; Solicitan ordenar y revisar tendidos",
+          "resumen": "4 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Solicitan esterilización de animales del sector",
-            "Solicitan ordenar y revisar tendidos",
-            "Solicitan atención, esterilización y adopción de gatos"
+            "Áreas verdes y arbolado (2 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Se reconoce colaboración de equipo territorial y programa comunitario, sin atribuir compromisos",
+          "resumen": "0 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "establecimientos de salud, establecimientos educacionales y comercios se mencionan como recursos territoriales",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "9 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (4 registros)",
+            "Comercio y actividad económica (3 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Personas en situación de calle (1 registros)"
+          ],
+          "conteo": 9,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1458,22 +2685,62 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Alumbrado; Espacio público",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (9 registros)",
+            "Aseo y medio ambiente (5 registros)",
+            "Actividad económica y comercio (3 registros)",
+            "Desarrollo social y comunitario (3 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Revisión documental pendiente",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 20,
+      "tipos_matriz_madre": {
+        "Oportunidad": 4,
+        "Lugar importante": 9,
+        "Problema": 7
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 9
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 5
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 3
+        }
+      ],
+      "privacidad_marcada": 1,
+      "control_auditoria": {
+        "CONSISTENTE": 18,
+        "Sin auditar": 2
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G01",
+          "n": 20
+        }
+      ]
     },
     {
       "uv": "27",
@@ -1491,60 +2758,77 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "28 archivos listados",
+          "resumen": "46 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Dificultades de abastecimiento de agua en sector alto; Acumulación de residuos y microbasurales",
+          "resumen": "29 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Dificultades de abastecimiento de agua en sector alto",
-            "Acumulación de residuos y microbasurales",
-            "Escaleras y evacuación de aguas lluvias deficientes"
+            "Aseo, residuos y salubridad (5 registros)",
+            "Espacio público y equipamiento (5 registros)",
+            "Movilidad, tránsito y transporte (5 registros)",
+            "Iluminación (4 registros)",
+            "Veredas y pavimentos (4 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Organización y vida comunitaria (1 registros)",
+            "Ruidos y convivencia (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 29,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía sin recuento acreditado",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "46 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes identificados",
-          "resumen": "Implementar medidas para moderar velocidad; Recuperar espacios de encuentro comunitario",
+          "resumen": "7 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Implementar medidas para moderar velocidad",
-            "Recuperar espacios de encuentro comunitario",
-            "Flexibilizar horarios de actividades para mejorar participación"
+            "Organización y vida comunitaria (3 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 7,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "No registrado en selección codificada",
-          "resumen": "No concluyente sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "4 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Comercio y actividad económica (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Organización y vida comunitaria (1 registros)"
+          ],
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "No registrado en selección codificada",
-          "resumen": "No concluyente sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "6 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (5 registros)",
+            "Áreas verdes y arbolado (1 registros)"
+          ],
+          "conteo": 6,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1555,22 +2839,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Movilidad y seguridad vial; Aseo y residuos",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (20 registros)",
+            "Aseo y medio ambiente (10 registros)",
+            "Movilidad y transporte (7 registros)",
+            "Desarrollo social y comunitario (5 registros)",
+            "Actividad económica y comercio (2 registros)",
+            "Seguridad y convivencia (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Discrepancias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 46,
+      "tipos_matriz_madre": {
+        "Problema": 29,
+        "Oportunidad": 7,
+        "Lugar importante": 6,
+        "Actor": 4
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 20
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 7
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 5
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 0,
+      "control_auditoria": {
+        "CONSISTENTE": 46
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G03",
+          "n": 17
+        },
+        {
+          "etiqueta": "G01",
+          "n": 15
+        },
+        {
+          "etiqueta": "G02",
+          "n": 14
+        }
+      ]
     },
     {
       "uv": "28",
@@ -1588,63 +2930,73 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "28 archivos listados",
+          "resumen": "43 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
+          "resumen": "25 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Infraestructura y espacio público (11 filas de tema/tipo)",
-            "Aseo y medio ambiente (10 filas de tema/tipo)",
-            "Seguridad y convivencia (3 filas de tema/tipo)",
-            "Infraestructura y espacio público",
-            "Aseo y medio ambiente"
+            "Aseo, residuos y salubridad (8 registros)",
+            "Iluminación (5 registros)",
+            "Espacio público y equipamiento (4 registros)",
+            "Seguridad y prevención (2 registros)",
+            "Veredas y pavimentos (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Ruidos y convivencia (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 25,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía sin recuento acreditado",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "43 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "resumen": "7 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Desarrollo social y comunitario (4 filas de tema/tipo)",
-            "Infraestructura y espacio público (3 filas de tema/tipo)",
-            "Desarrollo social y comunitario",
-            "Infraestructura y espacio público"
+            "Organización y vida comunitaria (4 registros)",
+            "Espacio público y equipamiento (3 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 7,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "5 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (3 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 5,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "6 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (3 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 6,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1655,22 +3007,84 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Infraestructura y espacio público; Aseo y medio ambiente",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (17 registros)",
+            "Aseo y medio ambiente (10 registros)",
+            "Desarrollo social y comunitario (10 registros)",
+            "Seguridad y convivencia (3 registros)",
+            "Actividad económica y comercio (2 registros)",
+            "Movilidad y transporte (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Discrepancias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         }
-      }
+      },
+      "registros_matriz_madre": 43,
+      "tipos_matriz_madre": {
+        "Problema": 25,
+        "Lugar importante": 6,
+        "Actor": 5,
+        "Oportunidad": 7
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 17
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 10
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 10
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 3
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 0,
+      "control_auditoria": {
+        "CONSISTENTE": 43
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G 02",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 03",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 04",
+          "n": 11
+        },
+        {
+          "etiqueta": "G 01",
+          "n": 10
+        }
+      ]
     },
     {
       "uv": "29",
@@ -1688,64 +3102,83 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos disponibles",
-          "resumen": "29 archivos listados",
+          "resumen": "86 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Aseo y medio ambiente; Seguridad y convivencia",
+          "resumen": "36 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Aseo y medio ambiente (13 filas de tema/tipo)",
-            "Seguridad y convivencia (6 filas de tema/tipo)",
-            "Vivienda y entorno urbano (5 filas de tema/tipo)",
-            "Aseo y medio ambiente",
-            "Seguridad y convivencia"
+            "Aseo, residuos y salubridad (11 registros)",
+            "Vivienda y habitabilidad (5 registros)",
+            "Estacionamientos (3 registros)",
+            "Personas en situación de calle (3 registros)",
+            "Ruidos y convivencia (3 registros)",
+            "Seguridad y prevención (3 registros)",
+            "Iluminación (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)",
+            "Comercio y actividad económica (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 36,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía sin recuento acreditado",
-          "resumen": "No se infieren frecuencias",
+          "resumen": "86 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
+          "resumen": "22 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Infraestructura y espacio público (9 filas de tema/tipo)",
-            "Desarrollo social y comunitario (4 filas de tema/tipo)",
-            "Aseo y medio ambiente (4 filas de tema/tipo)",
-            "Infraestructura y espacio público",
-            "Desarrollo social y comunitario"
+            "Espacio público y equipamiento (7 registros)",
+            "Organización y vida comunitaria (4 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Iluminación (2 registros)",
+            "Bienestar animal (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Patrimonio y entorno construido (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 22,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Desarrollo social y comunitario; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "13 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (12 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 13,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías temáticas del CSV",
-          "resumen": "Aseo y medio ambiente; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "15 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Áreas verdes y arbolado (4 registros)",
+            "Comercio y actividad económica (4 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Patrimonio y entorno construido (1 registros)"
+          ],
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1756,22 +3189,85 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Temas del material procesado",
-          "resumen": "Infraestructura y espacio público; Movilidad y transporte",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Desarrollo social y comunitario (22 registros)",
+            "Aseo y medio ambiente (21 registros)",
+            "Infraestructura y espacio público (15 registros)",
+            "Actividad económica y comercio (8 registros)",
+            "Seguridad y convivencia (7 registros)",
+            "Vivienda y entorno urbano (7 registros)",
+            "Movilidad y transporte (6 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Discrepancias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         }
-      }
+      },
+      "registros_matriz_madre": 86,
+      "tipos_matriz_madre": {
+        "Oportunidad": 22,
+        "Problema": 36,
+        "Lugar importante": 15,
+        "Actor": 13
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 22
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 21
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 15
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 8
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 7
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 7
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 6
+        }
+      ],
+      "privacidad_marcada": 8,
+      "control_auditoria": {
+        "CONSISTENTE": 86
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G2",
+          "n": 34
+        },
+        {
+          "etiqueta": "G1",
+          "n": 26
+        },
+        {
+          "etiqueta": "G3",
+          "n": 26
+        }
+      ]
     },
     {
       "uv": "30",
@@ -1789,58 +3285,68 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "13 archivos",
+          "resumen": "26 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Dificultades de abastecimiento de agua y residuos en laderas, según exposición; Percepción de baja asistencia sin porcentaje acreditado",
+          "resumen": "16 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Dificultades de abastecimiento de agua y residuos en laderas, según exposición",
-            "Percepción de baja asistencia sin porcentaje acreditado"
+            "Aseo, residuos y salubridad (7 registros)",
+            "Seguridad y prevención (3 registros)",
+            "Iluminación (2 registros)",
+            "Veredas y pavimentos (2 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Ruidos y convivencia (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 16,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "26 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Propuesta de continuidad y coordinación de iniciativas comunitarias; Actividad educativa anunciada, realización por verificar",
+          "resumen": "9 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Propuesta de continuidad y coordinación de iniciativas comunitarias",
-            "Actividad educativa anunciada, realización por verificar"
+            "Espacio público y equipamiento (3 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Iluminación (1 registros)",
+            "Seguridad y prevención (1 registros)",
+            "Vivienda y habitabilidad (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 9,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin código en la selección examinada",
-          "resumen": "Sin conclusión sobre la sesión completa",
+          "resumen": "0 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Se describe espacio comunitario visitado, sin delimitación cartográfica",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "1 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (1 registros)"
+          ],
+          "conteo": 1,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1851,22 +3357,72 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "Participación comunitaria; Movilidad",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Aseo y medio ambiente (8 registros)",
+            "Infraestructura y espacio público (8 registros)",
+            "Seguridad y convivencia (5 registros)",
+            "Desarrollo social y comunitario (3 registros)",
+            "Movilidad y transporte (1 registros)",
+            "Vivienda y entorno urbano (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Diferencias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 26,
+      "tipos_matriz_madre": {
+        "Problema": 16,
+        "Lugar importante": 1,
+        "Oportunidad": 9
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 8
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 5
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 3
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 1,
+      "control_auditoria": {
+        "Sin auditar": 23,
+        "REQUIERE RELECTURA": 3
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G01",
+          "n": 26
+        }
+      ]
     },
     {
       "uv": "31",
@@ -1884,60 +3440,79 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "29 archivos",
+          "resumen": "88 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "seguridad y oscuridad en espacios públicos; basura, poda e iluminación como dificultades de uso cotidiano",
+          "resumen": "37 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "seguridad y oscuridad en espacios públicos",
-            "basura, poda e iluminación como dificultades de uso cotidiano",
-            "visibilidad e iluminación deficientes en cruces del sector"
+            "Seguridad y prevención (11 registros)",
+            "Veredas y pavimentos (8 registros)",
+            "Aseo, residuos y salubridad (7 registros)",
+            "Iluminación (4 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Patrimonio y entorno construido (1 registros)",
+            "Personas en situación de calle (1 registros)",
+            "Vivienda y habitabilidad (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 37,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "88 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "reciclaje y recuperación de plazas y espacios interiores; potencial de ciclovía y cerros como activos del entorno",
+          "resumen": "18 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "reciclaje y recuperación de plazas y espacios interiores",
-            "potencial de ciclovía y cerros como activos del entorno",
-            "recuperación de espacios interiores descuidados como áreas verdes"
+            "Áreas verdes y arbolado (5 registros)",
+            "Organización y vida comunitaria (5 registros)",
+            "Espacio público y equipamiento (4 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Bienestar animal (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "organizaciones comunitarias y deportivas mencionadas",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "15 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (8 registros)",
+            "Espacio público y equipamiento (5 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Ruidos y convivencia (1 registros)"
+          ],
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "cerros, ciclovía y estaciones de metro como referencias del entorno",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "18 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (9 registros)",
+            "Organización y vida comunitaria (5 registros)",
+            "Áreas verdes y arbolado (3 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -1948,22 +3523,89 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (31 registros)",
+            "Aseo y medio ambiente (20 registros)",
+            "Desarrollo social y comunitario (19 registros)",
+            "Seguridad y convivencia (12 registros)",
+            "Actividad económica y comercio (2 registros)",
+            "Movilidad y transporte (2 registros)",
+            "Vivienda y entorno urbano (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Diferencias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 88,
+      "tipos_matriz_madre": {
+        "Oportunidad": 18,
+        "Actor": 15,
+        "Lugar importante": 18,
+        "Problema": 37
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 31
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 20
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 19
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 12
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 2
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 2
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 3,
+      "control_auditoria": {
+        "CONSISTENTE": 88
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G01",
+          "n": 40
+        },
+        {
+          "etiqueta": "G03",
+          "n": 17
+        },
+        {
+          "etiqueta": "G04",
+          "n": 16
+        },
+        {
+          "etiqueta": "G02",
+          "n": 15
+        }
+      ]
     },
     {
       "uv": "32",
@@ -1981,64 +3623,76 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "24 archivos",
+          "resumen": "53 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Seguridad y convivencia; Aseo y medio ambiente",
+          "resumen": "25 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Seguridad y convivencia (11 filas de tema/tipo)",
-            "Aseo y medio ambiente (7 filas de tema/tipo)",
-            "Infraestructura y espacio público (3 filas de tema/tipo)",
-            "Seguridad y convivencia",
-            "Aseo y medio ambiente"
+            "Seguridad y prevención (10 registros)",
+            "Aseo, residuos y salubridad (5 registros)",
+            "Iluminación (3 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Bienestar animal (1 registros)",
+            "Comercio y actividad económica (1 registros)",
+            "Personas en situación de calle (1 registros)",
+            "Ruidos y convivencia (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 25,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "53 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
+          "resumen": "4 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Desarrollo social y comunitario (1 filas de tema/tipo)",
-            "Infraestructura y espacio público (1 filas de tema/tipo)",
-            "Aseo y medio ambiente (1 filas de tema/tipo)",
-            "Desarrollo social y comunitario",
-            "Infraestructura y espacio público"
+            "Aseo, residuos y salubridad (1 registros)",
+            "Espacio público y equipamiento (1 registros)",
+            "Organización y vida comunitaria (1 registros)",
+            "Vivienda y habitabilidad (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 4,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Desarrollo social y comunitario; Infraestructura y espacio público",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "6 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (5 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 6,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Infraestructura y espacio público; Desarrollo social y comunitario",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "18 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (11 registros)",
+            "Organización y vida comunitaria (3 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Patrimonio y entorno construido (1 registros)"
+          ],
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -2049,22 +3703,85 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "Seguridad y convivencia; Infraestructura y espacio público",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (16 registros)",
+            "Desarrollo social y comunitario (12 registros)",
+            "Seguridad y convivencia (11 registros)",
+            "Aseo y medio ambiente (8 registros)",
+            "Actividad económica y comercio (3 registros)",
+            "Vivienda y entorno urbano (2 registros)",
+            "Movilidad y transporte (1 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Diferencias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         }
-      }
+      },
+      "registros_matriz_madre": 53,
+      "tipos_matriz_madre": {
+        "Problema": 25,
+        "Actor": 6,
+        "Lugar importante": 18,
+        "Oportunidad": 4
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 16
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 12
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 11
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 8
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 3
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 1
+        }
+      ],
+      "privacidad_marcada": 2,
+      "control_auditoria": {
+        "Sin auditar": 53
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G02",
+          "n": 22
+        },
+        {
+          "etiqueta": "G01",
+          "n": 18
+        },
+        {
+          "etiqueta": "G03",
+          "n": 13
+        }
+      ]
     },
     {
       "uv": "33",
@@ -2082,60 +3799,75 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "14 archivos",
+          "resumen": "59 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Deterioro de veredas y carencia de iluminación peatonal; Basura, congestión y poda pendiente",
+          "resumen": "34 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Deterioro de veredas y carencia de iluminación peatonal",
-            "Basura, congestión y poda pendiente",
-            "Riesgo de incendio por maleza del cerro"
+            "Seguridad y prevención (5 registros)",
+            "Veredas y pavimentos (5 registros)",
+            "Movilidad, tránsito y transporte (4 registros)",
+            "Comercio y actividad económica (3 registros)",
+            "Personas en situación de calle (3 registros)",
+            "Ruidos y convivencia (3 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Aseo, residuos y salubridad (2 registros)",
+            "Iluminación (2 registros)",
+            "Vivienda y habitabilidad (2 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 34,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "59 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Incrementar espacios verdes interiores; Remodelar plaza y habilitar juegos/vegetación en entorno urbano",
+          "resumen": "10 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Incrementar espacios verdes interiores",
-            "Remodelar plaza y habilitar juegos/vegetación en entorno urbano",
-            "Plan anual de despeje preventivo de maleza en septiembre y octubre"
+            "Áreas verdes y arbolado (4 registros)",
+            "Espacio público y equipamiento (2 registros)",
+            "Iluminación (1 registros)",
+            "Organización y vida comunitaria (1 registros)",
+            "Patrimonio y entorno construido (1 registros)",
+            "Personas en situación de calle (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 10,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin código en la selección examinada",
-          "resumen": "Sin conclusión sobre la sesión completa",
+          "resumen": "0 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 0,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "cerros del entorno, acceso cerros del entorno y equipamientos comunitarios; Valoración de inmuebles y patrimonio cultural del barrio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "15 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (6 registros)",
+            "Áreas verdes y arbolado (5 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Organización y vida comunitaria (2 registros)"
+          ],
+          "conteo": 15,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -2146,22 +3878,80 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "patrimonio_equipamiento; infraestructura_seguridad",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (17 registros)",
+            "Aseo y medio ambiente (14 registros)",
+            "Desarrollo social y comunitario (8 registros)",
+            "Seguridad y convivencia (8 registros)",
+            "Actividad económica y comercio (5 registros)",
+            "Movilidad y transporte (4 registros)",
+            "Vivienda y entorno urbano (3 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Fuentes por cotejar",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 59,
+      "tipos_matriz_madre": {
+        "Problema": 34,
+        "Lugar importante": 15,
+        "Oportunidad": 10
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 17
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 14
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 8
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 8
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 5
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 4
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 3
+        }
+      ],
+      "privacidad_marcada": 6,
+      "control_auditoria": {
+        "Sin auditar": 59
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G01",
+          "n": 39
+        },
+        {
+          "etiqueta": "G02",
+          "n": 20
+        }
+      ]
     },
     {
       "uv": "34",
@@ -2179,64 +3969,80 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "25 archivos",
+          "resumen": "74 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Infraestructura y espacio público; Seguridad y convivencia",
+          "resumen": "37 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Infraestructura y espacio público (11 filas de tema/tipo)",
-            "Seguridad y convivencia (10 filas de tema/tipo)",
-            "Aseo y medio ambiente (7 filas de tema/tipo)",
-            "Infraestructura y espacio público",
-            "Seguridad y convivencia"
+            "Seguridad y prevención (9 registros)",
+            "Aseo, residuos y salubridad (6 registros)",
+            "Personas en situación de calle (5 registros)",
+            "Iluminación (4 registros)",
+            "Veredas y pavimentos (4 registros)",
+            "Espacio público y equipamiento (3 registros)",
+            "Organización y vida comunitaria (2 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Estacionamientos (1 registros)",
+            "Ruidos y convivencia (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 37,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "74 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
+          "resumen": "16 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Infraestructura y espacio público (6 filas de tema/tipo)",
-            "Actividad económica y comercio (4 filas de tema/tipo)",
-            "Aseo y medio ambiente (2 filas de tema/tipo)",
-            "Infraestructura y espacio público",
-            "Actividad económica y comercio"
+            "Espacio público y equipamiento (6 registros)",
+            "Comercio y actividad económica (4 registros)",
+            "Áreas verdes y arbolado (1 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Movilidad, tránsito y transporte (1 registros)",
+            "Organización y vida comunitaria (1 registros)",
+            "Patrimonio y entorno construido (1 registros)",
+            "Personas en situación de calle (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "conteo": 16,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "7 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (3 registros)",
+            "Comercio y actividad económica (2 registros)",
+            "Organización y vida comunitaria (2 registros)"
+          ],
+          "conteo": 7,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Categorías CSV",
-          "resumen": "Infraestructura y espacio público; Actividad económica y comercio",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
+          "resumen": "14 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (8 registros)",
+            "Comercio y actividad económica (4 registros)",
+            "Organización y vida comunitaria (2 registros)"
+          ],
+          "conteo": 14,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -2247,22 +4053,89 @@
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "Aseo y medio ambiente; Desarrollo social y comunitario",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Infraestructura y espacio público (28 registros)",
+            "Desarrollo social y comunitario (13 registros)",
+            "Actividad económica y comercio (10 registros)",
+            "Seguridad y convivencia (10 registros)",
+            "Aseo y medio ambiente (9 registros)",
+            "Movilidad y transporte (2 registros)",
+            "Vivienda y entorno urbano (2 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Diferencias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "ETIQUETAS_CSV_HISTORICO"
         }
-      }
+      },
+      "registros_matriz_madre": 74,
+      "tipos_matriz_madre": {
+        "Problema": 37,
+        "Lugar importante": 14,
+        "Oportunidad": 16,
+        "Actor": 7
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 28
+        },
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 13
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 10
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 10
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 9
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 2
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 2
+        }
+      ],
+      "privacidad_marcada": 8,
+      "control_auditoria": {
+        "Sin auditar": 74
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G01",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 17
+        },
+        {
+          "etiqueta": "G04",
+          "n": 17
+        },
+        {
+          "etiqueta": "G03",
+          "n": 16
+        }
+      ]
     },
     {
       "uv": "35",
@@ -2280,58 +4153,79 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B02": {
-          "estado": "POR_VERIFICAR",
+          "estado": "INVENTARIO_MATRIZ_MADRE",
           "etiqueta": "Instrumentos conocidos",
-          "resumen": "34 archivos",
+          "resumen": "99 filas con ID en DATOS. Inventario de archivos y segmentos de fuentes distintas.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B03": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Molestias por ruido y horarios de funcionamiento reportadas; Problemas de basura y saneamiento mencionados",
+          "resumen": "53 registros de tipo Problema en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Molestias por ruido y horarios de funcionamiento reportadas",
-            "Problemas de basura y saneamiento mencionados"
+            "Seguridad y prevención (13 registros)",
+            "Aseo, residuos y salubridad (7 registros)",
+            "Ruidos y convivencia (7 registros)",
+            "Estacionamientos (4 registros)",
+            "Personas en situación de calle (4 registros)",
+            "Veredas y pavimentos (4 registros)",
+            "Comercio y actividad económica (3 registros)",
+            "Espacio público y equipamiento (3 registros)",
+            "Movilidad, tránsito y transporte (3 registros)",
+            "Iluminación (2 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 53,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B04": {
-          "estado": "POR_VERIFICAR",
+          "estado": "MATRIZ_MADRE_SIN_MAPA_PUBLICO",
           "etiqueta": "Cartografía por contrastar",
-          "resumen": "Sin recuento acreditado",
+          "resumen": "99 registros clasificados en la matriz; contraste con cartografías originales pendiente.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B05": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Aportes de digitalización",
-          "resumen": "Propuestas de revisión de regulación de actividades comerciales; Propuesta de seguimiento de responsabilidades de establecimientos",
+          "resumen": "20 registros de tipo Oportunidad en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
           "elementos": [
-            "Propuestas de revisión de regulación de actividades comerciales",
-            "Propuesta de seguimiento de responsabilidades de establecimientos"
+            "Organización y vida comunitaria (7 registros)",
+            "Espacio público y equipamiento (6 registros)",
+            "Áreas verdes y arbolado (2 registros)",
+            "Movilidad, tránsito y transporte (2 registros)",
+            "Aseo, residuos y salubridad (1 registros)",
+            "Iluminación (1 registros)",
+            "Seguridad y prevención (1 registros)"
           ],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "conteo": 20,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B06": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin código en la selección examinada",
-          "resumen": "Sin conclusión sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "8 registros de tipo Actor en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Organización y vida comunitaria (7 registros)",
+            "Espacio público y equipamiento (1 registros)"
+          ],
+          "conteo": 8,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B07": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Sin código en la selección examinada",
-          "resumen": "Sin conclusión sobre la sesión completa",
-          "elementos": [],
-          "conteo": null,
-          "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
+          "resumen": "18 registros de tipo Lugar importante en hoja DATOS. Subtemas ordenados por frecuencia; no representan personas ni acuerdos.",
+          "elementos": [
+            "Espacio público y equipamiento (8 registros)",
+            "Organización y vida comunitaria (7 registros)",
+            "Patrimonio y entorno construido (2 registros)",
+            "Comercio y actividad económica (1 registros)"
+          ],
+          "conteo": 18,
+          "tipo_fuente": "MATRIZ_MADRE_DATOS"
         },
         "B08": {
           "estado": "POR_VERIFICAR",
@@ -2342,22 +4236,101 @@
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B09": {
-          "estado": "POR_VERIFICAR",
+          "estado": "CLASIFICACION_MATRIZ_MADRE",
           "etiqueta": "Ejes temáticos documentados",
-          "resumen": "Ruido y horarios; Basura y saneamiento",
-          "elementos": [],
+          "resumen": "Temas de DATOS por UV, no preferencias representativas.",
+          "elementos": [
+            "Desarrollo social y comunitario (25 registros)",
+            "Infraestructura y espacio público (25 registros)",
+            "Seguridad y convivencia (21 registros)",
+            "Aseo y medio ambiente (12 registros)",
+            "Movilidad y transporte (9 registros)",
+            "Actividad económica y comercio (4 registros)",
+            "Vivienda y entorno urbano (3 registros)"
+          ],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         },
         "B10": {
-          "estado": "POR_VERIFICAR",
+          "estado": "FUENTE_MADRE_IDENTIFICADA",
           "etiqueta": "Diferencias documentales",
-          "resumen": "Se requiere cotejar versiones y respaldos originales antes de validar hallazgos territoriales. El corte divulgado no acredita acuerdos ni compromisos municipales.",
+          "resumen": "Fuente principal: matriz fusionada, hoja DATOS. Validación de privacidad y procedencia pendientes.",
           "elementos": [],
           "conteo": null,
           "tipo_fuente": "SINTESIS_CODIFICADA_NO_VALIDADA"
         }
-      }
+      },
+      "registros_matriz_madre": 99,
+      "tipos_matriz_madre": {
+        "Problema": 53,
+        "Oportunidad": 20,
+        "Lugar importante": 18,
+        "Actor": 8
+      },
+      "temas_matriz_madre": [
+        {
+          "etiqueta": "Desarrollo social y comunitario",
+          "n": 25
+        },
+        {
+          "etiqueta": "Infraestructura y espacio público",
+          "n": 25
+        },
+        {
+          "etiqueta": "Seguridad y convivencia",
+          "n": 21
+        },
+        {
+          "etiqueta": "Aseo y medio ambiente",
+          "n": 12
+        },
+        {
+          "etiqueta": "Movilidad y transporte",
+          "n": 9
+        },
+        {
+          "etiqueta": "Actividad económica y comercio",
+          "n": 4
+        },
+        {
+          "etiqueta": "Vivienda y entorno urbano",
+          "n": 3
+        }
+      ],
+      "privacidad_marcada": 5,
+      "control_auditoria": {
+        "Sin auditar": 99
+      },
+      "grupos_matriz_madre": [
+        {
+          "etiqueta": "G04",
+          "n": 24
+        },
+        {
+          "etiqueta": "G02",
+          "n": 22
+        },
+        {
+          "etiqueta": "G01",
+          "n": 21
+        },
+        {
+          "etiqueta": "G03",
+          "n": 18
+        },
+        {
+          "etiqueta": "G05",
+          "n": 14
+        }
+      ]
     }
-  ]
+  ],
+  "origen_matriz_madre": {
+    "spreadsheet_id": "1KecTjqU4Kx5tJLNPl4Z5D1sxlgC05PxWHh5xwuI0jpQ",
+    "hoja": "DATOS",
+    "rango": "A1:AF1571",
+    "corte": "2026-11-09",
+    "registros": 1570,
+    "uv_etiquetas": 25
+  }
 }
