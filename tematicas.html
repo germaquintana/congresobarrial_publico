@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f56">
+<title>Resultados por temática | Congreso Barrial de Recoleta</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#172e43;background:#f3f6fa}
+*{box-sizing:border-box}body{margin:0}a{color:#14627b}header{background:linear-gradient(110deg,#12334c,#16676e);color:#fff;padding:30px max(20px,calc((100% - 1190px)/2))}
+header a{color:#eafcff}header h1{font-size:clamp(1.7rem,3.5vw,2.5rem);margin:12px 0}header p{max-width:840px;line-height:1.55;color:#e0edf0}
+main{max-width:1190px;margin:auto;padding:22px 18px 40px}
+.card{background:#fff;border:1px solid #dce5ec;border-radius:12px;padding:18px;margin:12px 0;box-shadow:0 2px 8px #17395108}
+.alert{background:#fff6e5;border-left:4px solid #bb8c3e;line-height:1.6}
+.controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+button{font:inherit;border:1px solid #bdd0dc;background:#f5fafc;color:#1d495b;padding:10px 12px;border-radius:9px;cursor:pointer}
+button.active{color:#fff;background:#14506a;border-color:#14506a}
+button:focus-visible,a:focus-visible{outline:3px solid #f3ac47;outline-offset:3px}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.theme{width:100%;text-align:left;display:flex;align-items:center;gap:10px;line-height:1.4}
+.theme strong{display:block;font-size:1rem}.theme small{display:block;font-size:.76rem}
+.swatch{width:12px;height:12px;border-radius:3px;display:inline-block;flex-shrink:0}
+.muted{color:#60788c}.small{font-size:.84rem}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.kpi b{display:block;font-size:1.9rem}
+h2{font-size:1.18rem;margin:0 0 12px}h3{font-size:1.02rem}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}.legend span{display:flex;gap:6px;align-items:center;font-size:.84rem}
+.chartrow{display:grid;grid-template-columns:68px minmax(0,1fr) 62px;gap:9px;align-items:center;padding:9px 0;border-bottom:1px solid #ebf1f5;font-size:.86rem}
+.track{display:flex;height:23px;width:100%;background:#e8eff4;border-radius:5px;overflow:hidden}.segment{display:block;height:100%}
+.chartrow a{font-weight:700}table{border-collapse:collapse;width:100%;font-size:.85rem}th,td{padding:10px 9px;border-bottom:1px solid #e2e9ef;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#f1f6f9;position:sticky;top:0}tbody tr:hover{background:#f7fbfc}.scroll{overflow-x:auto}
+footer{margin-top:26px;padding-top:18px;border-top:1px solid #d8e2ea;color:#60788c;font-size:.8rem;line-height:1.6}
+@media(max-width:730px){.kpis{grid-template-columns:repeat(2,1fr)}.chartrow{grid-template-columns:55px minmax(0,1fr) 50px}.card{padding:13px}}
+</style>
+</head>
+<body>
+<header>
+<div><a id="returnLink" href="index.html?corte=entrega01">← Volver al dashboard general</a></div>
+<h1>Resultados por temática</h1>
+<p>Explora los siete ámbitos temáticos identificados en la matriz DATOS: distribución territorial, tipos de registro y comparación entre unidades vecinales.</p>
+</header>
+<main>
+<div class="card alert"><strong>Clasificación documental preliminar.</strong> Las cifras representan registros de la matriz, no personas, votos, necesidades acreditadas, compromisos ni prioridades oficiales. Se muestran solo agregados ya publicados; quedan pendientes las revisiones de fuentes y privacidad.</div>
+<div class="card"><div class="controls"><strong>Corte:</strong><button id="kit" type="button">Entrega 01 · 15 UV</button><button id="all" type="button">Matriz completa · 25 etiquetas</button></div><p id="scopeInfo" class="small muted"></p></div>
+<section class="card"><h2>Seleccionar temática</h2><div id="themePicker" class="themes"></div></section>
+<section class="card"><h2 id="selectedTitle">Cargando temáticas…</h2><p id="summary" class="small muted"></p><div id="kpis" class="kpis"></div></section>
+<section class="card"><h2>Composición por tipo de registro</h2><p class="small muted">Desglose del tema seleccionado en problemas, oportunidades, lugares importantes y actores.</p><div id="types" class="kpis"></div></section>
+<section class="card"><h2>Distribución del tema por unidad vecinal</h2><p class="small muted">Las barras apiladas desglosan el tema según el tipo de registro; sus longitudes son comparables entre UV dentro de este mismo tema. Selecciona una UV para revisar las dimensiones B01–B10.</p><div id="legend" class="legend"></div><div id="chart"></div></section>
+<section class="card"><h2>Tabla comparativa por UV</h2><div class="scroll"><table><thead><tr><th>Unidad vecinal</th><th>Problemas</th><th>Oportunidades</th><th>Lugares</th><th>Actores</th><th>Total del tema</th><th>% en la UV</th></tr></thead><tbody id="tableBody"></tbody><tfoot id="tableFoot"></tfoot></table></div></section>
+<section class="card"><h2>Alcance del análisis</h2><p class="small muted">La base pública permite cruzar de forma reproducible <strong>tema × UV × tipo</strong>. Los subtemas existen en agregados por tipo, pero todavía no están cruzados con cada tema; por ello esta página no los adjudica a una temática sin una tabla de correspondencia validada. Para observar los subtemas registrados por UV, utiliza el enlace a su ficha B03–B10 en el dashboard general.</p><p class="small muted">La etiqueta UV20 (tres registros en la matriz completa) está pendiente de conciliación territorial. No debe interpretarse como una jornada adicional.</p></section>
+<footer>Fuente: Matriz_Congreso_Barrial_fusionada, hoja DATOS, corte 9 de noviembre de 2026. Datos agregados del portal, sin microdatos individuales. <a href="datos-agregados.json">Consultar JSON de agregados</a> · <a href="index.html">Dashboard general</a>.</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n||0).toLocaleString("es-CL");
+const colors={
+"Infraestructura y espacio público":"#2b689b",
+"Aseo y medio ambiente":"#238b84",
+"Desarrollo social y comunitario":"#be772c",
+"Seguridad y convivencia":"#9554a9",
+"Movilidad y transporte":"#d05859",
+"Actividad económica y comercio":"#698b35",
+"Vivienda y entorno urbano":"#946781"
+};
+const typeNames=["Problema","Oportunidad","Lugar importante","Actor"];
+const typeLabels=["Problemas","Oportunidades","Lugares","Actores"];
+const typeColors=["#23587d","#21a092","#e2a248","#9764b3"];
+const kitIDs=new Set(["15","21","22","26A","26B","25","29","28","27","30","31","32","33","34","35"]);
+let D,scope="kit",selected="Infraestructura y espacio público";
+function rows(){return scope==="kit"?D.uvs.filter(u=>kitIDs.has(u.uv)):D.uvs}
+function count(u,topic){const hit=u.temas.find(v=>v.etiqueta===topic);return hit?hit.n:0}
+function byType(u,type,topic){const hit=(u.por_tipo[type]?.temas||[]).find(v=>v.etiqueta===topic);return hit?hit.n:0}
+function urlForUV(u){return "index.html?corte="+(scope==="kit"?"entrega01":"todo")+"&uv="+encodeURIComponent(u)}
+function refreshURL(){const p=new URLSearchParams();p.set("corte",scope==="kit"?"entrega01":"todo");p.set("tema",selected);history.replaceState({},"",location.pathname+"?"+p)}
+function setTopic(t){selected=t;refreshURL();render()}
+function setScope(s){scope=s;refreshURL();render()}
+function render(){
+ if(!D)return;
+ const all=rows(),grand=all.reduce((n,u)=>n+u.total,0);
+ const current=all.map(u=>({u,n:count(u,selected),kinds:typeNames.map(t=>byType(u,t,selected))})).sort((a,b)=>b.n-a.n||a.u.uv.localeCompare(b.u.uv,"es",{numeric:true}));
+ const themeTotal=current.reduce((n,x)=>n+x.n,0),activeUV=current.filter(x=>x.n>0).length;
+ const typeTotals=typeNames.map((_,i)=>current.reduce((n,x)=>n+x.kinds[i],0));
+ const valid=typeTotals.reduce((s,n)=>s+n,0)===themeTotal&&current.every(x=>x.kinds.reduce((s,n)=>s+n,0)===x.n);
+ if(!valid){$("selectedTitle").textContent="Inconsistencia en los datos agregados";return}
+ $("kit").classList.toggle("active",scope==="kit");
+ $("all").classList.toggle("active",scope==="all");
+ $("scopeInfo").textContent=scope==="kit"?"Entrega 01: 15 UV, "+fmt(grand)+" registros clasificados.":"Matriz madre: 25 etiquetas UV, "+fmt(grand)+" registros. UV20 requiere conciliación.";
+ $("returnLink").href="index.html?corte="+(scope==="kit"?"entrega01":"todo");
+ $("themePicker").innerHTML=D.distribucion_tematica.map(t=>{const n=all.reduce((s,u)=>s+count(u,t.etiqueta),0);return '<button type="button" class="theme '+(t.etiqueta===selected?'active':'')+'" data-topic="'+esc(t.etiqueta)+'" aria-pressed="'+(t.etiqueta===selected)+'"><span class="swatch" style="background:'+colors[t.etiqueta]+'"></span><span><strong>'+esc(t.etiqueta)+'</strong><small>'+fmt(n)+' registros · '+(100*n/Math.max(1,grand)).toLocaleString("es-CL",{maximumFractionDigits:1})+'% del corte</small></span></button>'}).join("");
+ $("themePicker").querySelectorAll("[data-topic]").forEach(el=>el.onclick=()=>setTopic(el.dataset.topic));
+ $("selectedTitle").textContent=selected;
+ $("summary").textContent="La temática concentra "+fmt(themeTotal)+" registros ("+(100*themeTotal/Math.max(1,grand)).toLocaleString("es-CL",{maximumFractionDigits:1})+"% del corte seleccionado), presentes en "+fmt(activeUV)+" de "+fmt(all.length)+" etiquetas UV.";
+ $("kpis").innerHTML=[["Registros del tema",themeTotal],["UV con registros",activeUV],["Registros de todo el corte",grand],["UV del corte",all.length]].map(([l,n])=>'<div class="card kpi"><b>'+fmt(n)+'</b><span class="muted small">'+esc(l)+'</span></div>').join("");
+ $("types").innerHTML=typeTotals.map((n,i)=>'<div class="card kpi"><b>'+fmt(n)+'</b><span class="muted small">'+typeLabels[i]+'</span></div>').join("");
+ $("legend").innerHTML=typeNames.map((n,i)=>'<span><i class="swatch" style="background:'+typeColors[i]+'"></i>'+typeLabels[i]+'</span>').join("");
+ const mx=Math.max(1,...current.map(x=>x.n));
+ $("chart").innerHTML=current.map(x=>{const segs=x.kinds.map((n,i)=>n?'<span class="segment" style="width:'+(100*n/mx).toFixed(5)+'%;background:'+typeColors[i]+'" title="'+typeLabels[i]+': '+n+'"></span>':'').join("");return '<div class="chartrow"><a href="'+urlForUV(x.u.uv)+'">UV '+esc(x.u.uv)+'</a><div class="track" role="img" aria-label="UV '+esc(x.u.uv)+', '+fmt(x.n)+' registros del tema">'+segs+'</div><strong>'+fmt(x.n)+'</strong></div>'}).join("");
+ $("tableBody").innerHTML=current.map(x=>'<tr><td><a href="'+urlForUV(x.u.uv)+'">UV '+esc(x.u.uv)+'</a>'+(x.u.registro_provisional?' *':'')+'</td>'+x.kinds.map(n=>'<td>'+fmt(n)+'</td>').join("")+'<td><strong>'+fmt(x.n)+'</strong></td><td>'+(100*x.n/Math.max(1,x.u.total)).toLocaleString("es-CL",{maximumFractionDigits:1})+'%</td></tr>').join("");
+ $("tableFoot").innerHTML='<tr><th>Total</th>'+typeTotals.map(n=>'<th>'+fmt(n)+'</th>').join("")+'<th>'+fmt(themeTotal)+'</th><th>—</th></tr>';
+}
+$("kit").onclick=()=>setScope("kit");
+$("all").onclick=()=>setScope("all");
+fetch("datos-agregados.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(d=>{
+if(d.uvs?.length!==25||d.totales?.filas_matriz!==1570||d.distribucion_tematica?.length!==7)throw Error("Esquema incompatible");
+if(d.distribucion_tematica.reduce((n,t)=>n+t.n,0)!==d.totales.filas_matriz)throw Error("Totales incompatibles");
+D=d;const params=new URLSearchParams(location.search);scope=params.get("corte")==="todo"?"all":"kit";const wanted=params.get("tema");if(wanted&&d.distribucion_tematica.some(t=>t.etiqueta===wanted))selected=wanted;render();
+}).catch(err=>{$("selectedTitle").textContent="No fue posible cargar los datos: "+err.message});
+</script>
+</body></html>
