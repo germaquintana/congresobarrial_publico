@@ -81,7 +81,7 @@ $(id).querySelectorAll("[data-key]").forEach(b=>b.onclick=()=>choose({[b.dataset
 }
 function urlToRecord(r,type){
 const q=new URLSearchParams();q.set("uv",r.uv);q.set("tema",r.theme);q.set("subtema",r.sub);
-if(type)q.set("tipo",type);if(state.scope==="kit")q.set("corte","entrega01");return "trazabilidad.html?"+q;
+if(type)q.set("tipo",type);if(state.scope==="kit")q.set("corte","entrega01");return "uv-grupos.html?"+q;
 }
 function urlToAnalysis(r,type){
 const q=new URLSearchParams();q.set("corte",state.scope==="kit"?"entrega01":"todo");q.set("tema",r.theme);q.set("subtema",r.sub);
