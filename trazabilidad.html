@@ -13,6 +13,20 @@ footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#me
 @media(max-width:1040px){.toolbar{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:1fr}#detail{position:static}}
 @media(max-width:670px){.steps,.load{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}.toolbar{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.steps,.load,.toolbar,.meta{grid-template-columns:1fr}}
+
+/* Visor geográfico: el plano de coordenadas funciona sin conexión; mapa de calles solo opt-in */
+.geo-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.geo-map{height:450px;position:relative;overflow:hidden;touch-action:none;cursor:grab;background-color:#eaf1f3;background-image:linear-gradient(#c9d8df88 1px,transparent 1px),linear-gradient(90deg,#c9d8df88 1px,transparent 1px);background-size:40px 40px;border:1px solid #bfd0d8;border-radius:10px}
+.geo-map:active{cursor:grabbing}
+.geo-tiles{position:absolute;inset:0;overflow:hidden;pointer-events:none}.geo-tiles img{position:absolute;width:256px;height:256px;max-width:none;pointer-events:none}
+.geo-canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}
+.geo-attrib{position:absolute;right:7px;bottom:6px;background:#ffffffeb;padding:3px 7px;border-radius:4px;font-size:.72rem;max-width:90%}
+.geo-attrib a{color:#135071}
+.geo-legend{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:.82rem;color:#4d6574;margin:10px 0}
+.geo-dot{display:inline-block;width:10px;height:10px;vertical-align:middle;border-radius:50%;margin-right:4px}
+.geo-readout{padding:10px;border:1px solid #dce8ed;border-radius:8px;line-height:1.5;background:#f7fafb}
+.geo-metrics{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.geo-metrics span{font-size:.82rem;color:#537183}
 </style></head>
 <body>
 <header><a href="tematicas.html">← Volver a resultados por temática</a><h1>Explorador de evidencia territorial</h1><p>Del tema al registro individual: identificación, Unidad Vecinal, grupo o cartografía propuesta, transcripción de DATOS, estado de revisión y preparación de un plan de acción municipal.</p></header>
@@ -30,15 +44,36 @@ footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#me
 <div><label for="kind">Tipo</label><select id="kind"><option value="">Todos</option></select></div>
 <div><label for="group">Grupo / cartografía</label><select id="group"><option value="">Todos</option></select></div>
 <div><label for="subtopic">Subtema</label><select id="subtopic"><option value="">Todos</option></select></div>
-</div><div style="margin-top:12px"><label for="search">Buscar por ID o contenido de la transcripción</label><input id="search" type="search" placeholder="Ej.: basura, iluminación, id_punto…" autocomplete="off"></div>
+</div><div style="margin-top:12px"><label for="search">Buscar por ID o contenido de la transcripción</label><input id="search" type="search" placeholder="Ej.: basura, esquina, nombre de calle, ID…" autocomplete="off"></div>
 <div class="checks"><label class="check"><input type="checkbox" id="includeFlagged">Incluir registros marcados para revisar privacidad</label><label class="check"><input type="checkbox" id="revealFlagged">Mostrar su descripción, bajo revisión específica</label></div>
 <p class="small muted">Las marcas de privacidad provienen de DATOS. Un registro sin marca <strong>no equivale</strong> a un dato autorizado para difusión.</p>
 <div id="kpis" class="kpis"></div>
 <div class="actions"><button id="exportActions" class="primary" type="button">Exportar matriz de plan de acción (.csv)</button><button id="clearFilters" type="button">Limpiar filtros</button><span class="small muted" id="shown"></span></div>
 </div>
+
+<section class="card" id="geoPanel" aria-labelledby="geoTitle">
+<h2 id="geoTitle">3. Mapa de ubicaciones y reportes</h2>
+<p class="small muted">Puntos de <strong>latitud/longitud de DATOS</strong>; son coordenadas referenciales hasta cotejar el post-it y la cartografía original. La ubicación escrita (calle, esquina, tramo o número) se muestra en la ficha si existe. Los registros siguen siendo relatos de jornadas, no infracciones o delitos acreditados.</p>
+<div class="geo-metrics" id="geoMetrics" role="status" aria-live="polite"></div>
+<div class="geo-toolbar">
+<button type="button" id="geoFit">Ajustar a resultados</button>
+<button type="button" id="geoZoomIn" title="Acercar mapa">+ Acercar</button>
+<button type="button" id="geoZoomOut" title="Alejar mapa">− Alejar</button>
+<button type="button" id="geoTilesToggle" class="primary">Activar mapa de calles (requiere conexión)</button>
+</div>
+<p class="small muted">Inicialmente se utiliza un <strong>plano local sin mapa de calles y sin solicitar recursos externos</strong>. Si activas el mapa de calles se cargarán imágenes de OpenStreetMap: su servidor podrá conocer el área del mapa y nivel de zoom, <strong>pero el navegador no envía los registros, textos, marcadores ni el CSV</strong>. Hazlo solamente si está autorizado para el contexto y dispositivo que utilizas.</p>
+<div class="geo-legend"><span><i class="geo-dot" style="background:#b94745"></i>Problema reportado</span><span><i class="geo-dot" style="background:#218d81"></i>Oportunidad propuesta</span><span><i class="geo-dot" style="background:#ad7937"></i>Lugar mencionado</span><span><i class="geo-dot" style="background:#7257a2"></i>Actor mencionado</span><span>◉ Seleccionado</span></div>
+<div id="geoMap" class="geo-map" aria-label="Mapa de coordenadas con puntos seleccionables; también existe lista textual navegable">
+<div id="geoTiles" class="geo-tiles" aria-hidden="true"></div>
+<canvas id="geoCanvas" class="geo-canvas" aria-label="Marcadores geográficos; selecciona un punto o usa la tabla accesible"></canvas>
+<div class="geo-attrib" id="geoAttrib">Coordenadas de DATOS · sin mapa base externo</div>
+</div>
+<p class="geo-readout small" id="geoReadout" aria-live="polite">Selecciona un marcador en el mapa o una fila de la tabla para ver su ubicación escrita y ficha documental.</p>
+<p class="small muted">Los registros marcados para revisión de privacidad <strong>no aparecen en el mapa</strong> a menos que se activen expresamente ambas opciones de inclusión y visualización del detalle. El mapa no identifica viviendas ni lugares como focos delictivos comprobados.</p>
+</section>
 <div class="workspace">
-<section class="card"><h2>3. Resultados documentales</h2><div class="table-scroll"><table><thead><tr><th>ID</th><th>UV</th><th>Tipo</th><th>Tema / subtema</th><th>Grupo</th></tr></thead><tbody id="resultRows"></tbody></table></div><p class="small muted">Hasta 150 filas visibles; los filtros y la exportación abarcan todo el conjunto elegible.</p></section>
-<aside class="card" id="detail"><h2>4. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div></aside>
+<section class="card"><h2>4. Resultados documentales</h2><div class="table-scroll"><table><thead><tr><th>ID</th><th>UV</th><th>Tipo</th><th>Tema / subtema</th><th>Grupo</th></tr></thead><tbody id="resultRows"></tbody></table></div><p class="small muted">Hasta 150 filas visibles; los filtros y la exportación abarcan todo el conjunto elegible.</p></section>
+<aside class="card" id="detail"><h2>5. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div></aside>
 </div></section>
 <footer>Fuente canónica: Matriz_Congreso_Barrial_fusionada, pestañas DATOS y MAPAS_UV. El vínculo cartográfico es provisional mientras falte cotejar el soporte original y la revisión humana. La clasificación no constituye un acuerdo, una denuncia acreditada ni una orden de trabajo. Esta interfaz no guarda estados de gestión: la matriz exportada es una propuesta de trabajo que debe tramitarse en los sistemas institucionales autorizados.</footer>
 </main>
@@ -79,7 +114,7 @@ if(flagged(r)&&!withFlag)return false;
 for(const [f,c] of [["tema_principal","theme"],["uv","uv"],["tipo","kind"],["grupo","group"],["subtema","subtopic"]])if($(c).value&&r[f]!==$(c).value)return false;
 if(!q)return true;
 const parts=[r.id_punto,r.uv,r.tema_principal,r.subtema,r.tipo,r.grupo];
-if(!flagged(r)||reveal)parts.push(r.descripcion||"");
+if(!flagged(r)||reveal)parts.push(r.descripcion||"",r.ubicacion||"");
 return parts.some(v=>String(v||"").toLocaleLowerCase("es").includes(q));
 });
 const uv=sorted(filtered.map(r=>r.uv)).length,groups=sorted(filtered.map(r=>key(r.uv,r.grupo))).length,privacy=records.filter(flagged).length,unmapped=filtered.filter(r=>!mInfo(r)).length;
@@ -87,26 +122,28 @@ $("kpis").innerHTML=[["Registros filtrados",filtered.length],["UV representadas"
 $("shown").textContent="Mostrando "+fmt(Math.min(150,filtered.length))+" de "+fmt(filtered.length)+" · "+fmt(privacy)+" filas tienen marca de privacidad en el archivo completo";
 $("resultRows").innerHTML=filtered.slice(0,150).map(r=>'<tr><td><button type="button" data-id="'+esc(r.id_punto)+'">'+esc(r.id_punto)+'</button></td><td>'+esc(r.uv)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.tema_principal)+'<div class="small muted">'+esc(r.subtema)+'</div></td><td>'+esc(r.grupo)+'</td></tr>').join("");
 $("resultRows").querySelectorAll("[data-id]").forEach(btn=>btn.onclick=()=>selectRecord(btn.dataset.id));
+refreshGeo();
 if(current){if(filtered.some(r=>r.id_punto===current))selectRecord(current);else{current=null;emptyDetail()}}
 }
-function emptyDetail(){$("detail").innerHTML='<h2>4. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div>'}
+function emptyDetail(){$("detail").innerHTML='<h2>5. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div>'}
 function selectRecord(id){
 const r=records.find(x=>x.id_punto===id);if(!r)return;current=id;
 const f=flagged(r),redact=f&&!$("revealFlagged").checked,map=mInfo(r),source=baseSheet+"A"+r._row+":AF"+r._row;
-const meta=[["UV",r.uv],["Tipo",r.tipo],["Tema",r.tema_principal],["Subtema",r.subtema],["Grupo en DATOS",r.grupo||"Sin grupo"],["Cartografía",map?(map.clave_mapa||map.mapa_propuesto||"Sin clave")+" · propuesta, estado "+(map.estado||"no revisado"):"Sin vínculo conciliado"],["Auditoría de fuente",r.aud_estado||"No indicado"],["Revisión de privacidad",f?"Marcada para revisión":"Sin marca; no implica aprobación"],["Origen indicado",r.origen_dato||"No indicado"],["Fecha asamblea (fuente)",r.fecha_asamblea||"Por verificar"],["Referencia fotografía",r.foto_ref||"No disponible"],["Estado del dato",r.estado_dato||"No indicado"]];
-$("detail").innerHTML='<h2>Ficha · '+esc(r.id_punto)+'</h2><span class="badge '+(f?'warn':'')+'">'+(f?'Privacidad por revisar':'Sin marca explícita de privacidad')+'</span><span class="badge warn">Evidencia de matriz, no cotejo del original</span><dl class="meta">'+meta.map(([k,v])=>'<div><dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl><h3>Descripción asociada al punto</h3><div class="quote">'+(redact?'Texto oculto porque el registro está marcado para revisar privacidad. Activa la opción específica solo si corresponde a tus atribuciones.':esc(r.descripcion||"Sin transcripción en DATOS"))+'</div><p class="small muted">Esta descripción es la registrada en DATOS; puede ser una digitalización o reformulación, y no se acredita como transcripción literal del post-it sin comparar el instrumento original.</p><h3>Cadena de evidencia</h3><p class="small">ID punto → hoja DATOS → UV y grupo → '+(map?'clave de mapa propuesta en MAPAS_UV':'mapa por conciliar')+' → soporte original pendiente de cotejo → derivación técnica por definir.</p><p class="small muted">La fila '+r._row+' procede del CSV cargado. El enlace puede dejar de apuntar al mismo registro si el orden de DATOS cambia; contrasta siempre el ID.</p><div class="actions"><a href="'+source+'" target="_blank" rel="noopener noreferrer">Revisar fila en hoja DATOS (requiere permiso)</a></div><div class="actions"><button type="button" id="exportOne" class="primary">Preparar ficha de acción (.csv)</button></div>';
+const meta=[["UV",r.uv],["Tipo",r.tipo],["Tema",r.tema_principal],["Subtema",r.subtema],["Grupo en DATOS",r.grupo||"Sin grupo"],["Ubicación escrita en DATOS",redact?"Restringida por revisión de privacidad":(r.ubicacion||"No consignada")],["Coordenadas en DATOS",redact?"Restringidas":(geoCoords(r)?geoCoords(r).lat.toFixed(6)+", "+geoCoords(r).lon.toFixed(6)+" · precisión por cotejar":"No válidas")],["Cartografía",map?(map.clave_mapa||map.mapa_propuesto||"Sin clave")+" · propuesta, estado "+(map.estado||"no revisado"):"Sin vínculo conciliado"],["Auditoría de fuente",r.aud_estado||"No indicado"],["Revisión de privacidad",f?"Marcada para revisión":"Sin marca; no implica aprobación"],["Origen indicado",r.origen_dato||"No indicado"],["Fecha asamblea (fuente)",r.fecha_asamblea||"Por verificar"],["Referencia fotografía",r.foto_ref||"No disponible"],["Estado del dato",r.estado_dato||"No indicado"]];
+$("detail").innerHTML='<h2>Ficha · '+esc(r.id_punto)+'</h2><span class="badge '+(f?'warn':'')+'">'+(f?'Privacidad por revisar':'Sin marca explícita de privacidad')+'</span><span class="badge warn">Evidencia de matriz, no cotejo del original</span><dl class="meta">'+meta.map(([k,v])=>'<div><dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl><h3>Descripción asociada al punto</h3><div class="quote">'+(redact?'Texto oculto porque el registro está marcado para revisar privacidad. Activa la opción específica solo si corresponde a tus atribuciones.':esc(r.descripcion||"Sin transcripción en DATOS"))+'</div><p class="small muted">Esta descripción es la registrada en DATOS; puede ser una digitalización o reformulación, y no se acredita como transcripción literal del post-it sin comparar el instrumento original.</p><h3>Cadena de evidencia</h3><p class="small">ID punto → hoja DATOS → UV y grupo → '+(map?'clave de mapa propuesta en MAPAS_UV':'mapa por conciliar')+' → soporte original pendiente de cotejo → derivación técnica por definir.</p><p class="small muted">La fila '+r._row+' procede del CSV cargado. El enlace puede dejar de apuntar al mismo registro si el orden de DATOS cambia; contrasta siempre el ID.</p><div class="actions"><a href="'+source+'" target="_blank" rel="noopener noreferrer">Revisar fila en hoja DATOS (requiere permiso)</a></div><div class="actions"><button type="button" id="exportOne" class="primary">Preparar ficha de acción (.csv)</button><button type="button" id="geoLocate">Ubicar en mapa</button></div>';
 $("exportOne").onclick=()=>downloadActions([r]);
+$("geoLocate").onclick=()=>{const p=geoCoords(r);if(!p||redact){$("geoReadout").textContent="No hay coordenada consultable para esta ficha.";return}geoCenter=p;geoZoom=Math.max(geoZoom,16);paintGeo();$("geoMap").scrollIntoView({behavior:"smooth",block:"center"})};
 }
 function csvSafe(v){let s=String(v??"");if(/^[\s]*[=+\-@]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}
-const actionCols=["id_punto","uv","tipo","tema_principal","subtema","descripcion_DATOS","grupo_DATOS","cartografia_propuesta","estado_vinculo_mapa","estado_auditoria","revisar_privacidad","origen_dato","fecha_asamblea","direccion_responsable_por_validar","otra_direccion_involucrada","accion_propuesta","fundamento_tecnico","prioridad_a_evaluar","responsable_designado","fecha_inicio_por_definir","plazo_tipo_por_definir","fecha_termino_por_definir","estado_gestion","evidencia_gestion","validacion_institucional"];
+const actionCols=["id_punto","uv","tipo","tema_principal","subtema","descripcion_DATOS","ubicacion_Datos","latitud_referencial","longitud_referencial","estado_precision_geografica","grupo_DATOS","cartografia_propuesta","estado_vinculo_mapa","estado_auditoria","revisar_privacidad","origen_dato","fecha_asamblea","direccion_responsable_por_validar","otra_direccion_involucrada","accion_propuesta","fundamento_tecnico","prioridad_a_evaluar","responsable_designado","fecha_inicio_por_definir","plazo_tipo_por_definir","fecha_termino_por_definir","estado_gestion","evidencia_gestion","validacion_institucional"];
 function downloadActions(items){
 if(!items.length)return;const reveal=$("revealFlagged").checked,lines=[actionCols.map(csvSafe).join(",")];
 for(const r of items){const m=mInfo(r),hidden=flagged(r)&&!reveal;
-const fields=[r.id_punto,r.uv,r.tipo,r.tema_principal,r.subtema,hidden?"[RESTRINGIDO_POR_REVISION_PRIVACIDAD]":r.descripcion,r.grupo,m?.clave_mapa||m?.mapa_propuesto||"",m?"PROPUESTA_NO_VALIDADA: "+(m.estado||"SIN_ESTADO"):"SIN_VINCULO_CONCILIADO",r.aud_estado,flagged(r)?"Sí":"Sin marca",r.origen_dato,r.fecha_asamblea,"","","","","","","","","","",""];
+const fields=[r.id_punto,r.uv,r.tipo,r.tema_principal,r.subtema,hidden?"[RESTRINGIDO_POR_REVISION_PRIVACIDAD]":r.descripcion,hidden?"[RESTRINGIDO]":r.ubicacion,hidden?"":r.latitud,hidden?"":r.longitud,"COORDENADA_DATOS_SIN_COTEJO_CARTOGRAFICO",r.grupo,m?.clave_mapa||m?.mapa_propuesto||"",m?"PROPUESTA_NO_VALIDADA: "+(m.estado||"SIN_ESTADO"):"SIN_VINCULO_CONCILIADO",r.aud_estado,flagged(r)?"Sí":"Sin marca",r.origen_dato,r.fecha_asamblea,"","","","","","","","","","",""];
 lines.push(fields.map(csvSafe).join(","))}
 const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="congreso_barrial_matriz_acciones_interna_"+new Date().toISOString().slice(0,10)+".csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
-$("authorized").onchange=()=>{$("datosFile").disabled=$("mapasFile").disabled=!$("authorized").checked;if(!$("authorized").checked){records=[];maps.clear();$("workspace").hidden=true;$("datosFile").value="";$("mapasFile").value="";$("messages").textContent="Consulta cerrada; vuelve a confirmar autorización para abrir un archivo."}};
+$("authorized").onchange=()=>{$("datosFile").disabled=$("mapasFile").disabled=!$("authorized").checked;if(!$("authorized").checked){tilesEnabled=false;clearTiles();}if(!$("authorized").checked){records=[];maps.clear();$("workspace").hidden=true;$("datosFile").value="";$("mapasFile").value="";$("messages").textContent="Consulta cerrada; vuelve a confirmar autorización para abrir un archivo."}};
 $("datosFile").onchange=async e=>{
 if(!$("authorized").checked||!e.target.files[0])return;try{
 const text=await e.target.files[0].text();const items=parseCsv(text),missing=missingHeaders(items,required);if(missing.length)throw Error("Faltan encabezados: "+missing.join(", "));
@@ -121,6 +158,66 @@ const next=new Map();let duplicates=0;for(const x of items){const r=x.data,k=key
 maps=next;$("messages").textContent="MAPAS_UV cargado localmente: "+fmt(maps.size)+" pares únicos UV-grupo; "+fmt(duplicates)+" duplicaciones detectadas. Sus claves y estados siguen siendo propuestas sujetas a cotejo.";if(records.length)apply();
 }catch(err){$("messages").textContent="No se pudo cargar MAPAS_UV: "+err.message}
 };
+
+// Coordenadas DATOS dibujadas localmente; no son una prueba de precisión territorial.
+const GEO_COLORS={"Problema":"#b94745","Oportunidad":"#218d81","Lugar importante":"#ad7937","Actor":"#7257a2"};
+let geoCenter={lat:-33.414,lon:-70.638},geoZoom=13,tilesEnabled=false,geoPoints=[],geoDrag=null,geoLastFitCount=-1;
+const MAX_MAP_ZOOM=18,MIN_MAP_ZOOM=10,MAX_TILE_COUNT=36,TILE_SIZE=256;
+function geoNum(v){const str=String(v??"").trim().replace(",",".");return str?Number(str):NaN}
+function geoCoords(r){const lat=geoNum(r.latitud),lon=geoNum(r.longitud);return Number.isFinite(lat)&&Number.isFinite(lon)&&lat>=-90&&lat<=90&&lon>=-180&&lon<=180&&!(lat===0&&lon===0)?{lat,lon}:null}
+function geoSourceRows(){return filtered.filter(r=>(!flagged(r)||$("revealFlagged").checked)&&geoCoords(r))}
+function mercator(p,z){const lat=Math.max(-85.0511,Math.min(85.0511,p.lat)),sin=Math.sin(lat*Math.PI/180),size=TILE_SIZE*(2**z);return{x:(p.lon+180)/360*size,y:(.5-Math.log((1+sin)/(1-sin))/(4*Math.PI))*size}}
+function unmercator(x,y,z){const size=TILE_SIZE*(2**z),lon=x/size*360-180,lat=Math.atan(Math.sinh(Math.PI*(1-2*y/size)))*180/Math.PI;return{lat,lon}}
+function mapDims(){const el=$("geoMap");return{w:el.clientWidth||950,h:el.clientHeight||450}}
+function geoProject(p){const m=mercator(p,geoZoom),c=mercator(geoCenter,geoZoom),{w,h}=mapDims();return{x:w/2+m.x-c.x,y:h/2+m.y-c.y}}
+function fitGeo(){
+const pts=geoSourceRows().map(geoCoords),{w,h}=mapDims();
+if(!pts.length){geoLastFitCount=0;geoZoom=13;geoCenter={lat:-33.414,lon:-70.638};paintGeo();return}
+let latMin=90,latMax=-90,lonMin=180,lonMax=-180;for(const p of pts){latMin=Math.min(latMin,p.lat);latMax=Math.max(latMax,p.lat);lonMin=Math.min(lonMin,p.lon);lonMax=Math.max(lonMax,p.lon)}
+geoCenter={lat:(latMin+latMax)/2,lon:(lonMin+lonMax)/2};geoZoom=16;
+if(pts.length>1)for(let z=18;z>=MIN_MAP_ZOOM;z--){const ul=mercator({lat:latMax,lon:lonMin},z),lr=mercator({lat:latMin,lon:lonMax},z);if(lr.x-ul.x<=w-80&&lr.y-ul.y<=h-80){geoZoom=z;break}else if(z===MIN_MAP_ZOOM)geoZoom=z}
+geoLastFitCount=pts.length;paintGeo();
+}
+function clearTiles(){$("geoTiles").replaceChildren();$("geoAttrib").textContent="Coordenadas de DATOS · sin mapa base externo"}
+function paintTiles(){
+const el=$("geoTiles");if(!tilesEnabled){clearTiles();return}
+const {w,h}=mapDims(),center=mercator(geoCenter,geoZoom),ox=w/2-center.x,oy=h/2-center.y,world=2**geoZoom;
+const minX=Math.floor(-ox/TILE_SIZE),maxX=Math.floor((w-ox)/TILE_SIZE),minY=Math.floor(-oy/TILE_SIZE),maxY=Math.floor((h-oy)/TILE_SIZE);
+const frag=document.createDocumentFragment();let n=0;
+for(let ty=minY;ty<=maxY;ty++)for(let tx=minX;tx<=maxX;tx++){
+if(ty<0||ty>=world||n>=MAX_TILE_COUNT)continue;
+const x=((tx%world)+world)%world,img=document.createElement("img");img.alt="";img.decoding="async";img.loading="lazy";img.referrerPolicy="no-referrer";img.src="https://tile.openstreetmap.org/"+geoZoom+"/"+x+"/"+ty+".png";
+img.style.left=(tx*TILE_SIZE+ox)+"px";img.style.top=(ty*TILE_SIZE+oy)+"px";frag.appendChild(img);n++;
+}
+el.replaceChildren(frag);$("geoAttrib").innerHTML='© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> · posiciones preliminares DATOS';
+}
+function paintGeo(){
+const canvas=$("geoCanvas"),d=mapDims(),scale=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.round(d.w*scale);canvas.height=Math.round(d.h*scale);const ctx=canvas.getContext("2d");if(!ctx)return;ctx.setTransform(scale,0,0,scale,0,0);ctx.clearRect(0,0,d.w,d.h);paintTiles();
+const source=geoSourceRows();geoPoints=[];
+for(const r of source){const p=geoProject(geoCoords(r));if(p.x<-12||p.x>d.w+12||p.y<-12||p.y>d.h+12)continue;geoPoints.push({row:r,x:p.x,y:p.y});
+ctx.beginPath();ctx.fillStyle=GEO_COLORS[r.tipo]||"#64748b";ctx.globalAlpha=r.id_punto===current?1:.8;ctx.arc(p.x,p.y,r.id_punto===current?7:4.4,0,2*Math.PI);ctx.fill();if(r.id_punto===current){ctx.lineWidth=2.5;ctx.strokeStyle="#172e43";ctx.stroke()};ctx.globalAlpha=1}
+$("geoTilesToggle").textContent=tilesEnabled?"Desactivar mapa de calles":"Activar mapa de calles (requiere conexión)";
+$("geoMetrics").innerHTML='<span><strong>'+fmt(source.length)+'</strong> puntos visibles</span><span><strong>'+fmt(source.filter(r=>String(r.ubicacion||"").trim()).length)+'</strong> con ubicación escrita</span><span>Zoom '+geoZoom+'</span>';
+}
+function refreshGeo(){if(!$("workspace").hidden)fitGeo()}
+function canvasPoint(e){const box=$("geoCanvas").getBoundingClientRect();return{x:e.clientX-box.left,y:e.clientY-box.top}}
+function nearestGeo(p){let found=null,best=13*13;for(const row of geoPoints){const dd=(row.x-p.x)**2+(row.y-p.y)**2;if(dd<best){best=dd;found=row}}return found}
+const cv=$("geoCanvas");
+cv.addEventListener("pointerdown",e=>{const p=canvasPoint(e);geoDrag={x:p.x,y:p.y,last:p,moved:false};cv.setPointerCapture(e.pointerId)});
+cv.addEventListener("pointermove",e=>{const p=canvasPoint(e);if(geoDrag){const delta={x:p.x-geoDrag.last.x,y:p.y-geoDrag.last.y};if(Math.abs(p.x-geoDrag.x)+Math.abs(p.y-geoDrag.y)>6)geoDrag.moved=true;if(geoDrag.moved){const c=mercator(geoCenter,geoZoom);geoCenter=unmercator(c.x-delta.x,c.y-delta.y,geoZoom);paintGeo()}geoDrag.last=p;}
+else{const item=nearestGeo(p);cv.style.cursor=item?"pointer":"crosshair";if(item)$("geoReadout").textContent="Punto "+item.row.id_punto+" · UV "+item.row.uv+" · "+item.row.tema_principal+" (reporte no verificado)"}});
+cv.addEventListener("pointerup",e=>{if(!geoDrag)return;const p=canvasPoint(e),moved=geoDrag.moved;geoDrag=null;if(!moved){const found=nearestGeo(p);if(found){selectRecord(found.row.id_punto);$("geoReadout").textContent="Seleccionado: "+found.row.id_punto+" · UV "+found.row.uv+" · "+(flagged(found.row)?"contenido bajo revisión":found.row.ubicacion||"sin ubicación escrita")}}});
+cv.addEventListener("pointercancel",()=>{geoDrag=null});
+$("geoFit").onclick=fitGeo;
+$("geoZoomIn").onclick=()=>{geoZoom=Math.min(MAX_MAP_ZOOM,geoZoom+1);paintGeo()};
+$("geoZoomOut").onclick=()=>{geoZoom=Math.max(MIN_MAP_ZOOM,geoZoom-1);paintGeo()};
+$("geoTilesToggle").onclick=()=>{
+if(tilesEnabled){tilesEnabled=false;clearTiles();paintGeo();return}
+const consent=window.confirm("Se cargarán mosaicos de OpenStreetMap para el área visualizada y el nivel de zoom. El proveedor podrá conocer qué zona visitas, pero no recibirá tus registros, descripciones ni archivos CSV. ¿Activar fondo de calles en este navegador?");
+if(!consent)return;tilesEnabled=true;paintGeo()
+};
+window.addEventListener("resize",()=>{if(!$("workspace").hidden)paintGeo()});
+
 for(const id of ["theme","uv","kind","group","subtopic","search","includeFlagged","revealFlagged"])$(id).addEventListener("input",apply);
 $("clearFilters").onclick=()=>{for(const id of ["theme","uv","kind","group","subtopic","search"])$(id).value="";$("includeFlagged").checked=$("revealFlagged").checked=false;apply()};
 $("exportActions").onclick=()=>downloadActions(filtered);
