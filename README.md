@@ -19,6 +19,13 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `datos-agregados.json` — totales por tipo, tema, UV y subtema derivados de DATOS.
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
+
+## Exploración temática — interfaz 11-11-2026
+
+- [Dashboard general](index.html): gráfico de torta de las siete temáticas y comparación UV mediante barras apiladas por temas.
+- [Detalle por temática](tematicas.html): navegación entre los siete temas, comparación UV y desglose por tipo (Problema, Oportunidad, Lugar importante, Actor), preservando los filtros Entrega 01 / matriz completa.
+- La página `tematicas.html` reutiliza `datos-agregados.json`; no agrega microdatos, nombres, testimonios ni distribuciones inferidas de subtemas. Las categorías y cifras siguen siendo preliminares. Para filtrar directamente una categoría, usar `tematicas.html?corte=entrega01&tema=Infraestructura%20y%20espacio%20p%C3%BAblico`.
+
 ## Limitaciones
 Los registros son aportes documentales, no personas, votos, mediciones representativas ni acuerdos aprobados. Se excluyeron descripciones individuales de filas, RUT, firmas, fotografías, teléfonos, correos, ubicaciones precisas y coordenadas. La revisión institucional de contenido y privacidad sigue pendiente. La etiqueta CONSISTENTE pertenece al proceso de auditoría de la hoja, **no certifica que un resultado sea publicable ni exacto en terreno**.
 
