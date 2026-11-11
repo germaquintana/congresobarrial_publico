@@ -4,8 +4,8 @@ const fmt=n=>Number(n||0).toLocaleString("es-CL");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const kit=new Set(["15","21","22","26A","26B","25","29","28","27","30","31","32","33","34","35"]);
 const kinds=["Problema","Oportunidad","Actor","Lugar importante"];
-const state={scope:"kit",role:"both",focus:"all",uv:"",sub:""};
-let data=null,tax=null,topics=[],items=[],limit=40;
+const state={scope:"kit",role:"both",focus:"all",uv:"",sub:"",pattern:"all"};
+let data=null,tax=null,topics=[],items=[],limit=40,quality=null;
 const sum=vals=>vals.reduce((a,n)=>a+Number(n||0),0);
 const sort=(a,b)=>String(a).localeCompare(String(b),"es",{numeric:true});
 function roleOf(x){if(x.direccion_lider_referencial==="DIMAO")return"lead";const support=String(x.apoyo_habitual||"").split(/\s*[·;,]\s*/).map(s=>s.trim());return support.includes("DIMAO")?"support":""}
@@ -28,16 +28,17 @@ if(p+o+a+l===0)continue;result.push({uv:u.uv,sub:t.subtema,theme:t.tematica,role
 return result;
 }
 function focused(r){return state.focus==="problems"?r.p:state.focus==="opportunities"?r.o:r.p+r.o}
-function selectedRows(){return listRows().filter(r=>focused(r)>0)}
+function patternOf(r){return r.p>0&&r.o>0?"both":r.p>0?"problemOnly":r.o>0?"opportunityOnly":"contextOnly"}
+function selectedRows(){return listRows().filter(r=>focused(r)>0&&(state.pattern==="all"||patternOf(r)===state.pattern))}
 function totals(rows){return{p:sum(rows.map(r=>r.p)),o:sum(rows.map(r=>r.o)),a:sum(rows.map(r=>r.a)),l:sum(rows.map(r=>r.l)),issues:sum(rows.map(r=>r.p+r.o)),uvs:new Set(rows.filter(r=>r.p+r.o>0).map(r=>r.uv)).size,subtopics:new Set(rows.filter(r=>r.p+r.o>0).map(r=>r.sub)).size}}
 function opt(v,l){return'<option value="'+esc(v)+'">'+esc(l)+'</option>'}
 function chooseOptions(id,list,blank,current){const el=$(id);el.innerHTML=opt("",blank)+list.map(([v,l])=>opt(v,l)).join("");if([...el.options].some(x=>x.value===current))el.value=current;else{el.value="";if(id==="uv"||id==="sub")state[id]=""}}
 function sync(){
-$("scope").value=state.scope;$("role").value=state.role;$("focus").value=state.focus;
+$("scope").value=state.scope;$("role").value=state.role;$("focus").value=state.focus;$("pattern").value=state.pattern;
 chooseOptions("uv",data.uvs.filter(u=>state.scope==="all"||kit.has(u.uv)).map(u=>[u.uv,"UV "+u.uv+(u.registro_provisional?" · por conciliar":"")]).sort((a,b)=>sort(a[0],b[0])),"Todas las UV",state.uv);
 chooseOptions("sub",topics.filter(t=>state.role==="both"||state.role===t.role).map(t=>[t.subtema,t.subtema]).sort((a,b)=>sort(a[0],b[0])),"Todos los subtemas",state.sub);
 }
-function query(){const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(state.role!=="both")q.set("rol",state.role);if(state.focus!=="all")q.set("foco",state.focus);if(state.uv)q.set("uv",state.uv);if(state.sub)q.set("subtema",state.sub);history.replaceState({},"",location.pathname+"?"+q)}
+function query(){const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(state.role!=="both")q.set("rol",state.role);if(state.focus!=="all")q.set("foco",state.focus);if(state.uv)q.set("uv",state.uv);if(state.sub)q.set("subtema",state.sub);if(state.pattern!=="all")q.set("patron",state.pattern);history.replaceState({},"",location.pathname+"?"+q)}
 function choose(changes){Object.assign(state,changes);if(state.sub&&!topics.some(t=>t.subtema===state.sub&&(state.role==="both"||t.role===state.role)))state.sub="";sync();query();limit=40;render()}
 function recordLink(uv,t,type){
 const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"trazabilidad.html?"+q}
@@ -95,28 +96,84 @@ $("pilotSummary").textContent="Piloto UV15, DIMAO como dirección de referencia:
 const pA=topics.find(t=>t.subtema==="Aseo, residuos y salubridad"),pB=topics.find(t=>t.subtema==="Áreas verdes y arbolado");
 for(const [id,s] of [["pilotEvidenceA",pA],["pilotEvidenceB",pB]])$(id).href=s?recordLink("15",s):"trazabilidad.html";
 }
-function render(){if(!data||!tax)return;const rows=selectedRows();renderKPIs(rows);barRender("roleBars",barGroups(rows,"role"),"role");barRender("subBars",barGroups(rows,"sub"),"sub");barRender("uvBars",barGroups(rows,"uv"),"uv");renderHeat(rows);renderCards(rows);renderTable(rows);renderPilot()}
-function pilot(){choose({scope:"kit",role:"lead",focus:"all",uv:"15",sub:""});$("heat").scrollIntoView({behavior:"smooth",block:"nearest"})}
-const csvCols=["uv","tema_principal","subtema","rol_DIMAO_referencial","direccion_lider_CAT_SUBTEMAS","apoyo_habitual_CAT_SUBTEMAS","instrumento_referencial","modalidad_referencial","n_problemas","n_oportunidades","n_actores","n_lugares","estado_cartera","id_punto_a_cotejar","cartografia_original_a_validar","privacidad_a_revisar","competencia_a_validar","unidad_responsable_por_confirmar","accion_propuesta","responsable_por_designar","fecha_inicio_por_definir","tipo_plazo_por_definir","fecha_termino_por_definir","recursos_a_evaluar","prioridad_a_fundamentar","autorizacion_requerida","evidencia_seguimiento"];
+
+function checkQuality(q){
+if(!q||!q.alcances)return false;
+for(const scope of ["kit","all"]){const set=q.alcances[scope];if(!set||!set.both||!set.lead||!set.support)return false;
+for(const role of ["both","lead","support"]){const v=set[role];if(!v||v.total!==v.CONSISTENTE+v.REQUIERE_RELECTURA+v.SIN_AUDITAR)return false}
+for(const k of ["total","CONSISTENTE","REQUIERE_RELECTURA","SIN_AUDITAR"])if(set.both[k]!==set.lead[k]+set.support[k])return false}
+return q.piloto_UV15_referencia?.total===10;
+}
+function renderQuality(){
+const box=$("qualityMetrics"),track=$("qualityStack");
+if(!quality){$("qualityScope").textContent="Los agregados de auditoría no están disponibles en esta consulta; el resto de las cifras sigue operativo.";box.innerHTML="";track.replaceChildren();return}
+const q=quality.alcances[state.scope][state.role],more=!!state.uv||!!state.sub||state.focus!=="all"||state.pattern!=="all";
+const role=state.role==="lead"?"DIMAO como dirección de referencia":state.role==="support"?"DIMAO como apoyo":"DIMAO como referencia o apoyo";
+const cut=state.scope==="kit"?"15 UV de Entrega 01":"25 etiquetas UV de la matriz";
+$("qualityScope").textContent="Revisión del conjunto "+cut+" · "+role+" · problemas y oportunidades (n="+fmt(q.total)+"). "+(more?"Atención: este agregado NO está filtrado por UV, subtema, foco o perfil; el detalle debe comprobarse por sus IDs.":"Los valores corresponden al mismo corte y rol de los indicadores principales, sin otros filtros.");
+const vals=[["Total para auditar",q.total],["CONSISTENTE en DATOS",q.CONSISTENTE],["REQUIERE RELECTURA",q.REQUIERE_RELECTURA],["SIN AUDITAR",q.SIN_AUDITAR]];
+box.innerHTML=vals.map(([k,v])=>'<div><b>'+fmt(v)+'</b><span>'+esc(k)+'</span></div>').join("");
+track.innerHTML=[
+["consistent",q.CONSISTENTE],["reread",q.REQUIERE_RELECTURA],["pending",q.SIN_AUDITAR]
+].map(([cl,n])=>'<i class="'+cl+'" style="width:'+(100*n/Math.max(1,q.total)).toFixed(4)+'%"></i>').join("");
+track.setAttribute("aria-label","Auditoría "+fmt(q.total)+" registros; consistentes "+fmt(q.CONSISTENTE)+", relectura "+fmt(q.REQUIERE_RELECTURA)+", sin auditar "+fmt(q.SIN_AUDITAR));
+}
+function renderPatterns(){
+const rr=listRows().filter(r=>focused(r)>0),counts={both:0,problemOnly:0,opportunityOnly:0};
+for(const r of rr){const p=patternOf(r);if(counts[p]!==undefined)counts[p]++}
+const defs=[["both","Ambos tipos","Problemas y propuestas registrados"],["problemOnly","Solo problemas","Sin oportunidad registrada en el cruce"],["opportunityOnly","Solo oportunidades","Sin problema registrado en el cruce"]];
+$("patternCards").innerHTML=defs.map(([key,label,explain])=>
+'<button type="button" class="patternBtn'+(state.pattern===key?' active':'')+'" data-pattern="'+key+'" aria-pressed="'+(state.pattern===key)+'"><b>'+fmt(counts[key])+'</b><span>'+label+'</span><small>'+explain+'</small></button>').join("");
+$("patternCards").querySelectorAll("button[data-pattern]").forEach(btn=>btn.onclick=()=>choose({pattern:state.pattern===btn.dataset.pattern?"all":btn.dataset.pattern}));
+}
+function renderScatter(rows){
+const map=new Map();for(const r of rows){const v=map.get(r.uv)||{uv:r.uv,p:0,o:0};v.p+=r.p;v.o+=r.o;map.set(r.uv,v)}
+const list=[...map.values()].sort((a,b)=>sort(a.uv,b.uv));
+const svg=$("scatter"),W=1040,H=430,left=92,right=930,top=45,bottom=350,ww=right-left,hh=bottom-top;
+if(!list.length){svg.innerHTML='<text x="80" y="55" fill="#54748a">No hay registros para este filtro.</text>';$("scatterNote").textContent="Prueba otra combinación de filtros.";return}
+const maxP=Math.max(1,...list.map(x=>x.p)),maxO=Math.max(1,...list.map(x=>x.o));
+const x=v=>left+ww*v/maxP,y=v=>bottom-hh*v/maxO;
+let fragments='',grid='';
+for(let i=0;i<=4;i++){const xVal=maxP*i/4,yVal=maxO*i/4;
+grid+='<line class="gridline" x1="'+x(xVal).toFixed(1)+'" y1="'+top+'" x2="'+x(xVal).toFixed(1)+'" y2="'+bottom+'"/><line class="gridline" x1="'+left+'" y1="'+y(yVal).toFixed(1)+'" x2="'+right+'" y2="'+y(yVal).toFixed(1)+'"/>';
+grid+='<text class="tick" x="'+x(xVal).toFixed(1)+'" y="'+(bottom+20)+'" text-anchor="middle">'+fmt(Math.round(xVal))+'</text><text class="tick" x="'+(left-14)+'" y="'+(y(yVal)+5).toFixed(1)+'" text-anchor="end">'+fmt(Math.round(yVal))+'</text>'}
+for(const item of list){const r=Math.min(21,6+Math.sqrt(item.p+item.o)*2.1),color="#1f8393";
+const label="UV "+item.uv+" · "+(item.p>0&&item.p<3?"menos de 3":fmt(item.p))+" problemas · "+(item.o>0&&item.o<3?"menos de 3":fmt(item.o))+" oportunidades";
+fragments+='<circle tabindex="0" role="button" aria-label="'+esc("Seleccionar "+label)+'" data-uv="'+esc(item.uv)+'" cx="'+x(item.p).toFixed(2)+'" cy="'+y(item.o).toFixed(2)+'" r="'+r.toFixed(2)+'" fill="'+color+'" fill-opacity=".76"><title>'+esc(label)+'</title></circle>'}
+const axis='<line class="axis" x1="'+left+'" y1="'+bottom+'" x2="'+right+'" y2="'+bottom+'"/><line class="axis" x1="'+left+'" y1="'+top+'" x2="'+left+'" y2="'+bottom+'"/>';
+const title='<text class="axis-label" x="'+((left+right)/2)+'" y="407" text-anchor="middle">Problemas reportados</text><text class="axis-label" x="22" y="'+((top+bottom)/2)+'" text-anchor="middle" transform="rotate(-90 22 '+((top+bottom)/2)+')">Oportunidades propuestas</text>';
+svg.innerHTML=grid+axis+fragments+title;
+svg.querySelectorAll("circle[data-uv]").forEach(node=>{
+const select=()=>choose({uv:node.dataset.uv});
+node.addEventListener("click",select);node.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select()}});
+});
+$("scatterNote").textContent=fmt(list.length)+" UV representadas · el círculo varía de tamaño según la suma de ambos tipos. El enfoque elegido define los grupos que entran al gráfico; se muestran los dos conteos de cada grupo incluido.";
+}
+
+function render(){if(!data||!tax)return;const rows=selectedRows();renderKPIs(rows);renderQuality();renderPatterns();barRender("roleBars",barGroups(rows,"role"),"role");barRender("subBars",barGroups(rows,"sub"),"sub");barRender("uvBars",barGroups(rows,"uv"),"uv");renderScatter(rows);renderHeat(rows);renderCards(rows);renderTable(rows);renderPilot()}
+function pilot(){choose({scope:"kit",role:"lead",focus:"all",uv:"15",sub:"",pattern:"all"});$("heat").scrollIntoView({behavior:"smooth",block:"nearest"})}
+const csvCols=["uv","tema_principal","subtema","rol_DIMAO_referencial","perfil_registrado_UV_subtema","competencias_validadas_preliminarmente","direccion_lider_CAT_SUBTEMAS","apoyo_habitual_CAT_SUBTEMAS","instrumento_referencial","modalidad_referencial","n_problemas","n_oportunidades","n_actores","n_lugares","estado_cartera","id_punto_a_cotejar","cartografia_original_a_validar","privacidad_a_revisar","competencia_a_validar","unidad_responsable_por_confirmar","accion_propuesta","responsable_por_designar","fecha_inicio_por_definir","tipo_plazo_por_definir","fecha_termino_por_definir","recursos_a_evaluar","prioridad_a_fundamentar","autorizacion_requerida","evidencia_seguimiento"];
 function csvSafe(val){let x=String(val??"");if(/^\s*[=+\-@]/.test(x))x="'"+x;return'"'+x.replace(/"/g,'""')+'"'}
 function exportCSV(){
 const arr=selectedRows();const lines=[csvCols.map(csvSafe).join(",")];
 for(const r of arr){const mask=n=>n>0&&n<3?"SUPRIMIDO_MENOR_A_3":n;
-const vals=[r.uv,r.theme,r.sub,r.role==="lead"?"DIRECCION_REFERENCIAL":"APOYO_REFERENCIAL",r.leader,r.helpers,r.instrument,r.method,mask(r.p),mask(r.o),mask(r.a),mask(r.l),"INSUMO_ANALITICO_NO_ASIGNADO","","","","","","","","","","","","","",""];
+const vals=[r.uv,r.theme,r.sub,r.role==="lead"?"DIRECCION_REFERENCIAL":"APOYO_REFERENCIAL",patternOf(r),"CONFIRMACION_PRELIMINAR_USUARIO_PENDIENTE_VALIDACION_FORMAL",r.leader,r.helpers,r.instrument,r.method,mask(r.p),mask(r.o),mask(r.a),mask(r.l),"INSUMO_ANALITICO_NO_ASIGNADO","","","","","","","","","","","","","",""];
 if(vals.length!==csvCols.length)throw Error("CSV: "+vals.length+" datos para "+csvCols.length+" columnas");lines.push(vals.map(csvSafe).join(","))}
 const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),link=document.createElement("a");
 link.href=url;link.download="congreso_barrial_cartera_DIMAO_"+state.scope+".csv";document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
-for(const id of ["scope","role","focus","uv","sub"])$(id).addEventListener("change",()=>choose({[id]:$(id).value}));
-$("reset").onclick=()=>choose({scope:"kit",role:"both",focus:"all",uv:"",sub:""});
+for(const id of ["scope","role","focus","uv","sub","pattern"])$(id).addEventListener("change",()=>choose({[id]:$(id).value}));
+$("reset").onclick=()=>choose({scope:"kit",role:"both",focus:"all",uv:"",sub:"",pattern:"all"});
 $("pilotButton").onclick=pilot;$("pilotAgain").onclick=pilot;
 $("more").onclick=()=>{limit+=40;renderTable(selectedRows())};
 $("export").onclick=exportCSV;
 Promise.all([
 fetch("datos-agregados.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Datos "+r.status);return r.json()}),
-fetch("taxonomia-subtemas.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Taxonomía "+r.status);return r.json()})
-]).then(([d,t])=>{validate(d,t);const q=new URLSearchParams(location.search);state.scope=q.get("corte")==="todo"?"all":"kit";
+fetch("taxonomia-subtemas.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Taxonomía "+r.status);return r.json()}),
+fetch("dimao-calidad-agregada.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Calidad "+r.status);return r.json()}).catch(()=>null)
+]).then(([d,t,qdata])=>{validate(d,t);quality=checkQuality(qdata)?qdata:null;const q=new URLSearchParams(location.search);state.scope=q.get("corte")==="todo"?"all":"kit";
 state.role=["both","lead","support"].includes(q.get("rol"))?q.get("rol"):"both";
 state.focus=["all","problems","opportunities"].includes(q.get("foco"))?q.get("foco"):"all";
 state.uv=q.get("uv")||"";state.sub=q.get("subtema")||"";
+state.pattern=["all","both","problemOnly","opportunityOnly"].includes(q.get("patron"))?q.get("patron"):"all";
 sync();query();render()}).catch(e=>{$("status").textContent="No se pudo construir el panel: "+e.message});
