@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173f56"><title>Explorador multidimensional · Congreso Barrial de Recoleta</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17354b;background:#f2f6f9;--line:#dce7ed;--muted:#5c7384;--primary:#145e75}
+*{box-sizing:border-box}body{margin:0}header{color:white;background:linear-gradient(120deg,#103449,#15616a);padding:28px max(18px,calc((100% - 1330px)/2))}
+header a{color:#e0f3f7}h1{font-size:clamp(1.65rem,3vw,2.6rem);margin:10px 0}header p{color:#dcedef;line-height:1.55;max-width:1050px;margin:0}
+main{max-width:1330px;margin:auto;padding:20px 17px 36px}a{color:#13647f}.toplinks{display:flex;gap:16px;flex-wrap:wrap}
+.card{background:white;border-radius:12px;border:1px solid var(--line);padding:20px;margin-bottom:16px;box-shadow:0 2px 8px #18314b06}
+.card h2{font-size:1.2rem;margin:0 0 10px}.card h3{font-size:1rem;margin:0 0 9px}.muted{color:var(--muted)}.small{font-size:.84rem;line-height:1.55}.note{background:#fff8eb;border-left:4px solid #ba873f;line-height:1.6}
+.toppill{display:inline-flex;align-items:center;gap:5px;border:1px solid #b8d0da;padding:5px 10px;border-radius:50px;font-size:.77rem;color:#fff}
+.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+label{display:block;font-size:.84rem;font-weight:650;margin-bottom:5px}select,button{font:inherit;background:#fff;color:#143d52;border:1px solid #adc6d4;border-radius:8px;padding:10px;cursor:pointer}select{width:100%}button:hover{border-color:#247995}button.primary{color:#fff;background:#185d73;border-color:#185d73}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #eab54e;outline-offset:3px}
+.filter-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:13px}.filter-actions .small{margin-left:auto}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.kpi{background:#f2f8fa;border:1px solid var(--line);padding:13px;border-radius:10px}.kpi strong{font-size:1.75rem;display:block;font-variant-numeric:tabular-nums}.kpi span{font-size:.82rem;color:var(--muted)}
+.insight{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.insight p{background:#f5f9fb;border-radius:9px;border:1px solid #e1eaee;padding:13px;line-height:1.5;font-size:.85rem;margin:0}
+.dual{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.scroll{overflow:auto;max-width:100%}table{border-collapse:separate;border-spacing:0;width:100%;font-size:.83rem}th,td{padding:8px;border-bottom:1px solid #e5edf2;text-align:right;white-space:nowrap}
+thead th{position:sticky;top:0;z-index:2;background:#eaf3f7;font-size:.77rem}thead th:first-child,tbody th{position:sticky;left:0;z-index:3;background:#f7fafc;text-align:left}thead th:first-child{z-index:4;background:#eaf3f7}tbody tr:hover{background:#f7fafc}
+.hmbtn{font-size:.85rem;min-height:42px;min-width:74px;width:100%;text-align:center;border:1px solid transparent;border-radius:7px;font-weight:700;padding:6px 10px;font-variant-numeric:tabular-nums;transition:box-shadow .15s}
+.hmbtn[aria-pressed="true"]{box-shadow:inset 0 0 0 3px #162c40}
+.uvmap{min-width:920px}.uvmap td{padding:3px}.uvmap th{padding:8px}.uvmap .hmbtn{min-width:100px}
+.dimmap td{padding:4px}
+.hint{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 0}.gradient{width:160px;height:11px;border-radius:8px;background:linear-gradient(90deg,rgba(30,112,146,.06),rgba(30,112,146,.92))}
+.flow{width:100%;height:auto;display:block;border:1px solid #e5eef2;background:#f9fcfd;border-radius:10px}.flow .edge{cursor:pointer}.flow .edge:hover{stroke-opacity:.8!important}.flow .node{cursor:pointer}.flow .node:focus{outline:none;stroke:#f7b52b;stroke-width:3}.flow text{font-size:12px;fill:#204357}.flow .hintsvg{font-size:10px;fill:#5e7380}
+.barrow{display:grid;grid-template-columns:minmax(180px,1.4fr) minmax(75px,3fr) 64px;gap:10px;align-items:center;border-bottom:1px solid #edf2f5;padding:7px 0}
+.barlink{border:0;background:transparent;text-align:left;color:#155c71;padding:3px 2px;font-weight:650;font-size:.84rem}.barlink:hover{text-decoration:underline}
+.barbg{height:20px;background:#ecf2f5;border-radius:4px;overflow:hidden}.barfill{height:100%;min-width:2px;border-radius:4px}.barval{font-variant-numeric:tabular-nums;text-align:right;font-size:.86rem;font-weight:700}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.chip{font-size:.77rem;border:1px solid #cee1e8;padding:5px 9px;border-radius:50px;background:#f4fafc}
+.panel-foot{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:13px;font-size:.85rem}
+.resulttable td{white-space:normal}.resulttable td a{white-space:nowrap}.resulttable th{white-space:nowrap}
+.empty{padding:22px;border:1px dashed #b5cdd9;border-radius:8px;color:#5e778a;text-align:center}
+footer{color:var(--muted);font-size:.78rem;line-height:1.6;padding:10px 2px 25px}
+#status{font-size:.88rem;min-height:1.5em;margin-top:12px;color:#61798a}
+@media(max-width:980px){.dual{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.insight{grid-template-columns:1fr}}
+@media(max-width:640px){.filters{grid-template-columns:1fr 1fr}.card{padding:13px}.barrow{grid-template-columns:minmax(120px,1.6fr) minmax(60px,2fr) 48px;gap:6px}}
+@media(max-width:440px){.filters,.kpis{grid-template-columns:1fr}.toplinks{gap:8px}}
+</style></head><body>
+<header><div class="toplinks"><a href="tematicas.html">← Resultados por temática</a><a href="index.html">Dashboard general</a><a href="trazabilidad.html">Fichas y mapa de registros</a></div>
+<h1>Explorador multidimensional</h1>
+<p>Compara cómo se distribuyen las problemáticas, oportunidades, actores y lugares entre siete temáticas, quince subtemas y unidades vecinales. Selecciona una celda o barra para cruzar filtros y profundizar en los antecedentes.</p></header>
+<main>
+<div class="card note"><strong>Cómo leer este análisis:</strong> B03, B05, B06 y B07 son dimensiones del informe asociadas respectivamente a los tipos Problema, Oportunidad, Actor y Lugar importante. B01, B02, B04 y B08–B10 documentan contexto, instrumentos, cartografías y fuentes: <strong>no son clases independientes de cada registro</strong>, por lo que no se suman como si lo fueran. Los valores representan menciones registradas, nunca votos, delitos acreditados ni planes aprobados.</div>
+<section class="card" aria-label="Filtros cruzados"><h2>Filtros conectados</h2><div class="filters">
+<div><label for="scope">Universo territorial</label><select id="scope"><option value="kit">Entrega 01 · 15 UV</option><option value="all">Matriz completa · 25 etiquetas</option></select></div>
+<div><label for="theme">Temática principal</label><select id="theme"><option value="">Todas las temáticas</option></select></div>
+<div><label for="type">Dimensión analítica</label><select id="type"><option value="">Todas las dimensiones B03/B05/B06/B07</option></select></div>
+<div><label for="uv">Unidad Vecinal</label><select id="uv"><option value="">Todas las UV del corte</option></select></div>
+<div><label for="subtheme">Subtema</label><select id="subtheme"><option value="">Todos los subtemas</option></select></div>
+<div><label for="metric">Escala de comparación</label><select id="metric"><option value="n">Número de registros</option><option value="pct">Porcentaje en cada grupo</option></select></div>
+</div><div class="filter-actions"><button id="reset" type="button">Limpiar filtros</button><button id="export" type="button">Exportar tabla agregada (.csv)</button><a href="docs/METODOLOGIA_CRUCES_MULTIDIMENSIONALES_V1.md">Metodología y limitaciones</a></div><div id="status" role="status" aria-live="polite">Cargando datos agregados y taxonomía…</div></section>
+<section class="card"><h2>Lectura del conjunto seleccionado</h2><div id="kpis" class="kpis"></div><div id="insights" class="insight"></div><div class="chips" id="activeFilters"></div></section>
+<section class="card"><h2>1. Matriz de calor — temática × dimensión</h2><p class="small muted">Cada celda representa cuántos registros de una temática pertenecen a una dimensión operativa. Cambia entre valores absolutos y porcentaje <strong>dentro de cada temática</strong>. Haz clic en una celda para seleccionar temática y dimensión. La UV seleccionada se aplica a esta matriz.</p>
+<div class="scroll" id="dimHeat"></div><p class="hint small muted"><span>Menor frecuencia</span><span class="gradient" aria-hidden="true"></span><span>Mayor frecuencia relativa</span></p></section>
+<section class="card"><h2>2. Mapa de calor territorial — UV × temática</h2><p class="small muted">Permite comparar patrones entre UV. El filtro de dimensión modifica toda la matriz; el filtro de temática y la UV seleccionada quedan resaltados para conservar el contexto. En porcentaje, el denominador es el total de registros de la UV en la dimensión elegida (o todas si no hay dimensión).</p>
+<div class="scroll" id="uvHeat"></div></section>
+<section class="card"><h2>3. Diagrama de flujos — temáticas hacia dimensiones</h2><p class="small muted">El ancho de los flujos representa la cantidad de registros (no relaciones causales). Los cuatro destinos son tipos excluyentes de un mismo registro, asociados a B03/B05/B06/B07. Selecciona un flujo para filtrar el panel. La visualización conserva los totales del universo territorial elegido.</p>
+<svg class="flow" id="flow" viewBox="0 0 1100 560" role="img" aria-label="Diagrama de flujos entre siete temáticas y cuatro dimensiones; se ofrece también la matriz accesible más arriba"></svg>
+<div class="panel-foot"><span class="small muted">Los caminos solo muestran cómo está clasificado el mismo conjunto de registros.</span></div></section>
+<section class="card"><h2>4. Perfil jerárquico — temáticas y subtemas</h2><p class="small muted">Los subtemas se vinculan a su temática por la tabla CAT_SUBTEMAS de la matriz madre. Este ranking responde a la UV y dimensión elegidas. Cuando una subcategoría concentra menos de tres registros en una única UV, se muestra como grupo pequeño para evitar una lectura excesivamente identificable.</p>
+<div id="subBars"></div></section>
+<section class="card"><h2>5. Intersecciones para gestión municipal</h2><p class="small muted">Cruce <strong>UV × temática × dimensión</strong> y, si se elige, un subtema. Ordenado por número de registros. Selecciona «Examinar registros» para abrir el visor local con los filtros correspondientes: <strong>la página pública no incluye textos individuales</strong>.</p>
+<div class="scroll"><table class="resulttable"><thead><tr><th>UV</th><th>Temática</th><th>Dimensión</th><th>Registros</th><th>% del subtotal elegido</th><th>Profundizar</th></tr></thead><tbody id="intersections"></tbody></table></div>
+<div class="panel-foot"><span id="tableInfo" class="small muted"></span><button id="more" type="button">Ver más filas</button></div></section>
+<footer>Fuentes: matriz madre DATOS, corte 2026-11-09, a través de <a href="datos-agregados.json">datos agregados públicos</a>; correspondencias de <a href="taxonomia-subtemas.json">CAT_SUBTEMAS</a> verificadas contra los totales. Números de menciones, no porcentajes de población ni diagnósticos oficiales. UV20 continúa pendiente de conciliación territorial. No se transfiere información individual a este portal. <a href="trazabilidad.html">Consulta detallada interna</a>.</footer>
+</main>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n||0).toLocaleString("es-CL"),pct=(a,b)=>b?100*a/b:0,percent=v=>v.toLocaleString("es-CL",{maximumFractionDigits:1})+"%";
+const typeMap={"Problema":{id:"B03",label:"Problemas",color:"#bd5150"},"Oportunidad":{id:"B05",label:"Oportunidades",color:"#21968b"},"Actor":{id:"B06",label:"Actores",color:"#8463a8"},"Lugar importante":{id:"B07",label:"Lugares",color:"#ba8334"}};
+const types=["Problema","Oportunidad","Actor","Lugar importante"];
+const themeColors={"Infraestructura y espacio público":"#2b689b","Aseo y medio ambiente":"#238b84","Desarrollo social y comunitario":"#be772c","Seguridad y convivencia":"#9554a9","Movilidad y transporte":"#d05859","Actividad económica y comercio":"#698b35","Vivienda y entorno urbano":"#946781"};
+const kitIDs=new Set(["15","21","22","26A","26B","25","29","28","27","30","31","32","33","34","35"]);
+const state={scope:"kit",theme:"",type:"",uv:"",subtheme:"",metric:"n"};
+let D=null,T=null,topics=[],submap=new Map(),visibleRows=45,intersections=[];
+const sum=a=>a.reduce((acc,n)=>acc+Number(n||0),0);
+const cleanSort=(a,b)=>String(a).localeCompare(String(b),"es",{numeric:true});
+function topicCount(u,theme){return u.temas.find(x=>x.etiqueta===theme)?.n||0}
+function typeCount(u,type,theme){if(!type)return theme?topicCount(u,theme):u.total;const x=u.por_tipo[type];if(!x)return 0;return theme?(x.temas||[]).find(r=>r.etiqueta===theme)?.n||0:(u.tipo[type]||0)}
+function subCount(u,type,sub){if(type)return (u.por_tipo[type]?.subtemas||[]).find(x=>x.etiqueta===sub)?.n||0;return sum(types.map(t=>subCount(u,t,sub)))}
+function count(u,theme,type,sub){
+if(sub){if(submap.get(sub)!==theme&&theme)return 0;return subCount(u,type,sub)}
+return typeCount(u,type,theme)}
+function scopeRows(){return D.uvs.filter(u=>state.scope==="all"||kitIDs.has(u.uv))}
+function geographicRows(){return scopeRows().filter(u=>!state.uv||u.uv===state.uv)}
+function selectedCount(u){return count(u,state.theme,state.type,state.subtheme)}
+function aggregateRows(rows,theme,type,sub){return sum(rows.map(u=>count(u,theme,type,sub)))}
+function basicThemes(){return topics}
+function optionValue(value,label){return '<option value="'+esc(value)+'">'+esc(label)+'</option>'}
+function populateSelect(id,items,firstLabel){const el=$(id),prior=el.value;el.innerHTML=optionValue("",firstLabel)+items.map(([v,l])=>optionValue(v,l)).join("");if([...el.options].some(o=>o.value===prior))el.value=prior;else el.value=""}
+function readParams(){const p=new URLSearchParams(location.search);
+state.scope=p.get("corte")==="todo"?"all":"kit";
+state.theme=topics.includes(p.get("tema"))?p.get("tema"):"";
+state.type=types.includes(p.get("tipo"))?p.get("tipo"):"";
+state.uv=scopeRows().some(u=>u.uv===p.get("uv"))?p.get("uv"):"";
+state.subtheme=submap.has(p.get("subtema"))&&(!state.theme||submap.get(p.get("subtema"))===state.theme)?p.get("subtema"):"";
+state.metric=p.get("escala")==="pct"?"pct":"n";
+}
+function writeParams(){const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(state.theme)q.set("tema",state.theme);if(state.type)q.set("tipo",state.type);if(state.uv)q.set("uv",state.uv);if(state.subtheme)q.set("subtema",state.subtheme);if(state.metric==="pct")q.set("escala","pct");history.replaceState({},"",location.pathname+"?"+q)}
+function syncControls(){
+populateSelect("theme",topics.map(t=>[t,t]),"Todas las temáticas");
+populateSelect("type",types.map(t=>[t,typeMap[t].id+" · "+typeMap[t].label]),"Todas las dimensiones B03/B05/B06/B07");
+populateSelect("uv",scopeRows().map(u=>[u.uv,"UV "+u.uv+(u.registro_provisional?" *":"")]).sort((a,b)=>cleanSort(a[0],b[0])),"Todas las UV del corte");
+populateSelect("subtheme",[...submap].filter(([sub,t])=>!state.theme||t===state.theme).map(([sub])=>[sub,sub]).sort((a,b)=>cleanSort(a[0],b[0])),"Todos los subtemas");
+for(const id of ["scope","theme","type","uv","subtheme","metric"])$(id).value=state[id];
+}
+function choose(values){Object.assign(state,values);if(state.subtheme&&state.theme&&submap.get(state.subtheme)!==state.theme)state.subtheme="";if(state.subtheme&&!state.theme)state.theme=submap.get(state.subtheme)||"";if(state.uv&&!scopeRows().some(u=>u.uv===state.uv))state.uv="";syncControls();writeParams();render();}
+function setFromInputs(id){state[id]=$(id).value;if(id==="scope"&&state.uv&&!scopeRows().some(u=>u.uv===state.uv))state.uv="";
+if(id==="theme"&&state.subtheme&&submap.get(state.subtheme)!==state.theme)state.subtheme="";
+if(id==="subtheme"&&state.subtheme)state.theme=submap.get(state.subtheme)||state.theme;
+choose({});}
+function kpiRender(){
+const scope=scopeRows(),geo=geographicRows(),n=aggregateRows(geo,state.theme,state.type,state.subtheme),totalScope=sum(scope.map(u=>u.total));
+const uvN=geo.filter(u=>selectedCount(u)>0).length;
+const themeN=topics.filter(t=>aggregateRows(geo,t,state.type,state.subtheme)>0).length;
+const kpis=[["Registros del cruce",n],["UV con presencia",uvN],["Temáticas del filtro",themeN],["Registros del corte",totalScope]];
+$("kpis").innerHTML=kpis.map(([l,n])=>'<div class="kpi"><strong>'+fmt(n)+'</strong><span>'+esc(l)+'</span></div>').join("");
+const rank=topics.map(t=>[t,aggregateRows(geo,t,state.type,"")]).sort((a,b)=>b[1]-a[1]);const best=rank[0];
+const topSub=[...submap].filter(([s,t])=>!state.theme||state.theme===t).map(([s,t])=>[s,t,aggregateRows(geo,t,state.type,s)]).sort((a,b)=>b[2]-a[2])[0];
+const topUV=geo.map(u=>[u.uv,selectedCount(u)]).sort((a,b)=>b[1]-a[1])[0];
+$("insights").innerHTML=[
+"<p><strong>Mayor volumen temático:</strong> "+(best&&best[1]?esc(best[0])+" ("+fmt(best[1])+" registros)":"sin datos en el filtro")+". La frecuencia no implica prioridad institucional.</p>",
+"<p><strong>Subtema más mencionado:</strong> "+(topSub&&topSub[2]?esc(topSub[0])+" ("+fmt(topSub[2])+")":"sin datos en el filtro")+". El conteo corresponde al corte aplicado.</p>",
+"<p><strong>UV con más registros en este cruce:</strong> "+(topUV&&topUV[1]?"UV "+esc(topUV[0])+" ("+fmt(topUV[1])+")":"sin datos")+". Comparar con el volumen total de cada UV antes de interpretar diferencias.</p>"
+].join("");
+const chips=["Corte: "+(state.scope==="kit"?"15 UV":"25 etiquetas"),state.theme||"Todas las temáticas",state.type?typeMap[state.type].id+" "+typeMap[state.type].label:"4 dimensiones",state.uv?"UV "+state.uv:"Todas las UV",state.subtheme||"Todos los subtemas"];
+$("activeFilters").innerHTML=chips.map(t=>'<span class="chip">'+esc(t)+'</span>').join("");
+$("status").textContent=fmt(n)+" registros en la selección · "+fmt(uvN)+" UV · "+percent(pct(n,totalScope))+" del total del corte (denominador: "+fmt(totalScope)+").";
+}
+function heatColor(n,max){const alpha=n>0?Math.min(.88,.12+.76*Math.sqrt(n/Math.max(1,max))):.055;return {background:"rgba(29,105,141,"+alpha.toFixed(3)+")",color:alpha>.48?"#fff":"#173d50"}}
+function cellButton(n,den,max,chosen,aria,values){
+const value=state.metric==="pct"?percent(pct(n,den)):fmt(n),v=state.metric==="pct"?pct(n,den):n,color=heatColor(v,max);
+return '<button type="button" class="hmbtn" data-theme="'+esc(values.theme||"")+'" data-type="'+esc(values.type||"")+'" data-uv="'+esc(values.uv||"")+'" aria-label="'+esc(aria+": "+fmt(n)+" registros, "+percent(pct(n,den)))+'" aria-pressed="'+chosen+'" style="background:'+color.background+';color:'+color.color+'">'+value+'</button>';
+}
+function attachCellButtons(root,keys){$(root).querySelectorAll("button[data-theme]").forEach(el=>el.onclick=()=>{
+const fields={};for(const k of keys)if(el.dataset[k]!==undefined)fields[k]=el.dataset[k];choose(fields);
+})}
+function renderDimHeat(){
+const rows=geographicRows(),sumFor=(t,ty)=>aggregateRows(rows,t,ty,state.subtheme);
+const vals=topics.flatMap(t=>types.map(ty=>{const n=sumFor(t,ty),den=aggregateRows(rows,t,"",state.subtheme);return state.metric==="pct"?pct(n,den):n}));
+const max=Math.max(1,...vals);
+let html='<table class="dimmap"><thead><tr><th>Temática</th>'+types.map(t=>'<th>'+typeMap[t].id+'<div class="muted">'+typeMap[t].label+'</div></th>').join("")+'<th>Total</th></tr></thead><tbody>';
+for(const t of topics){const denom=aggregateRows(rows,t,"",state.subtheme);
+html+='<tr><th>'+esc(t)+'</th>';
+for(const ty of types){const n=sumFor(t,ty),active=state.theme===t&&state.type===ty,aria=t+", "+typeMap[ty].label;
+html+='<td>'+cellButton(n,denom,max,active,aria,{theme:t,type:ty})+'</td>'}
+html+='<td><strong>'+fmt(denom)+'</strong></td></tr>'}
+const gt=aggregateRows(rows,"","",state.subtheme);
+html+='</tbody><tfoot><tr><th>Total</th>'+types.map(ty=>'<th>'+fmt(aggregateRows(rows,"",ty,state.subtheme))+'</th>').join("")+'<th>'+fmt(gt)+'</th></tr></tfoot></table>';
+$("dimHeat").innerHTML=html;attachCellButtons("dimHeat",["theme","type"]);
+}
+function renderUvHeat(){
+const scope=scopeRows(),max=Math.max(1,...scope.flatMap(u=>topics.map(t=>state.metric==="pct"?pct(count(u,t,state.type,state.subtheme),typeCount(u,state.type,"")):count(u,t,state.type,state.subtheme))));
+let html='<table class="uvmap"><thead><tr><th>UV</th>'+topics.map(t=>'<th title="'+esc(t)+'">'+esc(t)+'</th>').join("")+'<th>Total</th></tr></thead><tbody>';
+for(const u of scope){let total=0;html+='<tr><th>UV '+esc(u.uv)+(u.registro_provisional?' *':'')+'</th>';
+for(const t of topics){const n=count(u,t,state.type,state.subtheme),denom=typeCount(u,state.type,"");total+=n;const pressed=state.uv===u.uv&&state.theme===t;html+='<td>'+cellButton(n,denom,max,pressed,"UV "+u.uv+", "+t,{theme:t,uv:u.uv})+'</td>'}
+html+='<td><strong>'+fmt(total)+'</strong></td></tr>'}
+html+='</tbody></table>';$("uvHeat").innerHTML=html;attachCellButtons("uvHeat",["theme","uv"]);
+}
+function renderSub(){
+const rows=geographicRows(),groups=[...submap].filter(([sub,t])=>!state.theme||state.theme===t).map(([sub,t])=>({sub,theme:t,n:aggregateRows(rows,t,state.type,sub)})).sort((a,b)=>b.n-a.n||cleanSort(a.sub,b.sub));
+const max=Math.max(1,...groups.map(x=>x.n));let html="";
+for(const x of groups){const small=!!state.uv&&x.n>0&&x.n<3;
+const label=(small?"<3":fmt(x.n)),ratio=small?7:pct(x.n,max);
+html+='<div class="barrow"><button type="button" class="barlink" data-sub="'+esc(x.sub)+'" title="'+esc(x.theme)+'">'+esc(x.sub)+'<div class="muted small">'+esc(x.theme)+'</div></button><div class="barbg"><div class="barfill" style="width:'+Math.max(x.n>0?2:0,ratio).toFixed(2)+'%;background:'+themeColors[x.theme]+'"></div></div><div class="barval">'+label+'</div></div>'}
+$("subBars").innerHTML=html||'<div class="empty">No hay subtemas para esta selección.</div>';
+$("subBars").querySelectorAll("[data-sub]").forEach(btn=>btn.onclick=()=>choose({theme:submap.get(btn.dataset.sub),subtheme:btn.dataset.sub}));
+}
+function renderFlow(){
+const svg=$("flow"),rows=geographicRows();
+const grand=aggregateRows(rows,"","",null),topicTotal=topics.map(t=>aggregateRows(rows,t,"",null)),typeTotal=types.map(t=>aggregateRows(rows,"",t,null));
+if(!grand){svg.innerHTML='<text x="35" y="50">Sin registros en la selección territorial.</text>';return}
+const gap=10,H=510,scale=(H-gap*(topics.length-1))/grand;
+const leftTop=25,rightTop=(560-(grand*scale+gap*(types.length-1)))/2;
+const leftY=[],rightY=[];let y=leftTop;
+for(let i=0;i<topics.length;i++){leftY.push(y);y+=topicTotal[i]*scale+gap}
+y=rightTop;for(let j=0;j<types.length;j++){rightY.push(y);y+=typeTotal[j]*scale+gap}
+let paths="",nodes="",offsetLeft=Array(topics.length).fill(0),offsetRight=Array(types.length).fill(0);
+for(let i=0;i<topics.length;i++)for(let j=0;j<types.length;j++){const n=aggregateRows(rows,topics[i],types[j],null);if(!n)continue;
+const w=n*scale,yl=leftY[i]+offsetLeft[i]+w/2,yr=rightY[j]+offsetRight[j]+w/2;
+const highlight=(!state.theme||state.theme===topics[i])&&(!state.type||state.type===types[j]);
+const path="M 235 "+yl.toFixed(3)+" C 485 "+yl.toFixed(3)+" 615 "+yr.toFixed(3)+" 865 "+yr.toFixed(3);
+paths+='<path class="edge" tabindex="0" role="button" aria-label="'+esc(topics[i]+", "+typeMap[types[j]].label+": "+fmt(n))+'" data-theme="'+esc(topics[i])+'" data-type="'+esc(types[j])+'" d="'+path+'" stroke="'+themeColors[topics[i]]+'" stroke-opacity="'+(highlight?.47:.085)+'" stroke-width="'+Math.max(1,w).toFixed(3)+'" fill="none"><title>'+esc(topics[i]+" → "+typeMap[types[j]].label+": "+fmt(n)+" registros")+'</title></path>';
+offsetLeft[i]+=w;offsetRight[j]+=w}
+for(let i=0;i<topics.length;i++){const t=topics[i],h=topicTotal[i]*scale,chosen=state.theme===t;
+nodes+='<g class="node" role="button" tabindex="0" data-theme="'+esc(t)+'" data-type="" aria-label="Filtrar temática '+esc(t)+'"><rect x="217" y="'+leftY[i].toFixed(2)+'" width="18" height="'+Math.max(1,h).toFixed(2)+'" rx="3" fill="'+themeColors[t]+'" stroke="'+(chosen?"#f3a639":"#fff")+'" stroke-width="'+(chosen?3:1)+'"/><text x="209" y="'+(leftY[i]+Math.max(12,h/2)+4).toFixed(2)+'" text-anchor="end">'+esc(t)+'</text><title>'+esc(t)+": "+fmt(topicTotal[i])+' registros</title></g>'}
+for(let j=0;j<types.length;j++){const t=types[j],h=typeTotal[j]*scale,chosen=state.type===t;
+nodes+='<g class="node" role="button" tabindex="0" data-theme="" data-type="'+esc(t)+'" aria-label="Filtrar dimensión '+esc(typeMap[t].label)+'"><rect x="865" y="'+rightY[j].toFixed(2)+'" width="18" height="'+Math.max(1,h).toFixed(2)+'" rx="3" fill="'+typeMap[t].color+'" stroke="'+(chosen?"#f3a639":"#fff")+'" stroke-width="'+(chosen?3:1)+'"/><text x="890" y="'+(rightY[j]+Math.max(12,h/2)+4).toFixed(2)+'">'+esc(typeMap[t].id+" · "+typeMap[t].label)+'</text><title>'+esc(typeMap[t].label)+": "+fmt(typeTotal[j])+' registros</title></g>'}
+svg.innerHTML='<text class="hintsvg" x="217" y="15" text-anchor="end">7 temáticas</text><text class="hintsvg" x="865" y="15">4 dimensiones</text>'+paths+nodes;
+svg.querySelectorAll("[data-theme]").forEach(el=>{const handle=()=>{const item={};if(el.dataset.theme)item.theme=el.dataset.theme;if(el.dataset.type)item.type=el.dataset.type;choose(item)};el.onclick=handle;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();handle()}}});
+}
+function detailURL(uv,theme,type){let p=new URLSearchParams();if(uv)p.set("uv",uv);if(theme)p.set("tema",theme);if(type)p.set("tipo",type);if(state.subtheme)p.set("subtema",state.subtheme);if(state.scope==="kit")p.set("corte","entrega01");return "trazabilidad.html?"+p}
+function buildIntersections(){
+intersections=[];const rows=geographicRows();
+for(const u of rows)for(const t of topics){if(state.theme&&state.theme!==t)continue;
+for(const ty of types){if(state.type&&state.type!==ty)continue;
+const n=count(u,t,ty,state.subtheme);if(!n)continue;intersections.push({uv:u.uv,t,ty,n})}}
+intersections.sort((a,b)=>b.n-a.n||cleanSort(a.uv,b.uv)||cleanSort(a.t,b.t));}
+function renderIntersections(){
+const grand=sum(intersections.map(x=>x.n)),shown=intersections.slice(0,visibleRows);
+$("intersections").innerHTML=shown.map(x=>'<tr><td><strong>UV '+esc(x.uv)+'</strong></td><td>'+esc(x.t)+'</td><td>'+esc(typeMap[x.ty].id+" "+typeMap[x.ty].label)+'</td><td><strong>'+fmt(x.n)+'</strong></td><td>'+percent(pct(x.n,grand))+'</td><td><a href="'+detailURL(x.uv,x.t,x.ty)+'">Examinar registros</a></td></tr>').join("")||'<tr><td colspan="6">Sin registros para la selección.</td></tr>';
+$("more").hidden=visibleRows>=intersections.length;
+$("tableInfo").textContent=fmt(shown.length)+" de "+fmt(intersections.length)+" cruces con registros · subtotal "+fmt(grand)+" menciones.";
+}
+function render(){if(!D||!T)return;kpiRender();renderDimHeat();renderUvHeat();renderFlow();renderSub();buildIntersections();visibleRows=45;renderIntersections();}
+function csvQuote(s){let v=String(s??"");if(/^\s*[=+\-@]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}
+function exportCSV(){const grand=sum(intersections.map(r=>r.n)),head=["uv","tematica","dimension","tipo","n_registros","porcentaje_sobre_subtotal","estado_fuente"];
+const lines=[head.map(csvQuote).join(",")];for(const x of intersections){
+const small=!!state.subtheme&&x.n<3;const vals=[x.uv,x.t,typeMap[x.ty].id,x.ty,small?"SUPRIMIDO_MENOR_A_3":x.n,small?"SUPRIMIDO":pct(x.n,grand).toFixed(3),"MATRIZ_PRELIMINAR_NO_VALIDADA"];lines.push(vals.map(csvQuote).join(","))}
+const b=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(b),a=document.createElement("a");a.href=url;a.download="congreso_barrial_cruces_agregados_"+state.scope+".csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function verifyData(d,tax){
+if(d.uvs?.length!==25||d.totales?.filas_matriz!==1570||d.distribucion_tematica?.length!==7)throw Error("Esquema de datos agregados inesperado");
+if(tax.pares?.length!==15)throw Error("Taxonomía incompleta");
+const m=new Map();for(const x of tax.pares){if(m.has(x.subtema)&&m.get(x.subtema)!==x.tematica)throw Error("Subtema con doble temática: "+x.subtema);m.set(x.subtema,x.tematica)}
+const allTopics=d.distribucion_tematica.map(x=>x.etiqueta);if(tax.pares.some(x=>!allTopics.includes(x.tematica)))throw Error("Temática no incluida en datos");
+let mismatch=0,total=0;
+for(const u of d.uvs){let sumKind=0;for(const ty of types){const v=u.por_tipo[ty];if(!v)throw Error("Falta tipo "+ty);sumKind+=u.tipo[ty]||0;
+const sums={};for(const x of v.subtemas){const th=m.get(x.etiqueta);if(!th)throw Error("Subtema sin correspondencia: "+x.etiqueta);sums[th]=(sums[th]||0)+x.n}
+for(const x of v.temas)if((sums[x.etiqueta]||0)!==x.n)mismatch++;}
+if(sumKind!==u.total)mismatch++;total+=u.total}
+if(mismatch||total!==1570)throw Error("Inconsistencia entre clasificaciones ("+mismatch+") o totales "+total);
+submap=m;topics=allTopics;D=d;T=tax;
+}
+$("reset").onclick=()=>choose({scope:state.scope,theme:"",type:"",uv:"",subtheme:"",metric:"n"});
+$("export").onclick=exportCSV;
+$("more").onclick=()=>{visibleRows+=45;renderIntersections()};
+for(const id of ["scope","theme","type","uv","subtheme","metric"])$(id).addEventListener("change",()=>setFromInputs(id));
+Promise.all([
+fetch("datos-agregados.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("datos-agregados.json: HTTP "+r.status);return r.json()}),
+fetch("taxonomia-subtemas.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("taxonomia-subtemas.json: HTTP "+r.status);return r.json()})
+]).then(([d,t])=>{verifyData(d,t);readParams();syncControls();writeParams();render()})
+.catch(e=>{$("status").textContent="No se puede construir el análisis: "+e.message;$("kpis").innerHTML='<div class="empty">Los datos no superaron las verificaciones de coherencia.</div>';});
+</script></body></html>
