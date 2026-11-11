@@ -17,11 +17,12 @@ h2{font-size:1.17rem;margin:0 0 9px}h3{font-size:1rem;margin:0 0 7px}.small{font
 @media(max-width:640px){.filters,.portfolio,.kpis,.stages{grid-template-columns:1fr}.card{padding:13px}.barrow{grid-template-columns:minmax(110px,1.5fr) minmax(60px,2fr) 55px}}
 </style></head>
 <body>
-<header><nav><a href="index.html">← Dashboard general</a><a href="tematicas.html">Temáticas</a><a href="cruces.html">Análisis multidimensional</a><a href="trazabilidad.html">Evidencias y mapa</a></nav>
+<header><nav><a href="index.html">← Dashboard general</a><a href="dimao.html?corte=entrega01">Panel DIMAO</a><a href="tematicas.html">Temáticas</a><a href="cruces.html">Análisis multidimensional</a><a href="trazabilidad.html">Evidencias y mapa</a></nav>
 <h1>Carteras de problemas y oportunidades por dirección</h1>
 <p>Organiza los resultados del Congreso Barrial en grupos de asuntos territoriales para su evaluación técnica. Compara UV, temáticas y subtemas, conoce los instrumentos referenciales y abre la evidencia que fundamenta cada clasificación.</p></header>
 <main>
 <div class="card alert"><strong>Estado de la información:</strong> esta es una <strong>cartera de análisis, no de tareas asignadas</strong>. Los nombres de direcciones y los instrumentos de respuesta provienen de CAT_SUBTEMAS como referencias para revisar competencias; no constituyen órdenes, aprobaciones ni compromisos. Los registros son menciones, no personas o hechos investigados. No se publican textos ni domicilios individuales.</div>
+<section class="card" style="border-left:4px solid #23897d;background:#f2faf8"><h2>Vista especial para DIMAO</h2><p class="small">Filtra automáticamente los subtemas donde CAT_SUBTEMAS menciona a DIMAO como dirección líder referencial o como apoyo habitual. El panel identifica ambas situaciones por separado e incluye un piloto de consulta documental para UV15.</p><a style="display:inline-block;background:#176078;color:white;text-decoration:none;border-radius:8px;padding:10px 15px;font-weight:700" href="dimao.html?corte=entrega01">Abrir Panel DIMAO</a></section>
 <section class="card"><h2>1. Filtros de la cartera</h2><details class="help"><summary>ⓘ ¿Qué representa cada filtro?</summary><p>La <strong>temática</strong> agrupa asuntos generales; el <strong>subtema</strong> identifica una clase específica de hallazgo; la <strong>UV</strong> corresponde al territorio; la <strong>dirección</strong> es una referencia documental que requiere confirmación. Los filtros se combinan y actualizan todos los gráficos y tablas.</p></details>
 <div class="filters">
 <div><label for="scope">Corte territorial</label><select id="scope"><option value="kit">Entrega 01 · 15 UV</option><option value="all">Matriz completa · 25 etiquetas</option></select></div>
