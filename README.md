@@ -20,6 +20,16 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
 
+## Recorrido de tres capas y consulta local de post-it — V1 (11-11-2026)
+
+- **Capa comuna:** [portada](index.html), temáticas, cortes agregados y navegación UV.
+- **Capa UV:** [UV → grupos → post-it](uv-grupos.html) y su [módulo JavaScript](uv-grupos.js), integrados desde la ficha de cualquier UV; se muestran conteos agregados de grupos sin publicar descripciones.
+- **Dato digitalizado:** con autorización y una carga local de DATOS.csv por sesión, se puede abrir cada grupo y leer una ficha por ID sin salir de la página. Registros marcados para revisión de privacidad se ocultan por defecto. El sitio público no recibe el CSV ni guarda los textos.
+- **Capa municipal:** las carteras, el Panel DIMAO y los cruces por UV/subtema conducen ahora a la misma vista territorial para elegir grupo, registro e iniciar el cotejo.
+- **Visor alternativo:** [trazabilidad.html](trazabilidad.html) acepta corte, UV, grupo, tema, subtema, tipo e ID en la URL; la ficha se abre después de importar un CSV autorizado.
+- **Protocolo:** [Arquitectura de tres capas y lectura primaria](docs/PROTOCOLO_TRES_CAPAS_POSTIT_V1.md). Diferencia descripción en DATOS de fotografía/post-it original cotejado; no inventa enlaces cartográficos.
+- **Pendiente crítico:** acceso directo autenticado a Drive/Sheets, verificación de cartografías (especialmente UV15 G2/G3), revisión de privacidad y restablecer publicación GitHub Pages si sigue fallando.
+
 ## Panel DIMAO V1.1 — agenda analítica y revisión de fuentes
 
 - [Panel DIMAO](dimao.html) incorpora filtro de **perfil UV-subtema** (ambos tipos, solo problemas registrados, solo oportunidades registradas), diagrama de dispersión de problemas/oportunidades por UV y bloque de **calidad de auditoría** por corte/rol.
