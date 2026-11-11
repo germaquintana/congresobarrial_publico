@@ -44,3 +44,11 @@ Distinguir número de **registros**, número de **cartografías distintas verifi
 - **Fase 4:** derivación/aceptación por direcciones, plan de acción, fechas, verificación de cumplimiento, tableros de responsabilidad y exportaciones institucionales autorizadas.
 
 **No alcanzado:** copia literal verificada de post-it, asociación definitiva a la cartografía original, publicación de microdatos o ejecución de acciones administrativas.
+
+## Extensión V1.1 — exploración geográfica (11-11-2026)
+- DATOS dispone de 1.570 pares `latitud/longitud` numéricos dentro del entorno de Recoleta; 547 filas contienen `ubicacion` escrita. La casi ausencia de coordenadas duplicadas **no prueba georreferenciación individual verificada**.
+- Mapa interactivo en `trazabilidad.html` sobre CSV local sin transmitir microdatos; plano de coordenadas sin conexión por defecto. Tesoros cartográficos originales **no** están incorporados como imágenes públicas.
+- Capa de calles con mosaicos OpenStreetMap activable únicamente mediante confirmación. El proveedor puede observar teselas/área/zoom solicitados; no se añaden IDs, descripciones, CSV, ni coordenadas individuales a la URL de las teselas. No se carga JavaScript externo.
+- Búsqueda de calle, esquina o número exclusivamente cuando se dispone de `ubicacion` escrita; si no, solo coordenadas indicadas por DATOS, sujetas a cotejo.
+- Cartografía UV-grupo en MAPAS_UV sigue vinculada como **propuesta**, nunca original verificado.
+- Para reportes de viviendas, situaciones de calle, delincuencia o información que pueda identificar personas, acceso interno controlado, revisión de privacidad, proporcionalidad y auditoría; no generar capa pública de direcciones exactas.
