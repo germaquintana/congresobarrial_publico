@@ -35,10 +35,10 @@ function readSheet_(sheet) {
   const values = sheet.getDataRange().getDisplayValues();
   const headers = (values.shift() || []).map(x => String(x).trim());
   if (new Set(headers).size !== headers.length || !headers.length) throw new Error("Encabezados duplicados o vacíos.");
-  return values.filter(r => String(r[0] || "").trim()).map((r, idx) => {
+  return values.map((r, idx) => ({ r, rowNumber: idx + 2 })).filter(x => String(x.r[0] || "").trim()).map(({ r, rowNumber }) => {
     const o = {};
     headers.forEach((h, i) => { o[h] = String(r[i] == null ? "" : r[i]).trim(); });
-    o._sheet_row = idx + 2;
+    o._sheet_row = rowNumber;
     return o;
   });
 }
@@ -130,8 +130,8 @@ function boot() {
   }
   const dirSet = new Set();
   for (const t of tax) {
+    // Solo direcciones líderes catalogadas; apoyos pueden ser organizaciones no municipales.
     if (t.direccion_lider) dirSet.add(t.direccion_lider);
-    String(t.apoyo_habitual || "").split(/\s*[·;,]\s*/).forEach(x => { if (x) dirSet.add(x); });
   }
   return {
     identity: ctx.email, updated: new Date().toISOString(),
