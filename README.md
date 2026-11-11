@@ -20,6 +20,15 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
 
+## Carteras de problemas y oportunidades y guías de lectura (11-11-2026)
+
+- [Inicio del dashboard](index.html): cuatro accesos visibles a temáticas, cruces multidimensionales, carteras por dirección y visor de evidencia.
+- [Carteras por dirección](carteras.html) y su lógica [carteras.js](carteras.js): filtros por corte, dirección referencial, temática, UV, subtema y enfoque de lectura; KPIs de problemas/oportunidades separados de actores/lugares; comparativas por dirección/temática/UV; tarjetas por subtema e instrumento referencial; matriz UV×subtema para evaluación con exportación CSV.
+- [Protocolo de carteras](docs/PROTOCOLO_CARTERAS_ACCION_V1.md): definiciones de indicadores, denominadores, restricciones de privacidad, CSV y fases necesarias de aprobación humana.
+- Ayudas integradas con elementos desplegables de explicación en secciones del dashboard general, resultados por temática, explorador multidimensional, carteras y visor de evidencia.
+- Se conserva la trazabilidad de parámetros entre pantallas y la separación entre agregados públicos y consultas locales de microdatos autorizados.
+- **Ninguna clasificación de dirección y ninguno de los campos del CSV equivalen a tarea asignada, acción aprobada o mandato administrativo.** Los campos de decisión humana siguen vacíos.
+
 ## Explorador multidimensional — cruces temáticos y de gestión (11-11-2026)
 
 - [Explorador multidimensional](cruces.html): matrices de calor \`temática × dimensión\` y \`UV × temática\`, diagrama de flujos, perfil de 15 subtemas, orientación institucional indicativa por dirección y tabla de cruces con filtros conectados.
