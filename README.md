@@ -20,6 +20,15 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
 
+## Explorador multidimensional — cruces temáticos y de gestión (11-11-2026)
+
+- [Explorador multidimensional](cruces.html): matrices de calor \`temática × dimensión\` y \`UV × temática\`, diagrama de flujos, perfil de 15 subtemas, orientación institucional indicativa por dirección y tabla de cruces con filtros conectados.
+- [Resultados por temática](tematicas.html): se incorporó una matriz visible de 7 × 4 que vincula directamente con el nuevo explorador; [dashboard general](index.html) ofrece acceso directo.
+- [Taxonomía verificada](taxonomia-subtemas.json): 15 pares \`temática/subtema\` provenientes de CAT_SUBTEMAS, con 7 áreas de referencia y apoyo/instrumento orientativo. **No asigna trabajo ni aprueba competencias**.
+- [Metodología de cruces](docs/METODOLOGIA_CRUCES_MULTIDIMENSIONALES_V1.md): equivalencia válida B03/B05/B06/B07 con el campo \`tipo\`, fórmulas y denominadores de porcentajes, cautelas de privacidad e interpretación.
+- [Explorador local de registros](trazabilidad.html) acepta filtros URL \`tema\`, \`uv\`, \`tipo\`, \`subtema\` y \`corte\` al cargar un CSV autorizado. No añade microdatos al sitio público.
+- Validaciones: correspondencia completa de los 15 subtemas, cruces reconciliados con 1.570 registros (25 etiquetas UV) y 872 registros en Entrega 01 (15 UV); las categorías tienen carácter preliminar.
+
 ## Exploración temática — interfaz 11-11-2026
 
 - [Dashboard general](index.html): gráfico de torta de las siete temáticas y comparación UV mediante barras apiladas por temas.
