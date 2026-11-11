@@ -28,10 +28,12 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 
 ## Observatorio de trazabilidad — piloto de lectura local
 
-- [Explorador de evidencia territorial](trazabilidad.html): lectura local de CSV autorizados, filtros por tema/UV/tipo/grupo/subtema, ficha de punto con descripción de DATOS, vínculo propuesto desde MAPAS_UV y descarga de plantilla para planes de acción.
+- [Explorador y mapa de evidencia territorial](trazabilidad.html): lectura local de CSV autorizados, filtros por tema/UV/tipo/grupo/subtema/ubicación escrita, mapa interactivo de coordenadas de DATOS, mapa de calles OpenStreetMap solo por consentimiento, ficha individual y exportación de plan de acción.
 - [Arquitectura y gobierno del dato](docs/ARQUITECTURA_TRAZABILIDAD_V1.md): separación de superficie pública y aplicación institucional, trazabilidad, privacidad, roles y fases siguientes.
 - **Importante:** el código es público, pero los textos individuales no están alojados aquí. Requiere cargar archivos CSV autorizados desde el dispositivo del usuario; no utiliza `fetch`, almacenamiento web ni APIs externas para acceder a microdatos. Un checkbox no es autenticación corporativa.
 - Las relaciones UV-grupo/cartografía de MAPAS_UV **no están acreditadas como vínculos definitivos**, ni las descripciones de DATOS como texto literal verificado del post-it. No usar la exportación como decisión de competencia o plan oficialmente aprobado.
+
+- [Protocolo de cartografía y localización](docs/PROTOCOLO_CARTOGRAFIA_LOCAL_V1.md): manejo de esquinas, calles y direcciones, diferenciando reporte, coordenada referencial y localización validada; controles de privacidad y límites del mapa de calles.
 
 ## Limitaciones
 Los registros son aportes documentales, no personas, votos, mediciones representativas ni acuerdos aprobados. Se excluyeron descripciones individuales de filas, RUT, firmas, fotografías, teléfonos, correos, ubicaciones precisas y coordenadas. La revisión institucional de contenido y privacidad sigue pendiente. La etiqueta CONSISTENTE pertenece al proceso de auditoría de la hoja, **no certifica que un resultado sea publicable ni exacto en terreno**.
