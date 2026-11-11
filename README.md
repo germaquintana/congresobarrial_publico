@@ -20,6 +20,15 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
 
+## Panel DIMAO V1.1 — agenda analítica y revisión de fuentes
+
+- [Panel DIMAO](dimao.html) incorpora filtro de **perfil UV-subtema** (ambos tipos, solo problemas registrados, solo oportunidades registradas), diagrama de dispersión de problemas/oportunidades por UV y bloque de **calidad de auditoría** por corte/rol.
+- [Agregados de auditoría DIMAO](dimao-calidad-agregada.json): controles del campo aud_estado para problemas y oportunidades. Entrega 01: 182 consistentes, 7 requieren relectura y 87 sin auditar (276 registros). Estos valores no certifican origen cartográfico ni privacidad.
+- Nueva opción **«Descargar ficha»** por intersección UV-subtema, con 29 columnas para preparar evaluación técnica y campos de decisión humana sin completar.
+- [Guía de revisión del piloto UV15](docs/PILOTO_UV15_DIMAO_CONTROL_V1.md): comprobar 10 ID únicos, 5 relecturas, 7 vínculos cartográficos candidatos, 3 sin cruce y 0 cartografías confirmadas en MAPAS_UV; no se publican ID, textos ni direcciones.
+- [Protocolo DIMAO V1.1](docs/PROTOCOLO_PANEL_DIMAO_V1.md): registra confirmación **preliminar** del usuario sobre la clasificación de competencias, sin asignación formal ni aprobación de acciones.
+- La publicación de GitHub Pages es independiente de la escritura en GitHub; comprobar el último despliegue antes de dar la versión como visible.
+
 ## Panel DIMAO — vista sectorial y piloto territorial (11-11-2026)
 
 - [Panel DIMAO](dimao.html): botón destacado desde la portada y acceso desde las páginas de carteras, temáticas y cruces. Diferencia asuntos en que DIMAO figura como dirección líder referencial y como apoyo habitual, sin atribuir competencias automáticamente.
