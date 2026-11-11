@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173f56"><title>Explorador interno de evidencias · Congreso Barrial</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f3f6fa;color:#172e43}*{box-sizing:border-box}body{margin:0}a{color:#176783}header{background:linear-gradient(110deg,#12334c,#16676e);color:#fff;padding:30px max(20px,calc((100% - 1240px)/2))}header a{color:#e0f5f7}h1{font-size:clamp(1.55rem,3vw,2.4rem);margin:10px 0}header p{color:#e0edf0;max-width:1000px;line-height:1.55}
+main{max-width:1240px;margin:auto;padding:20px}.card{background:#fff;border:1px solid #dce5ec;border-radius:12px;padding:18px;margin-bottom:14px;box-shadow:0 2px 8px #17395108}
+.notice{border-left:4px solid #b47f39;background:#fff8ed;line-height:1.55}.muted{color:#5e7489}.small{font-size:.83rem}.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.step{border:1px solid #dce5ec;border-radius:10px;padding:12px;background:#f8fafc;font-size:.86rem}.step b{display:block;margin-bottom:4px}
+.load{display:grid;grid-template-columns:1fr 1fr;gap:16px}input,select,button{font:inherit}input[type=file]{display:block;max-width:100%;margin-top:8px;padding:10px;border:1px dashed #88a7b7;border-radius:8px;background:#f8fbfc}input[type=search],select{border:1px solid #bed0dc;border-radius:8px;padding:9px;width:100%;background:#fff;color:#163449}
+button{border:1px solid #abc8d5;border-radius:8px;background:#edf5f8;color:#17465d;padding:9px 12px;cursor:pointer}button.primary{background:#14506a;color:#fff;border-color:#14506a}button:disabled,input:disabled{opacity:.5;cursor:not-allowed}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #efaa38;outline-offset:2px}
+label{display:block;font-weight:600;font-size:.86rem}label.check{display:flex;align-items:flex-start;gap:9px;font-weight:400;line-height:1.5;margin-top:11px}label.check input{margin-top:4px}.toolbar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.checks{display:flex;flex-wrap:wrap;gap:15px;margin-top:10px}.checks label{font-weight:400}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.kpi{border-radius:8px;background:#f4f8fa;padding:10px}.kpi strong{display:block;font-size:1.55rem}.workspace{display:grid;grid-template-columns:minmax(380px,1.2fr) minmax(340px,1fr);gap:14px;align-items:start}
+.table-scroll{overflow:auto;max-height:640px}table{border-collapse:collapse;width:100%;font-size:.82rem}th,td{padding:9px 8px;border-bottom:1px solid #e5edf2;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#eff5f7;z-index:1}td button{text-align:left;padding:4px 6px;font-size:.81rem}tr:hover{background:#f7fbfc}h2{font-size:1.12rem;margin:0 0 12px}h3{font-size:1rem;margin:0 0 8px}.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.meta dt{font-size:.77rem;color:#657e8d}.meta dd{margin:2px 0 0;overflow-wrap:anywhere;font-size:.9rem}.quote{white-space:pre-wrap;background:#f1f6f9;border-left:3px solid #2a7381;padding:13px;border-radius:7px;line-height:1.55;overflow-wrap:anywhere}.badge{display:inline-block;padding:3px 8px;border-radius:15px;background:#e9f2f6;font-size:.72rem;margin:3px 4px 3px 0}.badge.warn{background:#fff0d4;color:#79520f}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.empty{padding:36px 12px;text-align:center;color:#567287;border:1px dashed #b8cfda;border-radius:9px}
+footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#messages{margin:10px 0;min-height:18px}#detail{position:sticky;top:12px}
+@media(max-width:1040px){.toolbar{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:1fr}#detail{position:static}}
+@media(max-width:670px){.steps,.load{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}.toolbar{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps,.load,.toolbar,.meta{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><a href="tematicas.html">← Volver a resultados por temática</a><h1>Explorador de evidencia territorial</h1><p>Del tema al registro individual: identificación, Unidad Vecinal, grupo o cartografía propuesta, transcripción de DATOS, estado de revisión y preparación de un plan de acción municipal.</p></header>
+<main>
+<div class="card notice"><strong>Visor piloto de uso interno, sin almacenamiento remoto.</strong> Esta página es pública, pero <strong>no contiene ni descarga microdatos</strong>. Los CSV seleccionados se procesan en la memoria de tu navegador: no se envían a GitHub ni a servidores. Úsala solo con archivos a los que tengas acceso autorizado, en un dispositivo institucional apropiado. <strong>No es un mecanismo de autenticación</strong> ni reemplaza la evaluación de privacidad. No compartas archivos exportados sin revisión.</div>
+<section class="card"><h2>Recorrido de la evidencia</h2><div class="steps"><div class="step"><b>1 · Temática</b>Identifica el tema y sus subtemas</div><div class="step"><b>2 · Territorio</b>Filtra por UV y grupo de trabajo</div><div class="step"><b>3 · Registro</b>Lee la descripción asociada al ID y su procedencia</div><div class="step"><b>4 · Gestión</b>Exporta una matriz para evaluación y plan de acción</div></div></section>
+<section class="card"><h2>1. Cargar fuentes autorizadas</h2><p class="small muted">En la hoja <strong>DATOS</strong> o <strong>MAPAS_UV</strong> del documento de Drive, utiliza Archivo → Descargar → Valores separados por comas (.csv), estando en la pestaña correspondiente. No uses archivos compartidos por correo o enlaces públicos sin control de acceso.</p>
+<label class="check"><input type="checkbox" id="authorized">Confirmo que estoy autorizado a consultar estos antecedentes y que utilizaré el detalle exclusivamente para trabajo interno, sujeto a revisión de privacidad.</label>
+<div class="load"><div><label for="datosFile">Matriz DATOS · obligatorio</label><input id="datosFile" type="file" accept=".csv,text/csv,text/plain" disabled><p class="small muted">Debe contener id_punto, uv, tipo, tema_principal, subtema, descripcion, grupo y los campos de revisión.</p></div>
+<div><label for="mapasFile">Hoja MAPAS_UV · opcional</label><input id="mapasFile" type="file" accept=".csv,text/csv,text/plain" disabled><p class="small muted">Permite mostrar una <em>asociación propuesta</em> entre UV, grupo y clave de mapa. No acredita por sí sola el mapa original.</p></div></div><div id="messages" role="status" aria-live="polite" class="small muted">No se han cargado registros.</div></section>
+<section id="workspace" hidden>
+<div class="card"><h2>2. Filtrar y localizar</h2><div class="toolbar">
+<div><label for="theme">Temática</label><select id="theme"><option value="">Todas</option></select></div>
+<div><label for="uv">Unidad Vecinal</label><select id="uv"><option value="">Todas</option></select></div>
+<div><label for="kind">Tipo</label><select id="kind"><option value="">Todos</option></select></div>
+<div><label for="group">Grupo / cartografía</label><select id="group"><option value="">Todos</option></select></div>
+<div><label for="subtopic">Subtema</label><select id="subtopic"><option value="">Todos</option></select></div>
+</div><div style="margin-top:12px"><label for="search">Buscar por ID o contenido de la transcripción</label><input id="search" type="search" placeholder="Ej.: basura, iluminación, id_punto…" autocomplete="off"></div>
+<div class="checks"><label class="check"><input type="checkbox" id="includeFlagged">Incluir registros marcados para revisar privacidad</label><label class="check"><input type="checkbox" id="revealFlagged">Mostrar su descripción, bajo revisión específica</label></div>
+<p class="small muted">Las marcas de privacidad provienen de DATOS. Un registro sin marca <strong>no equivale</strong> a un dato autorizado para difusión.</p>
+<div id="kpis" class="kpis"></div>
+<div class="actions"><button id="exportActions" class="primary" type="button">Exportar matriz de plan de acción (.csv)</button><button id="clearFilters" type="button">Limpiar filtros</button><span class="small muted" id="shown"></span></div>
+</div>
+<div class="workspace">
+<section class="card"><h2>3. Resultados documentales</h2><div class="table-scroll"><table><thead><tr><th>ID</th><th>UV</th><th>Tipo</th><th>Tema / subtema</th><th>Grupo</th></tr></thead><tbody id="resultRows"></tbody></table></div><p class="small muted">Hasta 150 filas visibles; los filtros y la exportación abarcan todo el conjunto elegible.</p></section>
+<aside class="card" id="detail"><h2>4. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div></aside>
+</div></section>
+<footer>Fuente canónica: Matriz_Congreso_Barrial_fusionada, pestañas DATOS y MAPAS_UV. El vínculo cartográfico es provisional mientras falte cotejar el soporte original y la revisión humana. La clasificación no constituye un acuerdo, una denuncia acreditada ni una orden de trabajo. Esta interfaz no guarda estados de gestión: la matriz exportada es una propuesta de trabajo que debe tramitarse en los sistemas institucionales autorizados.</footer>
+</main>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])),fmt=n=>Number(n||0).toLocaleString("es-CL");
+const baseSheet="https://docs.google.com/spreadsheets/d/1KecTjqU4Kx5tJLNPl4Z5D1sxlgC05PxWHh5xwuI0jpQ/edit#gid=1996552213&range=";
+let records=[],maps=new Map(),filtered=[],current=null;
+const required=["id_punto","uv","tipo","tema_principal","subtema","descripcion","grupo"];
+const sorted=(vals)=>[...new Set(vals.map(x=>String(x??"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es",{numeric:true}));
+function parseCsv(t){
+t=String(t||"").replace(/^\uFEFF/,"");const first=t.split(/\r?\n/,1)[0],delim=[",",";","\t"].sort((a,b)=>first.split(b).length-first.split(a).length)[0];
+const rows=[];let out=[],cell="",inside=false;
+for(let i=0;i<t.length;i++){const c=t[i];if(c==='"'){if(inside&&t[i+1]==='"'){cell+='"';i++}else inside=!inside}
+else if(c===delim&&!inside){out.push(cell);cell=""}
+else if((c==="\n"||c==="\r")&&!inside){if(c==="\r"&&t[i+1]==="\n")i++;out.push(cell);if(out.some(v=>v.trim()!==""))rows.push(out);out=[];cell=""}
+else cell+=c}
+if(inside)throw Error("CSV con comillas sin cerrar");
+out.push(cell);if(out.some(v=>v.trim()!==""))rows.push(out);
+if(rows.length<2)throw Error("CSV sin filas de datos");
+const head=rows.shift().map(x=>x.trim().replace(/^\uFEFF/,""));if(new Set(head).size!==head.length)throw Error("Encabezados duplicados");
+return rows.map((r,i)=>({row:i+2,data:Object.fromEntries(head.map((h,k)=>[h,String(r[k]??"").trim()])) ,headers:head}));
+}
+function missingHeaders(items,fields){const head=items[0]?.headers||[];return fields.filter(x=>!head.includes(x))}
+function flagged(r){return /^(s[ií]|yes|true|1)$/i.test(r.revisar_privacidad||"")}
+function key(u,g){return String(u||"").toUpperCase().replace(/\s/g,"")+"|"+String(g||"").toUpperCase().replace(/\s/g,"")}
+function mInfo(r){return maps.get(key(r.uv,r.grupo))}
+function fill(id,values){const el=$(id),keep=el.value;el.innerHTML='<option value="">Todos</option>'+sorted(values).map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join("");if([...el.options].some(o=>o.value===keep))el.value=keep}
+function initialize(){
+fill("theme",records.map(r=>r.tema_principal));fill("uv",records.map(r=>r.uv));fill("kind",records.map(r=>r.tipo));fill("group",records.map(r=>r.grupo));fill("subtopic",records.map(r=>r.subtema));
+$("workspace").hidden=false;apply();
+}
+function apply(){
+const q=$("search").value.trim().toLocaleLowerCase("es"),withFlag=$("includeFlagged").checked,reveal=$("revealFlagged").checked;
+filtered=records.filter(r=>{
+if(flagged(r)&&!withFlag)return false;
+for(const [f,c] of [["tema_principal","theme"],["uv","uv"],["tipo","kind"],["grupo","group"],["subtema","subtopic"]])if($(c).value&&r[f]!==$(c).value)return false;
+if(!q)return true;
+const parts=[r.id_punto,r.uv,r.tema_principal,r.subtema,r.tipo,r.grupo];
+if(!flagged(r)||reveal)parts.push(r.descripcion||"");
+return parts.some(v=>String(v||"").toLocaleLowerCase("es").includes(q));
+});
+const uv=sorted(filtered.map(r=>r.uv)).length,groups=sorted(filtered.map(r=>key(r.uv,r.grupo))).length,privacy=records.filter(flagged).length,unmapped=filtered.filter(r=>!mInfo(r)).length;
+$("kpis").innerHTML=[["Registros filtrados",filtered.length],["UV representadas",uv],["Grupos UV distintos",groups],["Sin asociación de mapa",unmapped]].map(([t,n])=>'<div class="kpi"><strong>'+fmt(n)+'</strong><span class="small muted">'+t+'</span></div>').join("");
+$("shown").textContent="Mostrando "+fmt(Math.min(150,filtered.length))+" de "+fmt(filtered.length)+" · "+fmt(privacy)+" filas tienen marca de privacidad en el archivo completo";
+$("resultRows").innerHTML=filtered.slice(0,150).map(r=>'<tr><td><button type="button" data-id="'+esc(r.id_punto)+'">'+esc(r.id_punto)+'</button></td><td>'+esc(r.uv)+'</td><td>'+esc(r.tipo)+'</td><td>'+esc(r.tema_principal)+'<div class="small muted">'+esc(r.subtema)+'</div></td><td>'+esc(r.grupo)+'</td></tr>').join("");
+$("resultRows").querySelectorAll("[data-id]").forEach(btn=>btn.onclick=()=>selectRecord(btn.dataset.id));
+if(current){if(filtered.some(r=>r.id_punto===current))selectRecord(current);else{current=null;emptyDetail()}}
+}
+function emptyDetail(){$("detail").innerHTML='<h2>4. Ficha de trazabilidad</h2><div class="empty">Selecciona un registro para inspeccionar su contexto y la transcripción disponible.</div>'}
+function selectRecord(id){
+const r=records.find(x=>x.id_punto===id);if(!r)return;current=id;
+const f=flagged(r),redact=f&&!$("revealFlagged").checked,map=mInfo(r),source=baseSheet+"A"+r._row+":AF"+r._row;
+const meta=[["UV",r.uv],["Tipo",r.tipo],["Tema",r.tema_principal],["Subtema",r.subtema],["Grupo en DATOS",r.grupo||"Sin grupo"],["Cartografía",map?(map.clave_mapa||map.mapa_propuesto||"Sin clave")+" · propuesta, estado "+(map.estado||"no revisado"):"Sin vínculo conciliado"],["Auditoría de fuente",r.aud_estado||"No indicado"],["Revisión de privacidad",f?"Marcada para revisión":"Sin marca; no implica aprobación"],["Origen indicado",r.origen_dato||"No indicado"],["Fecha asamblea (fuente)",r.fecha_asamblea||"Por verificar"],["Referencia fotografía",r.foto_ref||"No disponible"],["Estado del dato",r.estado_dato||"No indicado"]];
+$("detail").innerHTML='<h2>Ficha · '+esc(r.id_punto)+'</h2><span class="badge '+(f?'warn':'')+'">'+(f?'Privacidad por revisar':'Sin marca explícita de privacidad')+'</span><span class="badge warn">Evidencia de matriz, no cotejo del original</span><dl class="meta">'+meta.map(([k,v])=>'<div><dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl><h3>Descripción asociada al punto</h3><div class="quote">'+(redact?'Texto oculto porque el registro está marcado para revisar privacidad. Activa la opción específica solo si corresponde a tus atribuciones.':esc(r.descripcion||"Sin transcripción en DATOS"))+'</div><p class="small muted">Esta descripción es la registrada en DATOS; puede ser una digitalización o reformulación, y no se acredita como transcripción literal del post-it sin comparar el instrumento original.</p><h3>Cadena de evidencia</h3><p class="small">ID punto → hoja DATOS → UV y grupo → '+(map?'clave de mapa propuesta en MAPAS_UV':'mapa por conciliar')+' → soporte original pendiente de cotejo → derivación técnica por definir.</p><p class="small muted">La fila '+r._row+' procede del CSV cargado. El enlace puede dejar de apuntar al mismo registro si el orden de DATOS cambia; contrasta siempre el ID.</p><div class="actions"><a href="'+source+'" target="_blank" rel="noopener noreferrer">Revisar fila en hoja DATOS (requiere permiso)</a></div><div class="actions"><button type="button" id="exportOne" class="primary">Preparar ficha de acción (.csv)</button></div>';
+$("exportOne").onclick=()=>downloadActions([r]);
+}
+function csvSafe(v){let s=String(v??"");if(/^[\s]*[=+\-@]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}
+const actionCols=["id_punto","uv","tipo","tema_principal","subtema","descripcion_DATOS","grupo_DATOS","cartografia_propuesta","estado_vinculo_mapa","estado_auditoria","revisar_privacidad","origen_dato","fecha_asamblea","direccion_responsable_por_validar","otra_direccion_involucrada","accion_propuesta","fundamento_tecnico","prioridad_a_evaluar","responsable_designado","fecha_inicio_por_definir","plazo_tipo_por_definir","fecha_termino_por_definir","estado_gestion","evidencia_gestion","validacion_institucional"];
+function downloadActions(items){
+if(!items.length)return;const reveal=$("revealFlagged").checked,lines=[actionCols.map(csvSafe).join(",")];
+for(const r of items){const m=mInfo(r),hidden=flagged(r)&&!reveal;
+const fields=[r.id_punto,r.uv,r.tipo,r.tema_principal,r.subtema,hidden?"[RESTRINGIDO_POR_REVISION_PRIVACIDAD]":r.descripcion,r.grupo,m?.clave_mapa||m?.mapa_propuesto||"",m?"PROPUESTA_NO_VALIDADA: "+(m.estado||"SIN_ESTADO"):"SIN_VINCULO_CONCILIADO",r.aud_estado,flagged(r)?"Sí":"Sin marca",r.origen_dato,r.fecha_asamblea,"","","","","","","","","","",""];
+lines.push(fields.map(csvSafe).join(","))}
+const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="congreso_barrial_matriz_acciones_interna_"+new Date().toISOString().slice(0,10)+".csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+$("authorized").onchange=()=>{$("datosFile").disabled=$("mapasFile").disabled=!$("authorized").checked;if(!$("authorized").checked){records=[];maps.clear();$("workspace").hidden=true;$("datosFile").value="";$("mapasFile").value="";$("messages").textContent="Consulta cerrada; vuelve a confirmar autorización para abrir un archivo."}};
+$("datosFile").onchange=async e=>{
+if(!$("authorized").checked||!e.target.files[0])return;try{
+const text=await e.target.files[0].text();const items=parseCsv(text),missing=missingHeaders(items,required);if(missing.length)throw Error("Faltan encabezados: "+missing.join(", "));
+const ids=new Set();const next=items.map(x=>{const r={...x.data,_row:x.row};if(!r.id_punto)return null;if(ids.has(r.id_punto))throw Error("ID duplicado: "+r.id_punto);ids.add(r.id_punto);return r}).filter(Boolean);
+if(!next.length)throw Error("No hay registros con ID");records=next;maps.clear();$("mapasFile").value="";current=null;emptyDetail();$("messages").textContent="DATOS cargado localmente: "+fmt(records.length)+" IDs únicos. MAPAS_UV aún sin cargar.";initialize();
+}catch(err){$("messages").textContent="No se pudo cargar DATOS: "+err.message}
+};
+$("mapasFile").onchange=async e=>{
+if(!$("authorized").checked||!e.target.files[0])return;try{
+const items=parseCsv(await e.target.files[0].text()),missing=missingHeaders(items,["uv","grupo_en_DATOS","clave_mapa","estado"]);if(missing.length)throw Error("Faltan encabezados: "+missing.join(", "));
+const next=new Map();let duplicates=0;for(const x of items){const r=x.data,k=key(r.uv,r.grupo_en_DATOS);if(next.has(k)){duplicates++;next.delete(k)}else next.set(k,r)}
+maps=next;$("messages").textContent="MAPAS_UV cargado localmente: "+fmt(maps.size)+" pares únicos UV-grupo; "+fmt(duplicates)+" duplicaciones detectadas. Sus claves y estados siguen siendo propuestas sujetas a cotejo.";if(records.length)apply();
+}catch(err){$("messages").textContent="No se pudo cargar MAPAS_UV: "+err.message}
+};
+for(const id of ["theme","uv","kind","group","subtopic","search","includeFlagged","revealFlagged"])$(id).addEventListener("input",apply);
+$("clearFilters").onclick=()=>{for(const id of ["theme","uv","kind","group","subtopic","search"])$(id).value="";$("includeFlagged").checked=$("revealFlagged").checked=false;apply()};
+$("exportActions").onclick=()=>downloadActions(filtered);
+</script>
+</body></html>
