@@ -1,0 +1,118 @@
+<!doctype html><html lang="es"><head><base target="_top"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Congreso Barrial — Consulta institucional</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#183c4c;background:#f0f5f7}
+*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(110deg,#163a4b,#147c7c);color:white;padding:24px max(16px,calc((100% - 1250px)/2))}header h1{font-size:clamp(1.55rem,3vw,2.4rem);margin:8px 0}header p{max-width:980px;line-height:1.5;color:#d9eff1}
+main{max-width:1250px;margin:auto;padding:15px 16px 35px}.card{background:white;border:1px solid #d6e4e9;border-radius:12px;padding:18px;margin-bottom:12px;box-shadow:0 2px 10px #193b4b0a}
+h2{font-size:1.12rem;margin:0 0 12px}h3{font-size:1rem;margin:0 0 10px}p{line-height:1.55}.muted{color:#5a7482}.small{font-size:.83rem}
+.notice{border-left:4px solid #c29448;background:#fff9ec}.good{border-left:4px solid #277e76;background:#eef9f6}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.kpi{background:#eef6f8;padding:12px;border-radius:9px}.kpi strong{font-size:1.7rem;display:block;font-variant-numeric:tabular-nums}.kpi span{font-size:.8rem;color:#4f6f7e}
+.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}label{display:block;font-size:.82rem;font-weight:700;margin-bottom:6px}select,input,button{font:inherit}select,input:not([type=checkbox]),button{border:1px solid #afcbd5;border-radius:8px;background:white;padding:9px 11px;color:#17465b}select,input:not([type=checkbox]){width:100%}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #edb245;outline-offset:2px}
+.primary{background:#176276;color:white;border-color:#176276}.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}.check{display:flex;align-items:flex-start;gap:7px;font-size:.83rem;font-weight:500;line-height:1.5}.check input{flex:none;width:17px;height:17px;margin-top:2px}
+.groups{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.group{padding:11px;text-align:left;border:1px solid #cde0e6;border-radius:8px;background:#f2f9fa;cursor:pointer}.group b{display:block}.group span{font-size:.76rem;color:#547482}.group.active{border:2px solid #177988;background:#e0f2f5}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,1fr);gap:13px}.records{display:grid;gap:7px}.rec{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px solid #d6e6eb;background:#fafcfd;border-radius:9px;padding:10px}.rec button{border:none;background:transparent;color:#17667c;font-weight:750;padding:2px}.rec.selected{border-color:#16788a;background:#eef9fa}
+.chip{border-radius:99px;background:#e6f1f4;padding:4px 8px;font-size:.74rem;color:#315e6e}.chip.warn{background:#fff0d9;color:#785720}
+.detail{background:#f7fbfc;border:1px solid #d0e4ea;border-radius:10px;padding:16px;min-height:195px}.detail dl{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.detail dt{font-size:.74rem;color:#67808e}.detail dd{margin:2px 0 8px;overflow-wrap:anywhere;font-weight:650}.quote{background:white;border-left:4px solid #267d89;padding:13px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
+a{color:#17667b}.error{color:#923f37;font-weight:650}.hidden{display:none!important}
+@media(max-width:950px){.filters{grid-template-columns:repeat(2,1fr)}.groups{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.kpis,.filters,.groups,.layout,.detail dl{grid-template-columns:1fr}.card{padding:13px}}
+</style></head><body>
+<header><div class="small">MUNICIPALIDAD DE RECOLETA · CONSULTA DOCUMENTAL INTERNA</div><h1>Congreso Barrial — observatorio institucional</h1><p>Tres perspectivas de consulta sobre la misma matriz: panorama comunal, Unidad Vecinal y direcciones municipales. Cada registro se abre mediante su ID y los permisos de lectura del usuario activo.</p></header>
+<main>
+<section class="card notice"><strong>Acceso restringido:</strong> esta aplicación debe ejecutarse como <strong>usuario que accede</strong> y limitarse al dominio institucional. Se verifica también el permiso de cada cuenta sobre la matriz. Los registros son menciones de la jornada y pueden incluir transcripciones no cotejadas; no acreditan hechos ni generan actuaciones. No distribuir este enlace públicamente.</section>
+<section class="card"><h2>1. Identidad y panorama de la fuente</h2><p id="connection" role="status" class="small muted">Verificando identidad y permisos…</p><div id="kpis" class="kpis"></div></section>
+<section class="card"><h2>2. Selecciona una perspectiva</h2>
+<div class="filters">
+<div><label for="mode">Perspectiva</label><select id="mode"><option value="comuna">Comuna / matriz completa</option><option value="uv">Unidad Vecinal y grupos</option><option value="direccion">Dirección municipal</option></select></div>
+<div><label for="uv">Unidad Vecinal</label><select id="uv"><option value="">Todas las UV</option></select></div>
+<div><label for="direccion">Dirección referencial</label><select id="direccion"><option value="">Todas las direcciones</option></select></div>
+<div><label for="rol">Relación con la dirección</label><select id="rol"><option value="ambos">Referencia o apoyo</option><option value="referencia">Solo liderazgo referencial</option><option value="apoyo">Solo apoyo</option></select></div>
+<div><label for="tipo">Tipo</label><select id="tipo"><option value="">Todos los tipos</option><option>Problema</option><option>Oportunidad</option><option>Actor</option><option>Lugar importante</option></select></div>
+<div><label for="tema">Temática</label><select id="tema"><option value="">Todas las temáticas</option></select></div>
+<div><label for="subtema">Subtema</label><select id="subtema"><option value="">Todos los subtemas</option></select></div>
+<div><label for="texto">Buscar por ID o texto</label><input id="texto" placeholder="Buscar registro…"></div>
+</div>
+<div class="actions"><button class="primary" id="search" type="button">Consultar registros</button><button type="button" id="clear">Limpiar filtros</button><label class="check"><input type="checkbox" id="includeFlagged">Incluir ID con revisión de privacidad</label></div>
+<div id="groupsWrap" class="hidden"><h3>Grupos de la UV</h3><p class="small muted">Los grupos son etiquetas de DATOS, no cartografías originales verificadas. Selecciona uno para acotar la búsqueda.</p><div class="groups" id="groups"></div></div>
+<p class="small muted" id="state">Selecciona filtros para consultar la matriz.</p></section>
+<div class="layout">
+<section class="card"><h2>3. Registros filtrados</h2><div id="resultInfo" class="small muted"></div><div id="results" class="records"></div><div class="actions"><button id="prev" type="button" disabled>Anterior</button><button id="next" type="button" disabled>Siguiente</button></div></section>
+<section class="card"><h2>4. Dato primario digitalizado</h2><div id="detail" class="detail"><p class="muted">Selecciona un ID de la lista.</p></div>
+<div class="actions"><label class="check"><input type="checkbox" id="reviewPrivacy">Habilitar lectura de un registro marcado, previa revisión específica</label></div>
+<p class="small muted">Este permiso no cambia marcas ni autoriza difusión. El acceso a un texto marcado se registra en la bitácora interna de ejecución del script. El vínculo al post-it/cartografía original permanece pendiente de cotejo.</p></section>
+</div>
+<section class="card good"><h2>5. Cadena de evidencia</h2><p class="small">Dirección o UV → clasificación → grupo → ID estable → descripción en DATOS → soporte original (si se localizó y cotejó). El último enlace documental y las competencias de gestión requieren validación; la aplicación no crea tareas ni envía correos.</p></section>
+<footer class="small muted">Fuente institucional: Matriz_Congreso_Barrial_fusionada, DATOS y CAT_SUBTEMAS. La pantalla no hace públicas las descripciones, las direcciones ni las coordenadas; toda lectura pasa por el servidor bajo la cuenta de quien consulta. La consulta sobre categorías no asigna automáticamente responsables.</footer>
+</main>
+<script>
+"use strict";
+const $=x=>document.getElementById(x),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=x=>Number(x||0).toLocaleString("es-CL");
+const state={info:null,offset:0,limit:30,group:"",rows:[],activeId:"",busy:0};
+function status(s,error){$("state").textContent=s;$("state").className=error?"small error":"small muted"}
+function call(method,args,success){const seq=++state.busy;
+  let rpc=google.script.run.withSuccessHandler(result=>{if(seq!==state.busy)return;success(result)}).withFailureHandler(e=>{if(seq!==state.busy)return;status("Error de consulta: "+(e.message||e),true)});
+  rpc[method].apply(rpc,args);
+}
+function option(v,l){return'<option value="'+esc(v)+'">'+esc(l)+'</option>'}
+function fill(id,values,blank){const el=$(id),prev=el.value;el.innerHTML=option("",blank)+values.map(v=>option(v,v)).join("");el.value=values.includes(prev)?prev:""}
+function initialize(v){
+ state.info=v;$("connection").textContent="Sesión institucional: "+v.identity+" · fuente verificada · "+v.source;
+ const uv=Object.keys(v.totals.uvs).sort((a,b)=>a.localeCompare(b,"es",{numeric:true}));
+ const k=[["Post-it digitalizados",v.totals.total],["UV en DATOS",uv.length],["Grupos UV",Object.keys(v.totals.grupos).length],["Problemas + oportunidades",(v.totals.tipos.Problema||0)+(v.totals.tipos.Oportunidad||0)]];
+ $("kpis").innerHTML=k.map(([x,n])=>'<div class="kpi"><strong>'+fmt(n)+'</strong><span>'+esc(x)+'</span></div>').join("");
+ fill("uv",uv,"Todas las UV");
+ fill("direccion",v.directions,"Todas las direcciones");
+ fill("tema",[...new Set(v.taxonomy.map(t=>t.tema))].sort(),"Todas las temáticas");
+ fill("subtema",[...new Set(v.taxonomy.map(t=>t.subtema))].sort(),"Todos los subtemas");
+ const q=new URLSearchParams(location.search);
+ for(const [key,id] of [["uv","uv"],["direccion","direccion"],["tema","tema"],["subtema","subtema"],["tipo","tipo"]]){
+  const val=q.get(key);if(val&&[...$(id).options].some(o=>o.value===val))$(id).value=val;
+ }
+ if(["referencia","apoyo"].includes(q.get("rol")))$("rol").value=q.get("rol");
+ if($("direccion").value)$("mode").value="direccion";else if($("uv").value)$("mode").value="uv";
+ if(q.get("grupo"))state.group=q.get("grupo");
+ if(q.get("id"))$("texto").value=q.get("id");
+ renderGroups();search();
+}
+function renderGroups(){
+ const v=state.info,uv=$("uv").value;
+ if(!v||!uv){$("groupsWrap").classList.add("hidden");return}
+ const keys=Object.entries(v.totals.grupos).filter(([k])=>k.startsWith(uv+"\u00a7")).sort((a,b)=>a[0].localeCompare(b[0],"es",{numeric:true}));
+ $("groupsWrap").classList.remove("hidden");
+ $("groups").innerHTML=keys.map(([k,n])=>{const grp=k.slice(uv.length+1);return'<button type="button" class="group '+(grp===state.group?"active":"")+'" data-group="'+esc(grp)+'"><b>'+esc(grp)+'</b><span>'+fmt(n)+' registros</span></button>'}).join("");
+ $("groups").querySelectorAll("[data-group]").forEach(b=>b.onclick=()=>{state.group=b.dataset.group===state.group?"":b.dataset.group;renderGroups();search()});
+}
+function filters(){
+ return {uv:$("mode").value==="uv"?$("uv").value:$("uv").value,
+  grupo:state.group,tipo:$("tipo").value,tema:$("tema").value,subtema:$("subtema").value,
+  direccion:$("mode").value==="direccion"?$("direccion").value:"",
+  rol:$("rol").value,texto:$("texto").value.trim(),
+  incluirMarcados:$("includeFlagged").checked,offset:state.offset,limit:state.limit};
+}
+function search(){if(!state.info)return;status("Consultando DATOS…");const q=filters();call("queryPoints",[q],result=>{
+ state.rows=result.results;state.total=result.count;
+ $("resultInfo").textContent=fmt(result.count)+" registros coincidentes. Página "+(Math.floor(result.offset/result.limit)+1)+".";
+ $("results").innerHTML=result.results.map(r=>'<div class="rec '+(state.activeId===r.id?"selected":"")+'"><button type="button" data-id="'+esc(r.id)+'">'+esc(r.id)+'</button><span class="chip">'+esc(r.tipo)+'</span><span class="chip">'+esc("UV "+r.uv+" · "+r.grupo)+'</span>'+ (r.privacidad?'<span class="chip warn">Privacidad pendiente</span>':'')+'<span class="small muted">'+esc(r.subtema)+'</span></div>').join("")||'<p class="muted">No hay registros para los filtros seleccionados.</p>';
+ $("results").querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>openPoint(b.dataset.id));
+ $("prev").disabled=result.offset<=0;$("next").disabled=result.offset+result.results.length>=result.count;
+ status("Consulta completada. Abre un ID para leer su descripción digitalizada.");
+ });}
+function showPoint(r){
+ $("detail").innerHTML='<h3>Registro '+esc(r.id)+'</h3>'+
+ '<dl>'+[["UV",r.uv],["Grupo",r.grupo],["Tipo",r.tipo],["Subtema",r.subtema],["Auditoría",r.auditoria],["Revisión de privacidad",r.privacidad?"Marcada":"Sin marca; no equivale a aprobación"]].map(([k,v])=>'<div><dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl>'+
+ (r.restricted?'<p class="error">'+esc(r.message||"Texto restringido")+'</p>':'<div class="quote">'+esc(r.descripcion||"Descripción no registrada")+'</div>'+
+ '<p class="small muted">Origen: '+esc(r.origen||"Por cotejar")+' · Foto: '+esc(r.referenciaFoto||"Sin referencia")+'</p><p class="small muted">Mapa original: por cotejar.</p><a target="_blank" rel="noopener noreferrer" href="'+esc(r.fuenteUrl||"#")+'">Abrir fila autorizada en Google Sheets</a>');
+}
+function openPoint(id){state.activeId=id;$("detail").innerHTML='<p class="muted">Recuperando ficha…</p>';call("getPoint",[id,{reviewPrivacy:$("reviewPrivacy").checked}],r=>{showPoint(r);if(r.restricted)status("El registro tiene privacidad por revisar: se requiere habilitación adicional.")})}
+$("search").onclick=()=>{state.offset=0;state.group=$("uv").value?state.group:"";renderGroups();search()};
+$("prev").onclick=()=>{state.offset=Math.max(0,state.offset-state.limit);search()};
+$("next").onclick=()=>{state.offset+=state.limit;search()};
+$("clear").onclick=()=>{for(const id of ["uv","direccion","tipo","tema","subtema","texto"])$(id).value="";$("mode").value="comuna";$("rol").value="ambos";$("includeFlagged").checked=false;$("reviewPrivacy").checked=false;state.group="";state.offset=0;state.activeId="";$("detail").textContent="Selecciona un ID.";renderGroups();search()};
+$("mode").onchange=()=>{state.offset=0;state.group="";renderGroups();search()};
+$("uv").onchange=()=>{state.group="";state.offset=0;renderGroups();search()};
+for(const id of ["direccion","rol","tipo","tema","subtema","includeFlagged"])$(id).addEventListener("change",()=>{state.offset=0;search()});
+$("texto").addEventListener("keydown",e=>{if(e.key==="Enter"){state.offset=0;search()}});
+$("reviewPrivacy").onchange=()=>{if(state.activeId)openPoint(state.activeId)};
+google.script.run.withSuccessHandler(initialize).withFailureHandler(e=>{$("connection").textContent="No fue posible validar la sesión: "+(e.message||e);$("connection").className="error"}).boot();
+</script></body></html>
