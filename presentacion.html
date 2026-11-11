@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d50">
+<title>Congreso Barrial de Recoleta | Dashboard de presentación</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173b4f;background:#f3f7f9;--dark:#12394c;--mid:#14747e;--muted:#617b89;--edge:#dbe7ed;--red:#c35b57;--green:#21887b}
+*{box-sizing:border-box}body{margin:0}a{color:#16637d}button,select{font:inherit}button{cursor:pointer}
+header{background:linear-gradient(120deg,#12374a 18%,#12666c 90%);color:white;padding:29px max(16px,calc((100% - 1240px)/2)) 25px}
+header a{color:#e5f4f5}header .meta{font-size:.77rem;letter-spacing:.14em;text-transform:uppercase;color:#c7e6e8;font-weight:750}
+header h1{font-size:clamp(1.7rem,3.2vw,3rem);line-height:1.13;margin:12px 0 11px;font-weight:800;max-width:960px}
+header p{font-size:1rem;color:#dbecf0;line-height:1.5;max-width:910px;margin:0 0 15px}
+nav{display:flex;flex-wrap:wrap;gap:16px;font-size:.83rem}
+main{max-width:1240px;margin:auto;padding:18px 16px 38px}
+.card{background:white;border:1px solid var(--edge);border-radius:14px;padding:20px;margin-bottom:15px;box-shadow:0 2px 14px #12394c08}
+h2{font-size:1.22rem;line-height:1.25;margin:0 0 11px}h3{font-size:1rem;line-height:1.3;margin:0 0 8px}p{line-height:1.55}
+.muted{color:var(--muted)}.small{font-size:.83rem;line-height:1.5}.eyebrow{text-transform:uppercase;font-size:.7rem;letter-spacing:.09em;color:#34798d;font-weight:750}
+.cut{display:flex;justify-content:space-between;gap:16px;align-items:center}.cut div{flex:1}.cut select{min-width:210px;border:1px solid #b5cdd8;border-radius:9px;padding:10px;color:#174e64}
+.notice{padding:14px 18px;background:#fff9eb;border-left:4px solid #b88944;border-radius:9px;margin-bottom:15px;font-size:.85rem;line-height:1.6}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 15px}.tab{border:1px solid #c6dce4;background:white;border-radius:11px;padding:16px;text-align:left;transition:.15s;min-height:100px}
+.tab:hover{background:#f1fafa}.tab.active{border-color:#1a7786;box-shadow:inset 0 0 0 2px #1a7786;background:#ecf8fa}.tab strong{display:block;font-size:1rem;color:#19485f;margin-bottom:6px}.tab span{font-size:.8rem;color:#63808e;line-height:1.42}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{background:#eff7f9;border:1px solid #dce9ee;border-radius:11px;padding:16px}.metric strong{display:block;font-size:2rem;font-weight:800;color:#174b60;font-variant-numeric:tabular-nums}.metric span{display:block;font-size:.8rem;color:#607b88;margin-top:4px}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:15px}.barrow{display:grid;grid-template-columns:minmax(145px,1.6fr) minmax(90px,2.4fr) 52px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid #edf3f5;font-size:.83rem}.barrow a,.barrow button{background:transparent;border:0;padding:0;color:#17657b;text-align:left;font-weight:700;cursor:pointer;font-size:inherit}.barrow b{text-align:right;font-variant-numeric:tabular-nums;font-size:.8rem}.track{width:100%;height:17px;border-radius:5px;background:#ebf2f4;overflow:hidden;display:flex}.fill{height:100%;background:#247e89}.track i{height:100%;display:block}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 13px;font-size:.78rem;color:#587684}.legend span:before{content:"";display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--red);border-radius:3px}.legend .good:before{background:var(--green)}.legend .context:before{background:#6792a5}
+.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}.filters label{display:block;font-size:.81rem;color:#496d7e;font-weight:750;margin-bottom:6px}.filters select{border:1px solid #aecbd6;border-radius:9px;padding:10px;width:100%;background:#fff;color:#19536b}
+.groupgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}.groupcard{display:flex;justify-content:space-between;gap:10px;align-items:center;text-decoration:none;padding:15px;border:1px solid #c9e0e7;background:#f0f9fa;border-radius:10px}.groupcard b{font-size:1.45rem;color:#175c72;font-variant-numeric:tabular-nums}.groupcard span{font-size:.83rem;color:#3d6b7c}.groupcard:hover{background:#e5f5f7}
+.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:13px 0 0}.action{display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;border-radius:9px;background:#155f74;border:1px solid #155f74;color:#fff;text-decoration:none;font-weight:750;font-size:.85rem}.action.secondary{color:#17637c;background:white;border-color:#adcad5}.action:hover{filter:brightness(.94)}
+.pill{display:inline-block;background:#e9f3f5;color:#206478;border-radius:50px;padding:5px 9px;font-size:.75rem;margin:3px}.pill.warn{background:#fff3df;color:#926526}
+.uvList{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.uvCard{border:1px solid #dce8ec;border-radius:9px;background:#fafdfd;padding:13px;text-decoration:none;color:#17445b}.uvCard b{display:block;font-size:1rem}.uvCard span{display:block;font-size:.79rem;color:#5c7887;margin-top:5px}.uvCard:hover{background:#ecf8fa}
+.heatwrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.8rem}th,td{border-bottom:1px solid #e6eef1;padding:8px 7px;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#f2f8fa}td a{font-weight:700}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:11px}.flow>div{background:#f4f9fa;border:1px solid #d8e8ec;border-radius:10px;padding:14px}.flow b{display:block;margin:0 0 8px;color:#165a70}.flow span{font-size:.8rem;color:#527180;line-height:1.48}
+.empty{padding:18px;color:#67818f;background:#f2f7f8;border-radius:9px}.hidden{display:none!important}
+footer{max-width:1240px;margin:auto;padding:12px 17px 32px;font-size:.8rem;line-height:1.6;color:#647b88}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #edb345;outline-offset:3px}
+@media(max-width:900px){.columns{grid-template-columns:1fr}.uvList{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.tabs,.metrics,.groupgrid,.flow,.filters{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.tabs,.metrics,.groupgrid,.flow,.filters,.uvList{grid-template-columns:1fr}.card{padding:15px}.cut{flex-direction:column;align-items:stretch}.barrow{grid-template-columns:120px minmax(50px,1fr) 38px;gap:5px}.cut select{width:100%}}
+@media print{body{background:#fff}header{print-color-adjust:exact}main{padding:0}.card{box-shadow:none;break-inside:avoid}nav,.tabs,.cut select,.action,#print,.actions{display:none!important}header{padding:12px}.hidden{display:none!important}footer{padding:5px}}
+</style>
+</head><body>
+<header><div class="meta">Observatorio territorial · Congreso Barrial de Recoleta</div>
+<h1>De los aportes vecinales a un panorama de gestión municipal</h1>
+<p>Un recorrido con tres perspectivas conectadas: comuna, Unidades Vecinales y direcciones municipales. Cada dato agregado puede localizarse por territorio y categoría; el detalle individual permanece en un entorno autorizado.</p>
+<nav><a href="index.html">Dashboard original</a><a href="uv-grupos.html?corte=entrega01&uv=15">UV y grupos</a><a href="dimao.html">Panel DIMAO</a><a href="carteras.html">Todas las carteras</a><a href="docs/PROTOCOLO_TRES_CAPAS_POSTIT_V1.md">Metodología</a></nav></header>
+<main>
+<div class="notice"><strong>Cómo leer este instrumento:</strong> son registros clasificados de jornadas barriales, no personas encuestadas, hechos acreditados ni prioridades municipales. El corte de 15 UV corresponde a la entrega del 11-11-2026; la matriz completa contiene 25 etiquetas UV y no representa por sí sola todas las necesidades de la comuna.</div>
+<section class="card cut"><div><span class="eyebrow">Universo de análisis</span><h2>Seleccione el alcance documental</h2><p id="cutDescription" class="small muted">Carga de resultados en curso.</p></div><label for="cut" class="small"><strong>Corte territorial</strong><select id="cut"><option value="kit">Primera entrega · 15 UV</option><option value="all">Matriz completa · 25 etiquetas</option></select></label></section>
+<div class="tabs" role="tablist" aria-label="Perspectivas del dashboard">
+<button role="tab" type="button" id="tab-comuna" class="tab active" aria-selected="true" data-view="comuna"><strong>01 · Panorama comunal</strong><span>Qué se ha registrado y cómo se distribuye territorialmente.</span></button>
+<button role="tab" type="button" id="tab-uv" class="tab" aria-selected="false" data-view="uv"><strong>02 · Unidad Vecinal</strong><span>Un territorio, sus temáticas, grupos y acceso a registros.</span></button>
+<button role="tab" type="button" id="tab-direcciones" class="tab" aria-selected="false" data-view="direcciones"><strong>03 · Direcciones municipales</strong><span>Competencias referenciales y relación con problemas y oportunidades.</span></button>
+</div>
+<section id="view-comuna" aria-label="Panorama comunal" role="tabpanel">
+<div class="card"><h2>Panorama del conjunto seleccionado</h2><div id="communeKpis" class="metrics"></div></div>
+<div class="columns">
+<section class="card"><h2>Distribución temática</h2><p class="small muted">Registros agrupados por temática. Las barras no representan votos ni importancia relativa de necesidades.</p><div id="themesBars"></div></section>
+<section class="card"><h2>Tipos de registro</h2><p class="small muted">Problemas, oportunidades, actores y lugares constituyen categorías documentales diferentes.</p><div id="typeBars"></div></section>
+</div>
+<div class="card"><h2>Unidades Vecinales comparadas</h2><p class="small muted">Selecciona una UV para abrir su panorama. Más menciones no implican necesariamente más necesidades.</p><div id="uvCards" class="uvList"></div></div>
+</section>
+<section id="view-uv" class="hidden" role="tabpanel" aria-label="Detalle de Unidad Vecinal">
+<section class="card"><h2>Panorama territorial por Unidad Vecinal</h2><div class="filters"><div><label for="uvSelect">Unidad Vecinal</label><select id="uvSelect"></select></div></div>
+<div id="uvKpis" class="metrics"></div><p id="uvThemes" class="small muted"></p>
+<div class="actions"><a id="uvFull" class="action secondary" href="index.html">Ver informe UV B01–B10</a><a id="uvRead" class="action" href="uv-grupos.html">Explorar grupos y post-it</a></div></section>
+<div class="card"><h2>Grupos documentados</h2><p class="small muted">Son etiquetas de la matriz DATOS. Los enlaces hacia las cartografías originales deben cotejarse antes de considerarse verificados.</p><div id="uvGroups" class="groupgrid"></div><p id="uvWarning" class="small muted"></p></div>
+<div class="card"><h2>Temáticas mencionadas en esta UV</h2><div id="uvThemeBars"></div></div>
+</section>
+<section id="view-direcciones" class="hidden" role="tabpanel" aria-label="Perspectiva de direcciones municipales">
+<div class="card"><h2>Observación por dirección y relación funcional</h2><p class="small muted">Clasificación referencial de CAT_SUBTEMAS: no asigna tareas, compromisos, presupuestos ni competencia formal. La interpretación requiere validación de la dirección involucrada.</p>
+<div class="filters"><div><label for="directionSelect">Dirección de referencia</label><select id="directionSelect"></select></div><div><label for="roleSelect">Relación con la materia</label><select id="roleSelect"><option value="both">Liderazgo referencial o apoyo</option><option value="lead">Solo liderazgo referencial</option><option value="support">Solo apoyo habitual</option></select></div></div><div id="directionKpis" class="metrics"></div>
+<div class="actions"><a id="directionDeep" class="action secondary" href="carteras.html">Abrir carteras detalladas</a></div></div>
+<div class="columns"><div class="card"><h2>Problemas y oportunidades por subtema</h2><div class="legend"><span>Problemas</span><span class="good">Oportunidades</span></div><div id="directionTopics"></div></div>
+<div class="card"><h2>Distribución territorial</h2><p class="small muted">Cada UV conduce a los grupos y registros de esa categoría, bajo consulta autorizada.</p><div id="directionUVs"></div></div></div></section>
+<section class="card">
+<span class="eyebrow">De los indicadores a la evidencia</span><h2>Una ficha de post-it, con acceso según permisos</h2>
+<div class="flow"><div><b>1 · Identificar</b><span>Comuna, temática, UV o dirección municipal.</span></div><div><b>2 · Explorar</b><span>Grupo, tipo y subtema de la mención.</span></div><div><b>3 · Leer fuente</b><span>Descripción digitalizada por ID en consulta autorizada.</span></div><div><b>4 · Validar</b><span>Cotejar post-it y mapa originales, privacidad y competencia.</span></div></div>
+<p class="small muted">La lectura de la descripción mediante CSV autorizado ya está disponible en el visor territorial. La aplicación interna autenticada está preparada en GitHub, pero requiere un despliegue municipal antes de habilitar un acceso directo sin CSV.</p>
+<div class="actions"><a class="action" id="toReader" href="uv-grupos.html?corte=entrega01&uv=15">Abrir visor UV de consulta local</a><a class="action secondary" href="interno-appsscript/README.md">Configurar acceso institucional</a><button id="print" type="button">Imprimir o guardar vista como PDF</button></div>
+<p id="secureStatus" class="small muted">Acceso institucional directo: pendiente de despliegue autorizado.</p>
+</section></main>
+<footer>Fuente pública: DATOS agregados de la matriz madre (corte 09-11-2026) y CAT_SUBTEMAS (11-11-2026). La clasificación de competencias es referencial. Los textos de post-it, ubicaciones y coordenadas no están incluidos en esta página. La consulta original exige autorización, y la privacidad/publicación individual del proyecto canónico continúa pendiente.</footer>
+<script src="presentacion.js" defer></script>
+</body></html>
