@@ -28,6 +28,18 @@ h2{font-size:1.18rem;margin:0 0 12px}h3{font-size:1.02rem}
 .chartrow a{font-weight:700}table{border-collapse:collapse;width:100%;font-size:.85rem}th,td{padding:10px 9px;border-bottom:1px solid #e2e9ef;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#f1f6f9;position:sticky;top:0}tbody tr:hover{background:#f7fbfc}.scroll{overflow-x:auto}
 footer{margin-top:26px;padding-top:18px;border-top:1px solid #d8e2ea;color:#60788c;font-size:.8rem;line-height:1.6}
 @media(max-width:730px){.kpis{grid-template-columns:repeat(2,1fr)}.chartrow{grid-template-columns:55px minmax(0,1fr) 50px}.card{padding:13px}}
+
+.cross-intro{background:#f0f8fa;border-left:4px solid #22758d}
+.cross-intro p{line-height:1.56}
+.cross-link{display:inline-block;padding:10px 14px;border-radius:9px;background:#145e75;color:#fff;font-weight:700;text-decoration:none;margin:10px 0}
+.cross-link:hover{background:#1a7893}
+.crosspreview{overflow-x:auto}
+.crosspreview table{width:100%;border-collapse:separate;border-spacing:3px;font-size:.82rem}
+.crosspreview th,.crosspreview td{padding:4px;text-align:center;border:0}
+.crosspreview thead th{position:static;background:#eaf3f6;border-radius:4px}
+.crosspreview tbody th{text-align:left;white-space:normal;min-width:160px}
+.crosspreview a{display:block;border-radius:7px;padding:9px 7px;font-weight:700;border:1px solid #d1e2ea;text-decoration:none;min-width:80px}
+.crosspreview .focusrow th{color:#10627d}
 </style>
 </head>
 <body>
@@ -40,6 +52,12 @@ footer{margin-top:26px;padding-top:18px;border-top:1px solid #d8e2ea;color:#6078
 <div class="card alert"><strong>Clasificación documental preliminar.</strong> Las cifras representan registros de la matriz, no personas, votos, necesidades acreditadas, compromisos ni prioridades oficiales. Se muestran solo agregados ya publicados; quedan pendientes las revisiones de fuentes y privacidad.</div>
 <div class="card"><div class="controls"><strong>Corte:</strong><button id="kit" type="button">Entrega 01 · 15 UV</button><button id="all" type="button">Matriz completa · 25 etiquetas</button></div><p id="scopeInfo" class="small muted"></p></div>
 <section class="card"><h2>Seleccionar temática</h2><div id="themePicker" class="themes"></div></section>
+<section class="card cross-intro"><h2>Explorar cruces entre dimensiones y temáticas</h2>
+<p>Las temáticas se pueden cruzar con <strong>B03 Problemas, B05 Oportunidades, B06 Actores y B07 Lugares</strong>. La matriz muestra estas intersecciones en el corte seleccionado. Presiona cualquier celda para entrar al análisis multidimensional; allí también puedes comparar UV y quince subtemas.</p>
+<div id="matrixPreview" class="crosspreview"></div>
+<p><a id="crossDeepLink" class="cross-link" href="cruces.html">Abrir explorador multidimensional →</a></p>
+<p class="small muted">B01, B02, B04 y B08–B10 son dimensiones documentales o de contexto: no se suman como categorías de los puntos. Los valores son registros, no votos ni compromisos.</p>
+</section>
 <section class="card"><h2 id="selectedTitle">Cargando temáticas…</h2><p id="summary" class="small muted"></p><div id="kpis" class="kpis"></div></section>
 <section class="card"><h2>Composición por tipo de registro</h2><p class="small muted">Desglose del tema seleccionado en problemas, oportunidades, lugares importantes y actores.</p><div id="types" class="kpis"></div></section>
 <section class="card"><h2>Distribución del tema por unidad vecinal</h2><p class="small muted">Las barras apiladas desglosan el tema según el tipo de registro; sus longitudes son comparables entre UV dentro de este mismo tema. Selecciona una UV para revisar las dimensiones B01–B10.</p><div id="legend" class="legend"></div><div id="chart"></div></section>
@@ -73,6 +91,20 @@ function urlForUV(u){return "index.html?corte="+(scope==="kit"?"entrega01":"todo
 function refreshURL(){const p=new URLSearchParams();p.set("corte",scope==="kit"?"entrega01":"todo");p.set("tema",selected);history.replaceState({},"",location.pathname+"?"+p)}
 function setTopic(t){selected=t;refreshURL();render()}
 function setScope(s){scope=s;refreshURL();render()}
+function renderMatrixPreview(){
+const all=rows(),types=[["Problema","B03 · Problemas"],["Oportunidad","B05 · Oportunidades"],["Actor","B06 · Actores"],["Lugar importante","B07 · Lugares"]],scopeCode=scope==="kit"?"entrega01":"todo";
+const max=Math.max(1,...D.distribucion_tematica.flatMap(t=>types.map(([ty])=>all.reduce((n,u)=>n+byType(u,ty,t.etiqueta),0))));
+let html='<table><thead><tr><th>Temática</th>'+types.map(t=>'<th>'+esc(t[1])+'</th>').join("")+'<th>Total</th></tr></thead><tbody>';
+for(const t of D.distribucion_tematica){const total=all.reduce((n,u)=>n+count(u,t.etiqueta),0);
+html+='<tr class="'+(t.etiqueta===selected?'focusrow':'')+'"><th>'+esc(t.etiqueta)+'</th>';
+for(const [ty] of types){const n=all.reduce((v,u)=>v+byType(u,ty,t.etiqueta),0);
+const alpha=n?Math.min(.85,.13+.7*Math.sqrt(n/max)):.04;
+const url='cruces.html?corte='+scopeCode+'&tema='+encodeURIComponent(t.etiqueta)+'&tipo='+encodeURIComponent(ty);
+html+='<td><a href="'+url+'" style="background:rgba(28,108,140,'+alpha.toFixed(3)+');color:'+(alpha>.5?'#fff':'#14394e')+'" aria-label="'+esc(t.etiqueta+", "+ty+", "+fmt(n)+" registros")+'">'+fmt(n)+'</a></td>'}
+html+='<td><strong>'+fmt(total)+'</strong></td></tr>'}
+html+='</tbody></table>';$("matrixPreview").innerHTML=html;
+$("crossDeepLink").href='cruces.html?corte='+scopeCode+'&tema='+encodeURIComponent(selected);
+}
 function render(){
  if(!D)return;
  const all=rows(),grand=all.reduce((n,u)=>n+u.total,0);
@@ -81,6 +113,7 @@ function render(){
  const typeTotals=typeNames.map((_,i)=>current.reduce((n,x)=>n+x.kinds[i],0));
  const valid=typeTotals.reduce((s,n)=>s+n,0)===themeTotal&&current.every(x=>x.kinds.reduce((s,n)=>s+n,0)===x.n);
  if(!valid){$("selectedTitle").textContent="Inconsistencia en los datos agregados";return}
+ renderMatrixPreview();
  $("kit").classList.toggle("active",scope==="kit");
  $("all").classList.toggle("active",scope==="all");
  $("scopeInfo").textContent=scope==="kit"?"Entrega 01: 15 UV, "+fmt(grand)+" registros clasificados.":"Matriz madre: 25 etiquetas UV, "+fmt(grand)+" registros. UV20 requiere conciliación.";
