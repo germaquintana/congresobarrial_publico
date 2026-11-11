@@ -88,7 +88,7 @@ function renderDirecciones(){
  const mx=Math.max(1,...subItems.map(x=>x[1].p+x[1].o)),maxUV=Math.max(1,...uvItems.map(x=>x[1].p+x[1].o));
  $("directionTopics").innerHTML=subItems.map(([label,v])=>stacked(label,v.p,v.o,mx,"cruces.html?corte="+cutID()+"&subtema="+encodeURIComponent(label))).join("")||'<p class="empty">Sin menciones de este tipo en el corte seleccionado.</p>';
  $("directionUVs").innerHTML=uvItems.map(([uv,v])=>{
- const q=new URLSearchParams({corte:cutID(),uv:uv});
+ const q=new URLSearchParams({corte:cutID(),uv:uv,direccion:state.direction});if(state.role!=="both")q.set("rol",state.role);
  return stacked("UV "+uv,v.p,v.o,maxUV,"uv-grupos.html?"+q);
  }).join("")||'<p class="empty">Sin registros de problemas u oportunidades.</p>';
  $("directionDeep").href=state.direction==="DIMAO"?"dimao.html?corte="+cutID()+"&rol="+(state.role==="lead"?"lead":state.role==="support"?"support":"both"):"carteras.html?corte="+cutID()+"&lead="+encodeURIComponent(state.direction);
@@ -101,7 +101,7 @@ function render(){
  $("tab-"+v).classList.toggle("active",state.view===v);
  $("tab-"+v).setAttribute("aria-selected",state.view===v?"true":"false");
  }
- renderComuna();renderUV();renderDirecciones();setUrl();
+ renderComuna();renderUV();renderDirecciones();if(state.view==="direcciones"){const p=new URLSearchParams({corte:cutID(),uv:state.uv,direccion:state.direction});if(state.role!=="both")p.set("rol",state.role);$("toReader").href="uv-grupos.html?"+p;}setUrl();
 }
 function validate(d,t){
  if(d.uvs?.length!==25||d.totales?.filas_matriz!==1570||t.pares?.length!==15)throw Error("Cortes publicados incompatibles");
