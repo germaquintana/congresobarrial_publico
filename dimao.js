@@ -86,7 +86,8 @@ return'<article class="work"><h3>'+esc(r.sub)+'</h3><span class="pill '+(r.role=
 function renderTable(rows){
 const arr=rows.slice().sort((a,b)=>focused(b)-focused(a)||sort(a.uv,b.uv)||sort(a.sub,b.sub));
 const show=arr.slice(0,limit),masked=n=>n>0&&n<3?"&lt;3":fmt(n);
-$("table").innerHTML=show.map(r=>'<tr><td>UV '+esc(r.uv)+'</td><td>'+esc(r.sub)+'</td><td>'+esc(r.role==="lead"?"Referencia":"Apoyo")+'</td><td>'+masked(state.focus==="opportunities"?0:r.p)+'</td><td>'+masked(state.focus==="problems"?0:r.o)+'</td><td><a href="'+recordLink(r.uv,r)+'">Ver registros</a></td></tr>').join("")||'<tr><td colspan="6">Sin cruces UV-subtema.</td></tr>';
+$("table").innerHTML=show.map((r,i)=>'<tr><td>UV '+esc(r.uv)+'</td><td>'+esc(r.sub)+'</td><td>'+esc(r.role==="lead"?"Referencia":"Apoyo")+'</td><td>'+masked(state.focus==="opportunities"?0:r.p)+'</td><td>'+masked(state.focus==="problems"?0:r.o)+'</td><td><a href="'+recordLink(r.uv,r)+'">Ver registros</a></td><td><button type="button" data-ficha="'+i+'" aria-label="Preparar ficha de UV '+esc(r.uv)+', '+esc(r.sub)+'">Descargar ficha</button></td></tr>').join("")||'<tr><td colspan="7">Sin cruces UV-subtema.</td></tr>';
+$("table").querySelectorAll("button[data-ficha]").forEach(btn=>btn.onclick=()=>{const r=show[Number(btn.dataset.ficha)];if(r)exportCSV([r])});
 $("tableInfo").textContent=fmt(show.length)+" de "+fmt(arr.length)+" intersecciones UV–subtema.";
 $("more").hidden=limit>=arr.length;
 }
@@ -154,19 +155,19 @@ function render(){if(!data||!tax)return;const rows=selectedRows();renderKPIs(row
 function pilot(){choose({scope:"kit",role:"lead",focus:"all",uv:"15",sub:"",pattern:"all"});$("heat").scrollIntoView({behavior:"smooth",block:"nearest"})}
 const csvCols=["uv","tema_principal","subtema","rol_DIMAO_referencial","perfil_registrado_UV_subtema","competencias_validadas_preliminarmente","direccion_lider_CAT_SUBTEMAS","apoyo_habitual_CAT_SUBTEMAS","instrumento_referencial","modalidad_referencial","n_problemas","n_oportunidades","n_actores","n_lugares","estado_cartera","id_punto_a_cotejar","cartografia_original_a_validar","privacidad_a_revisar","competencia_a_validar","unidad_responsable_por_confirmar","accion_propuesta","responsable_por_designar","fecha_inicio_por_definir","tipo_plazo_por_definir","fecha_termino_por_definir","recursos_a_evaluar","prioridad_a_fundamentar","autorizacion_requerida","evidencia_seguimiento"];
 function csvSafe(val){let x=String(val??"");if(/^\s*[=+\-@]/.test(x))x="'"+x;return'"'+x.replace(/"/g,'""')+'"'}
-function exportCSV(){
-const arr=selectedRows();const lines=[csvCols.map(csvSafe).join(",")];
+function exportCSV(rowsOverride=null){
+const arr=Array.isArray(rowsOverride)?rowsOverride:selectedRows();const lines=[csvCols.map(csvSafe).join(",")];
 for(const r of arr){const mask=n=>n>0&&n<3?"SUPRIMIDO_MENOR_A_3":n;
 const vals=[r.uv,r.theme,r.sub,r.role==="lead"?"DIRECCION_REFERENCIAL":"APOYO_REFERENCIAL",patternOf(r),"CONFIRMACION_PRELIMINAR_USUARIO_PENDIENTE_VALIDACION_FORMAL",r.leader,r.helpers,r.instrument,r.method,mask(r.p),mask(r.o),mask(r.a),mask(r.l),"INSUMO_ANALITICO_NO_ASIGNADO","","","","","","","","","","","","","",""];
 if(vals.length!==csvCols.length)throw Error("CSV: "+vals.length+" datos para "+csvCols.length+" columnas");lines.push(vals.map(csvSafe).join(","))}
 const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),link=document.createElement("a");
-link.href=url;link.download="congreso_barrial_cartera_DIMAO_"+state.scope+".csv";document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+link.href=url;link.download=arr.length===1?"ficha_preparacion_DIMAO_UV"+String(arr[0].uv).replace(/[^A-Za-z0-9]/g,"")+"_"+arr[0].sub.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Za-z0-9]+/g,"_").slice(0,45)+".csv":"congreso_barrial_cartera_DIMAO_"+state.scope+".csv";document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 for(const id of ["scope","role","focus","uv","sub","pattern"])$(id).addEventListener("change",()=>choose({[id]:$(id).value}));
 $("reset").onclick=()=>choose({scope:"kit",role:"both",focus:"all",uv:"",sub:"",pattern:"all"});
 $("pilotButton").onclick=pilot;$("pilotAgain").onclick=pilot;
 $("more").onclick=()=>{limit+=40;renderTable(selectedRows())};
-$("export").onclick=exportCSV;
+$("export").onclick=()=>exportCSV();
 Promise.all([
 fetch("datos-agregados.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Datos "+r.status);return r.json()}),
 fetch("taxonomia-subtemas.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Taxonomía "+r.status);return r.json()}),
