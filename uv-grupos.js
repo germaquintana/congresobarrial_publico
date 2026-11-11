@@ -102,7 +102,7 @@ if(!data)return;
 syncControls();renderStats();renderGroups();renderRows();updateLinks();
 }
 function setFilters(patch){
-Object.assign(state,patch);visible=30;if(patch.uv!==undefined||patch.scope!==undefined){state.grupo=patch.grupo||"";state.id="";state.subtema=patch.subtema||state.subtema;}
+Object.assign(state,patch);visible=30;if(patch.uv!==undefined||patch.scope!==undefined){state.grupo=patch.grupo||"";state.id="";state.subtema=patch.subtema??"";}
 render();
 }
 function closeLocal(){
