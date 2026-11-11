@@ -4,6 +4,18 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const fmt=n=>Number(n||0).toLocaleString("es-CL");
 const kit=new Set(["15","21","22","25","26A","26B","27","28","29","30","31","32","33","34","35"]);
 const types=["Problema","Oportunidad","Actor","Lugar importante"];
+// Paleta recuperada de index.html; una temática conserva el mismo color en todas las capas.
+const themePalette={
+ "Infraestructura y espacio público":"#2b689b",
+ "Aseo y medio ambiente":"#238b84",
+ "Desarrollo social y comunitario":"#be772c",
+ "Seguridad y convivencia":"#9554a9",
+ "Movilidad y transporte":"#d05859",
+ "Actividad económica y comercio":"#698b35",
+ "Vivienda y entorno urbano":"#946781"
+};
+const topicOrder=["Infraestructura y espacio público","Desarrollo social y comunitario","Aseo y medio ambiente","Seguridad y convivencia","Movilidad y transporte","Actividad económica y comercio","Vivienda y entorno urbano"];
+const typePalette={"Problema":"#c35b57","Oportunidad":"#21887b","Actor":"#6792a5","Lugar importante":"#b18b5d"};
 const state={cut:"kit",view:"comuna",uv:"15",direction:"DIMAO",role:"both"};
 let data=null,tax=null;
 const sort=(a,b)=>String(a).localeCompare(String(b),"es",{numeric:true});
@@ -37,6 +49,40 @@ function stacked(label,p,o,max,url){
  const a=(p/Math.max(1,max)*100).toFixed(3),b=(o/Math.max(1,max)*100).toFixed(3);
  return'<div class="barrow"><div>'+(url?'<a href="'+esc(url)+'">'+esc(label)+'</a>':esc(label))+'</div><div class="track" role="img" aria-label="'+esc(label+": "+fmt(p)+" problemas y "+fmt(o)+" oportunidades")+'"><i style="width:'+a+'%;background:#c35b57"></i><i style="width:'+b+'%;background:#21887b"></i></div><b>'+mask(p+o)+'</b></div>';
 }
+
+function pieChart(id,items,palette,description,linkFor){
+ const vals=items.filter(x=>Number(x.n)>0),total=sum(vals.map(x=>x.n));
+ if(!total){$(id).innerHTML='<p class="empty">No hay datos para esta categoría.</p>';return}
+ let cursor=0;const colors=vals.map((x,i)=>{
+ const from=cursor;cursor=i===vals.length-1?100:cursor+100*x.n/total;
+ return (palette[x.name]||"#708c9b")+" "+from.toFixed(5)+"% "+cursor.toFixed(5)+"%";
+ });
+ const legend=vals.map(x=>{
+ const color=palette[x.name]||"#708c9b",pct=(x.n/total*100).toLocaleString("es-CL",{maximumFractionDigits:1});
+ const label=linkFor?'<a href="'+esc(linkFor(x))+'">'+esc(x.name)+'</a>':esc(x.name);
+ return'<div class="pie-line"><span class="color-dot" style="background:'+color+'"></span><span>'+label+'<br><small>'+fmt(x.n)+' menciones · '+pct+'%</small></span></div>';
+ }).join("");
+ $(id).innerHTML='<div class="pie-graphic" role="img" aria-label="'+esc(description+": "+fmt(total)+" menciones distribuidas en "+vals.length+" categorías")+'" style="background:conic-gradient('+colors.join(",")+')"></div><div class="pie-legend">'+legend+'</div>';
+}
+function verticalColumns(id,items,segmenter,linkFor,uvLinkFor){
+ if(!items.length){$(id).innerHTML='<p class="empty">No hay registros para el filtro elegido.</p>';return}
+ const max=Math.max(1,...items.map(x=>x.total));
+ $(id).innerHTML=items.map(row=>{
+ const total=Number(row.total)||0;
+ const segments=segmenter(row).filter(t=>t.n>0).map(t=>{
+ const height=(100*t.n/Math.max(total,1)).toFixed(5);
+ return'<a class="stack-segment" href="'+esc(linkFor(row,t))+'" title="'+esc(t.label+": "+fmt(t.n)+" menciones · UV "+row.uv)+'" aria-label="'+esc("UV "+row.uv+", "+t.label+", "+fmt(t.n)+" registros")+'" style="height:'+height+'%;background:'+t.color+'"></a>';
+ }).join("");
+ return'<div class="stack-column"><span class="stack-total">'+fmt(total)+'</span><div class="stack-shell"><div class="stack-tower" role="group" aria-label="'+esc("UV "+row.uv+": "+fmt(total)+" registros")+'" style="height:'+(100*total/max).toFixed(5)+'%">'+segments+'</div></div><a class="stack-uv-label" href="'+esc(uvLinkFor(row))+'">UV '+esc(row.uv)+'</a></div>';
+ }).join("");
+}
+function thematicStackSegments(u){
+ return topicOrder.map(t=>{
+  const n=u.temas.find(x=>x.etiqueta===t)?.n||0;
+  return {label:t,n,color:themePalette[t]||"#708c9b"};
+ });
+}
+
 function chooseView(next){state.view=next;render()}
 function chooseUV(uv){state.uv=uv;state.view="uv";render()}
 function setUrl(){
@@ -49,8 +95,17 @@ function renderComuna(){
  const uvs=scopeUVs(),totals=Object.fromEntries(types.map(t=>[t,sum(uvs.map(u=>u.tipo[t]||0))]));
  const count=sum(uvs.map(u=>u.total)),grupos=sum(uvs.map(u=>u.grupos.length));
  $("communeKpis").innerHTML=stat("Registros en el corte",count)+stat("Etiquetas UV con registros",uvs.length)+stat("Problemas",totals.Problema)+stat("Oportunidades",totals.Oportunidad);
- const topics=byField(topicRows(),"name");$("themesBars").innerHTML=topics.map(t=>bar(t.name,t.n,Math.max(...topics.map(x=>x.n),1),"tematicas.html?corte="+cutID()+"&tema="+encodeURIComponent(t.name))).join("");
- const typesList=types.map(name=>({name,n:totals[name]}));$("typeBars").innerHTML=typesList.map(t=>bar(t.name,t.n,count)).join("")+'<p class="small muted">'+fmt(grupos)+' combinaciones UV–grupo documentadas en este corte; los grupos no acreditan mapas físicos.</p>';
+ const topics=byField(topicRows(),"name");
+ pieChart("themesPie",topics,themePalette,"Distribución temática del corte",x=>"tematicas.html?corte="+cutID()+"&tema="+encodeURIComponent(x.name));
+ $("themesBars").innerHTML=topics.map(t=>bar(t.name,t.n,Math.max(...topics.map(x=>x.n),1),"tematicas.html?corte="+cutID()+"&tema="+encodeURIComponent(t.name))).join("");
+ const typesList=types.map(name=>({name,n:totals[name]}));
+ pieChart("typesPie",typesList,typePalette,"Distribución por tipo de registro",x=>"cruces.html?corte="+cutID()+"&tipo="+encodeURIComponent(x.name));
+ $("typeBars").innerHTML=typesList.map(t=>bar(t.name,t.n,count)).join("")+'<p class="small muted">'+fmt(grupos)+' combinaciones UV–grupo documentadas en este corte; los grupos no acreditan mapas físicos.</p>';
+ $("stackLegend").innerHTML=topicOrder.map(name=>'<span class="legend-key"><span class="color-dot" style="background:'+(themePalette[name]||"#708c9b")+'"></span>'+esc(name)+'</span>').join("");
+ verticalColumns("uvStacks",uvs,thematicStackSegments,
+ (row,segment)=>"cruces.html?corte="+cutID()+"&uv="+encodeURIComponent(row.uv)+"&tema="+encodeURIComponent(segment.label),
+ row=>"presentacion.html?corte="+cutID()+"&vista=uv&uv="+encodeURIComponent(row.uv));
+ $("stackNote").textContent="Escala común: la columna más alta equivale a "+fmt(Math.max(...uvs.map(u=>u.total)))+" registros. "+fmt(grupos)+" grupos documentados en el corte. Los colores identifican temáticas, no niveles de prioridad.";
  $("uvCards").innerHTML=uvs.map(u=>'<a href="presentacion.html?corte='+cutID()+'&vista=uv&uv='+encodeURIComponent(u.uv)+'" class="uvCard" data-uv="'+esc(u.uv)+'"><b>UV '+esc(u.uv)+'</b><span>'+fmt(u.total)+' registros · '+fmt(u.grupos.length)+' grupos</span><span>'+esc(u.temas.slice(0,2).map(x=>x.etiqueta).join(" · "))+'</span></a>').join("");
  $("uvCards").querySelectorAll("[data-uv]").forEach(a=>a.onclick=e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();chooseUV(a.dataset.uv)});
 }
@@ -67,7 +122,9 @@ function renderUV(){
  return'<a href="uv-grupos.html?'+p+'" class="groupcard"><span><strong>'+esc(g.etiqueta)+'</strong><br><span class="small muted">Explorar registros</span></span><b>'+fmt(g.n)+'</b></a>';
  }).join("");
  $("uvWarning").textContent=state.uv==="15"?"Control pendiente: DATOS registra G2 con 16 registros, mientras MAPAS_UV propone G3 con 16. Son etiquetas distintas; no se homologan sin cotejo.":"El vínculo entre grupo de DATOS y mapa físico sigue siendo una asociación pendiente de cotejo.";
- const top=[...u.temas].sort((a,b)=>b.n-a.n);$("uvThemeBars").innerHTML=top.map(x=>bar(x.etiqueta,x.n,Math.max(1,...top.map(y=>y.n)),"cruces.html?corte="+cutID()+"&uv="+encodeURIComponent(u.uv)+"&tema="+encodeURIComponent(x.etiqueta))).join("");
+ const top=[...u.temas].sort((a,b)=>b.n-a.n);
+ pieChart("uvThemePie",top.map(x=>({name:x.etiqueta,n:x.n})),themePalette,"Distribución temática UV "+u.uv,x=>"cruces.html?corte="+cutID()+"&uv="+encodeURIComponent(u.uv)+"&tema="+encodeURIComponent(x.name));
+ $("uvThemeBars").innerHTML=top.map(x=>bar(x.etiqueta,x.n,Math.max(1,...top.map(y=>y.n)),"cruces.html?corte="+cutID()+"&uv="+encodeURIComponent(u.uv)+"&tema="+encodeURIComponent(x.etiqueta))).join("");
 }
 function renderDirecciones(){
  const dirs=[...new Set(tax.pares.map(p=>p.direccion_lider_referencial).filter(Boolean))].sort(sort);
@@ -91,6 +148,13 @@ function renderDirecciones(){
  const q=new URLSearchParams({corte:cutID(),uv:uv,direccion:state.direction});if(state.role!=="both")q.set("rol",state.role);
  return stacked("UV "+uv,v.p,v.o,maxUV,"uv-grupos.html?"+q);
  }).join("")||'<p class="empty">Sin registros de problemas u oportunidades.</p>';
+ verticalColumns("directionStacks",uvItems.map(([uv,counts])=>({uv,total:counts.p+counts.o,counts})),
+ row=>[{label:"Problema",n:row.counts.p,color:typePalette.Problema},{label:"Oportunidad",n:row.counts.o,color:typePalette.Oportunidad}],
+ (row,segment)=>{const q=new URLSearchParams({corte:cutID(),uv:row.uv,direccion:state.direction,tipo:segment.label});
+ if(state.role!=="both")q.set("rol",state.role);return"uv-grupos.html?"+q},
+ row=>{const q=new URLSearchParams({corte:cutID(),uv:row.uv,direccion:state.direction});
+ if(state.role!=="both")q.set("rol",state.role);return"uv-grupos.html?"+q});
+ $("directionStackNote").textContent="Escala común: columna máxima = "+fmt(maxUV)+" menciones de problemas u oportunidades. Dirección: "+state.direction+" · "+(state.role==="both"?"referencia y apoyo":state.role==="lead"?"liderazgo referencial":"apoyo habitual")+".";
  $("directionDeep").href=state.direction==="DIMAO"?"dimao.html?corte="+cutID()+"&rol="+(state.role==="lead"?"lead":state.role==="support"?"support":"both"):"carteras.html?corte="+cutID()+"&lead="+encodeURIComponent(state.direction);
 }
 function render(){
