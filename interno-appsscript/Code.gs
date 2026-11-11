@@ -35,7 +35,7 @@ function readSheet_(sheet) {
   const values = sheet.getDataRange().getDisplayValues();
   const headers = (values.shift() || []).map(x => String(x).trim());
   if (new Set(headers).size !== headers.length || !headers.length) throw new Error("Encabezados duplicados o vacíos.");
-  return values.map((r, idx) => ({ r, rowNumber: idx + 2 })).filter(x => String(x.r[0] || "").trim()).map(({ r, rowNumber }) => {
+  return values.map((r, idx) => ({ r, rowNumber: idx + 2 })).filter(x => x.r.some(v => String(v || "").trim())).map(({ r, rowNumber }) => {
     const o = {};
     headers.forEach((h, i) => { o[h] = String(r[i] == null ? "" : r[i]).trim(); });
     o._sheet_row = rowNumber;
@@ -165,12 +165,10 @@ function getPoint(rawId, options) {
     return { ...minimalRow_(r), restricted: true, descripcion: null,
       message: "Texto marcado para revisión de privacidad. Requiere revisión expresa antes de mostrarlo." };
   }
-  if (restricted) {
-    // La bitácora de ejecución de Apps Script tiene acceso restringido a gestores del proyecto.
-    // No registrar texto, dirección ni coordenadas.
-    console.info(JSON.stringify({ action: "LECTURA_RESTRINGIDA", email: ctx.email,
-      recordId: id, when: new Date().toISOString() }));
-  }
+  // Toda apertura de descripción queda trazada en la bitácora técnica del proyecto.
+  // No registrar texto, dirección ni coordenadas.
+  console.info(JSON.stringify({ action: restricted ? "LECTURA_RESTRINGIDA" : "LECTURA_REGISTRO",
+    email: ctx.email, recordId: id, when: new Date().toISOString() }));
   return {
     ...minimalRow_(r), restricted: restricted,
     descripcion: r.descripcion || "", origen: r.origen_dato || "",
