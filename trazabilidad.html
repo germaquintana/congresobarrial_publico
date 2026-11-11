@@ -37,6 +37,7 @@ footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#me
 <label class="check"><input type="checkbox" id="authorized">Confirmo que estoy autorizado a consultar estos antecedentes y que utilizaré el detalle exclusivamente para trabajo interno, sujeto a revisión de privacidad.</label>
 <div class="load"><div><label for="datosFile">Matriz DATOS · obligatorio</label><input id="datosFile" type="file" accept=".csv,text/csv,text/plain" disabled><p class="small muted">Debe contener id_punto, uv, tipo, tema_principal, subtema, descripcion, grupo y los campos de revisión.</p></div>
 <div><label for="mapasFile">Hoja MAPAS_UV · opcional</label><input id="mapasFile" type="file" accept=".csv,text/csv,text/plain" disabled><p class="small muted">Permite mostrar una <em>asociación propuesta</em> entre UV, grupo y clave de mapa. No acredita por sí sola el mapa original.</p></div></div><div id="messages" role="status" aria-live="polite" class="small muted">No se han cargado registros.</div></section>
+<p class="small"><a id="returnGroup" href="uv-grupos.html">← Volver a UV, grupos y post-it</a></p>
 <section id="workspace" hidden>
 <div class="card"><h2>2. Filtrar y localizar</h2><details class="bubble"><summary>ⓘ ¿Qué muestra?</summary><p>Combina temas, tipos, UV, subtemas y texto. Una descripción puede ser digitalización de DATOS, no transcripción literal del post-it; las marcas de privacidad requieren revisión.</p></details><div class="toolbar">
 <div><label for="theme">Temática</label><select id="theme"><option value="">Todas</option></select></div>
@@ -105,10 +106,13 @@ function mInfo(r){return maps.get(key(r.uv,r.grupo))}
 function fill(id,values){const el=$(id),keep=el.value;el.innerHTML='<option value="">Todos</option>'+sorted(values).map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join("");if([...el.options].some(o=>o.value===keep))el.value=keep}
 function initialize(){
 fill("theme",records.map(r=>r.tema_principal));fill("uv",records.map(r=>r.uv));fill("kind",records.map(r=>r.tipo));fill("group",records.map(r=>r.grupo));fill("subtopic",records.map(r=>r.subtema));
-const q=new URLSearchParams(location.search);const incomingTopic=q.get("tema");if(incomingTopic&&[...$("theme").options].some(o=>o.value===incomingTopic))$("theme").value=incomingTopic;
-for(const [param,id] of [["uv","uv"],["tipo","kind"],["subtema","subtopic"]]){const v=q.get(param);if(v&&[...$(id).options].some(o=>o.value===v))$(id).value=v;}
+const q=new URLSearchParams(location.search);
+for(const [param,id] of [["tema","theme"],["uv","uv"],["tipo","kind"],["grupo","group"],["subtema","subtopic"]]){const v=q.get(param);if(v&&[...$(id).options].some(o=>o.value===v))$(id).value=v;}
 $("kitOnly").checked=q.get("corte")==="entrega01";
+const p=new URLSearchParams();for(const k of ["corte","uv","grupo","tema","subtema","tipo","id"])if(q.get(k))p.set(k,q.get(k));
+$("returnGroup").href="uv-grupos.html?"+p;
 $("workspace").hidden=false;apply();
+const requested=q.get("id");if(requested&&filtered.some(x=>x.id_punto===requested))selectRecord(requested);
 }
 function apply(){
 const q=$("search").value.trim().toLocaleLowerCase("es"),withFlag=$("includeFlagged").checked,reveal=$("revealFlagged").checked;
