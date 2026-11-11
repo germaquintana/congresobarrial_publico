@@ -41,7 +41,7 @@ chooseOptions("sub",topics.filter(t=>state.role==="both"||state.role===t.role).m
 function query(){const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(state.role!=="both")q.set("rol",state.role);if(state.focus!=="all")q.set("foco",state.focus);if(state.uv)q.set("uv",state.uv);if(state.sub)q.set("subtema",state.sub);if(state.pattern!=="all")q.set("patron",state.pattern);history.replaceState({},"",location.pathname+"?"+q)}
 function choose(changes){Object.assign(state,changes);if(state.sub&&!topics.some(t=>t.subtema===state.sub&&(state.role==="both"||t.role===state.role)))state.sub="";sync();query();limit=40;render()}
 function recordLink(uv,t,type){
-const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"trazabilidad.html?"+q}
+const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"uv-grupos.html?"+q}
 function crossLink(uv,t,type){
 const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"cruces.html?"+q}
 function renderKPIs(rows){const v=totals(rows);
