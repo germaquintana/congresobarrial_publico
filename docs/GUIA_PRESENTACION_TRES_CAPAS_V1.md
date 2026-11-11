@@ -26,6 +26,14 @@ Mostrar los resultados disponibles del Congreso Barrial con tres perspectivas co
 - Antes de comunicar medidas municipales, verificar competencia, fundamento técnico, prioridades y responsable; la relación entre subtema y dirección de CAT_SUBTEMAS es referencial.
 - Los nombres «UV20» y las asociaciones de mapa UV15 G2/G3 requieren conciliación; no presentarlos como vínculos geográficos certificados.
 
+## Recuperación editorial de las visualizaciones originales (V1.1)
+
+La presentación vuelve a incluir las **tortas cromáticas** y las **columnas apiladas por temática** utilizadas en el panorama original. Colores fijos por temática: Infraestructura y espacio público `#2b689b`, Aseo y medio ambiente `#238b84`, Desarrollo social y comunitario `#be772c`, Seguridad y convivencia `#9554a9`, Movilidad y transporte `#d05859`, Actividad económica y comercio `#698b35`, Vivienda y entorno urbano `#946781`.
+
+En la primera capa, una torta muestra la distribución temática y otra los tipos de registro; las columnas por UV dividen el total en segmentos de la paleta y todos usan un máximo común para la escala de altura. En la segunda capa se recupera la torta de las temáticas de la UV seleccionada. En la tercera capa se muestran columnas apiladas para problemas (rojo) y oportunidades (verde), coherentes con los gráficos sectoriales anteriores. Las leyendas identifican número y porcentaje de menciones, no prioridad administrativa. Los segmentos tienen enlaces a sus filtros de origen; se mantienen alternativas de lectura mediante barras.
+
+**Control de regresión:** con Entrega 01, las tortas suman 872 registros y los gráficos muestran 15 columnas UV; UV15 suma 42 registros. Para la matriz completa, se muestran 25 columnas UV y 1.570 registros. En DIMAO, 176/100 problemas/oportunidades en Entrega 01 y 307/172 en la matriz completa. Sintaxis y renderización simulada verificadas; prueba visual externa pendiente.
+
 ## Controles de calidad del dashboard
 
 - La fuente pública `datos-agregados.json` mantiene **25 etiquetas UV y 1.570 registros**, con **15 UV y 872 registros** en Entrega 01.
