@@ -13,6 +13,18 @@ Desde el 9 de noviembre de 2026, el origen principal de los registros de resulta
 
 Los CSV históricos con 872 filas **no son el origen numérico principal** y no se suman a la matriz.
 
+## Versión ejecutiva de presentación y consulta institucional (11-11-2026)
+
+**Dashboard de presentación:** [presentacion.html](presentacion.html) · [código de visualización](presentacion.js).
+
+Se incorporó un recorrido único con tres perspectivas: 1) panorama general del conjunto territorial, 2) panorama UV con grupos enlazados al lector de post-it digitalizado, y 3) dirección municipal con asuntos de liderazgo referencial/apoyo, distribuidos por subtema y UV. Todos los indicadores proceden de los mismos agregados `datos-agregados.json` y `taxonomia-subtemas.json`. El corte por defecto es Entrega 01 (15 UV, 872 registros); también permite observar la matriz completa (25 etiquetas UV, 1.570 registros). La vista se puede imprimir como respaldo de una reunión.
+
+El botón **«Abrir modo presentación»** aparece destacado en [la portada general](index.html). Las perspectivas UV y dirección conservan filtros y abren las fichas sectoriales o [UV → grupos → post-it](uv-grupos.html).
+
+**Lectura institucional sin CSV:** [interno-appsscript/README.md](interno-appsscript/README.md) explica cómo desplegar una aplicación interna [Code.gs](interno-appsscript/Code.gs) + [Index.html](interno-appsscript/Index.html) con [manifest](interno-appsscript/appsscript.json). El Web App se configura obligatoriamente como **usuario que accede** y **solo dominio**, y verifica los permisos del usuario sobre la matriz institucional antes de devolver descripciones. El servidor devuelve únicamente metadatos en listados, y abre el texto de un ID con control de revisión de privacidad y bitácora. **No está desplegado todavía:** solo una cuenta institucional habilitada puede crear y autorizar el Web App. No confundir el prototipo probado con una sesión real autorizada.
+
+La fuente primaria digitalizada no equivale a un post-it físico o cartografía cotejada. El repositorio canónico mantiene publicación individual y revisión de privacidad pendientes; no se añaden microdatos al portal público.
+
 ## Dashboard
 
 - `index.html` — dashboard general y fichas por UV; admite enlaces `?uv=25`.
