@@ -58,7 +58,8 @@ footer{color:var(--muted);font-size:.78rem;line-height:1.6;padding:10px 2px 25px
 <div class="panel-foot"><span class="small muted">Los caminos solo muestran cómo está clasificado el mismo conjunto de registros.</span></div></section>
 <section class="card"><h2>4. Perfil jerárquico — temáticas y subtemas</h2><p class="small muted">Los subtemas se vinculan a su temática por la tabla CAT_SUBTEMAS de la matriz madre. Este ranking responde a la UV y dimensión elegidas. Cuando una subcategoría concentra menos de tres registros en una única UV, se muestra como grupo pequeño para evitar una lectura excesivamente identificable.</p>
 <div id="subBars"></div></section>
-<section class="card"><h2>5. Intersecciones para gestión municipal</h2><p class="small muted">Cruce <strong>UV × temática × dimensión</strong> y, si se elige, un subtema. Ordenado por número de registros. Selecciona «Examinar registros» para abrir el visor local con los filtros correspondientes: <strong>la página pública no incluye textos individuales</strong>.</p>
+<section class="card"><h2>5. Orientación institucional por subtema</h2><p class="small muted">La hoja CAT_SUBTEMAS señala una dirección de referencia y posibles apoyos para cada subtema. Esta distribución suma menciones según esa clasificación, <strong>no asigna expedientes, recursos, obligaciones ni planes de acción</strong>. Su uso exige confirmación de competencias y revisión por las direcciones correspondientes.</p><div id="leadBars"></div></section>
+<section class="card"><h2>6. Intersecciones para gestión municipal</h2><p class="small muted">Cruce <strong>UV × temática × dimensión</strong> y, si se elige, un subtema. Ordenado por número de registros. Selecciona «Examinar registros» para abrir el visor local con los filtros correspondientes: <strong>la página pública no incluye textos individuales</strong>.</p>
 <div class="scroll"><table class="resulttable"><thead><tr><th>UV</th><th>Temática</th><th>Dimensión</th><th>Registros</th><th>% del subtotal elegido</th><th>Profundizar</th></tr></thead><tbody id="intersections"></tbody></table></div>
 <div class="panel-foot"><span id="tableInfo" class="small muted"></span><button id="more" type="button">Ver más filas</button></div></section>
 <footer>Fuentes: matriz madre DATOS, corte 2026-11-09, a través de <a href="datos-agregados.json">datos agregados públicos</a>; correspondencias de <a href="taxonomia-subtemas.json">CAT_SUBTEMAS</a> verificadas contra los totales. Números de menciones, no porcentajes de población ni diagnósticos oficiales. UV20 continúa pendiente de conciliación territorial. No se transfiere información individual a este portal. <a href="trazabilidad.html">Consulta detallada interna</a>.</footer>
@@ -73,7 +74,7 @@ const types=["Problema","Oportunidad","Actor","Lugar importante"];
 const themeColors={"Infraestructura y espacio público":"#2b689b","Aseo y medio ambiente":"#238b84","Desarrollo social y comunitario":"#be772c","Seguridad y convivencia":"#9554a9","Movilidad y transporte":"#d05859","Actividad económica y comercio":"#698b35","Vivienda y entorno urbano":"#946781"};
 const kitIDs=new Set(["15","21","22","26A","26B","25","29","28","27","30","31","32","33","34","35"]);
 const state={scope:"kit",theme:"",type:"",uv:"",subtheme:"",metric:"n"};
-let D=null,T=null,topics=[],submap=new Map(),visibleRows=45,intersections=[];
+let D=null,T=null,topics=[],submap=new Map(),leadMap=new Map(),visibleRows=45,intersections=[];
 const sum=a=>a.reduce((acc,n)=>acc+Number(n||0),0);
 const cleanSort=(a,b)=>String(a).localeCompare(String(b),"es",{numeric:true});
 function topicCount(u,theme){return u.temas.find(x=>x.etiqueta===theme)?.n||0}
@@ -161,11 +162,22 @@ html+='</tbody></table>';$("uvHeat").innerHTML=html;attachCellButtons("uvHeat",[
 function renderSub(){
 const rows=geographicRows(),groups=[...submap].filter(([sub,t])=>!state.theme||state.theme===t).map(([sub,t])=>({sub,theme:t,n:aggregateRows(rows,t,state.type,sub)})).sort((a,b)=>b.n-a.n||cleanSort(a.sub,b.sub));
 const max=Math.max(1,...groups.map(x=>x.n));let html="";
-for(const x of groups){const small=!!state.uv&&x.n>0&&x.n<3;
+for(const x of groups){const meta=leadMap.get(x.sub)||{};const small=!!state.uv&&x.n>0&&x.n<3;
 const label=(small?"<3":fmt(x.n)),ratio=small?7:pct(x.n,max);
-html+='<div class="barrow"><button type="button" class="barlink" data-sub="'+esc(x.sub)+'" title="'+esc(x.theme)+'">'+esc(x.sub)+'<div class="muted small">'+esc(x.theme)+'</div></button><div class="barbg"><div class="barfill" style="width:'+Math.max(x.n>0?2:0,ratio).toFixed(2)+'%;background:'+themeColors[x.theme]+'"></div></div><div class="barval">'+label+'</div></div>'}
+html+='<div class="barrow"><button type="button" class="barlink" data-sub="'+esc(x.sub)+'" title="'+esc(x.theme)+'">'+esc(x.sub)+'<div class="muted small">'+esc(x.theme)+' · <strong>Ref. '+esc(meta.direccion_lider_referencial||"Por verificar")+'</strong> · '+esc(meta.instrumento_respuesta||"Instrumento por revisar")+'</div></button><div class="barbg"><div class="barfill" style="width:'+Math.max(x.n>0?2:0,ratio).toFixed(2)+'%;background:'+themeColors[x.theme]+'"></div></div><div class="barval">'+label+'</div></div>'}
 $("subBars").innerHTML=html||'<div class="empty">No hay subtemas para esta selección.</div>';
 $("subBars").querySelectorAll("[data-sub]").forEach(btn=>btn.onclick=()=>choose({theme:submap.get(btn.dataset.sub),subtheme:btn.dataset.sub}));
+}
+function renderLead(){
+const rows=geographicRows(),counts=new Map();
+for(const [sub,theme] of submap){if(state.theme&&theme!==state.theme)continue;if(state.subtheme&&sub!==state.subtheme)continue;
+const lead=leadMap.get(sub)?.direccion_lider_referencial||"Por verificar",n=aggregateRows(rows,theme,state.type,sub);
+counts.set(lead,(counts.get(lead)||0)+n)}
+const ranking=[...counts].filter(([,n])=>n>0).sort((a,b)=>b[1]-a[1]||cleanSort(a[0],b[0])),max=Math.max(1,...ranking.map(x=>x[1]));
+$("leadBars").innerHTML=ranking.map(([name,n])=>{
+const small=!!state.uv&&n>0&&n<3,label=small?"<3":fmt(n),w=small?8:pct(n,max);
+return '<div class="barrow"><div class="barlink" style="cursor:default">'+esc(name)+'</div><div class="barbg"><div class="barfill" style="width:'+Math.max(2,w).toFixed(2)+'%;background:#23758b"></div></div><div class="barval">'+label+'</div></div>'
+}).join("")||'<div class="empty">No hay registros en el filtro seleccionado.</div>';
 }
 function renderFlow(){
 const svg=$("flow"),rows=geographicRows();
@@ -203,7 +215,7 @@ $("intersections").innerHTML=shown.map(x=>'<tr><td><strong>UV '+esc(x.uv)+'</str
 $("more").hidden=visibleRows>=intersections.length;
 $("tableInfo").textContent=fmt(shown.length)+" de "+fmt(intersections.length)+" cruces con registros · subtotal "+fmt(grand)+" menciones.";
 }
-function render(){if(!D||!T)return;kpiRender();renderDimHeat();renderUvHeat();renderFlow();renderSub();buildIntersections();visibleRows=45;renderIntersections();}
+function render(){if(!D||!T)return;kpiRender();renderDimHeat();renderUvHeat();renderFlow();renderSub();renderLead();buildIntersections();visibleRows=45;renderIntersections();}
 function csvQuote(s){let v=String(s??"");if(/^\s*[=+\-@]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}
 function exportCSV(){const grand=sum(intersections.map(r=>r.n)),head=["uv","tematica","dimension","tipo","n_registros","porcentaje_sobre_subtotal","estado_fuente"];
 const lines=[head.map(csvQuote).join(",")];for(const x of intersections){
@@ -220,7 +232,8 @@ const sums={};for(const x of v.subtemas){const th=m.get(x.etiqueta);if(!th)throw
 for(const x of v.temas)if((sums[x.etiqueta]||0)!==x.n)mismatch++;}
 if(sumKind!==u.total)mismatch++;total+=u.total}
 if(mismatch||total!==1570)throw Error("Inconsistencia entre clasificaciones ("+mismatch+") o totales "+total);
-submap=m;topics=allTopics;D=d;T=tax;
+if(tax.pares.some(x=>!x.direccion_lider_referencial||!x.instrumento_respuesta))throw Error("Metadatos orientativos incompletos");
+leadMap=new Map(tax.pares.map(x=>[x.subtema,x]));submap=m;topics=allTopics;D=d;T=tax;
 }
 $("reset").onclick=()=>choose({scope:state.scope,theme:"",type:"",uv:"",subtheme:"",metric:"n"});
 $("export").onclick=exportCSV;
