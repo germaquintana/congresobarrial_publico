@@ -69,6 +69,7 @@ function mInfo(r){return maps.get(key(r.uv,r.grupo))}
 function fill(id,values){const el=$(id),keep=el.value;el.innerHTML='<option value="">Todos</option>'+sorted(values).map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join("");if([...el.options].some(o=>o.value===keep))el.value=keep}
 function initialize(){
 fill("theme",records.map(r=>r.tema_principal));fill("uv",records.map(r=>r.uv));fill("kind",records.map(r=>r.tipo));fill("group",records.map(r=>r.grupo));fill("subtopic",records.map(r=>r.subtema));
+const incomingTopic=new URLSearchParams(location.search).get("tema");if(incomingTopic&&[...$("theme").options].some(o=>o.value===incomingTopic))$("theme").value=incomingTopic;
 $("workspace").hidden=false;apply();
 }
 function apply(){
