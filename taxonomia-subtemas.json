@@ -1,74 +1,135 @@
 {
   "schema_version": 1,
   "corte": "2026-11-11",
-  "fuente": "Matriz_Congreso_Barrial_fusionada, pestaña CAT_SUBTEMAS, columnas A:B; validación de consistencia contra datos-agregados.json (corte 2026-11-09)",
-  "naturaleza": "taxonomía temática de referencia; categorías no constituyen validación sustantiva o aprobación institucional",
+  "fuente": "Matriz_Congreso_Barrial_fusionada, pestaña CAT_SUBTEMAS, columnas A:F; cruce de subtemas validado contra datos-agregados.json (corte 2026-11-09)",
+  "naturaleza": "Taxonomía de referencia; dirección líder, apoyos, modalidad e instrumentos son orientativos y NO asignaciones institucionales ni compromisos aprobados",
   "conteos": {
     "tematicas": 7,
     "subtemas": 15,
     "registros_conciliados": 1570,
-    "inconsistencias": 0
+    "inconsistencias": 0,
+    "direcciones_referenciales": 7
   },
   "pares": [
     {
       "tematica": "Seguridad y convivencia",
-      "subtema": "Seguridad y prevención"
+      "subtema": "Seguridad y prevención",
+      "direccion_lider_referencial": "Seguridad Humana",
+      "apoyo_habitual": "Carabineros · DIDECO · Jurídica",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Gestión intersectorial"
     },
     {
       "tematica": "Seguridad y convivencia",
-      "subtema": "Ruidos y convivencia"
+      "subtema": "Ruidos y convivencia",
+      "direccion_lider_referencial": "Seguridad Humana",
+      "apoyo_habitual": "Patentes · Inspección · DIDECO",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Fiscalización"
     },
     {
       "tematica": "Aseo y medio ambiente",
-      "subtema": "Aseo, residuos y salubridad"
+      "subtema": "Aseo, residuos y salubridad",
+      "direccion_lider_referencial": "DIMAO",
+      "apoyo_habitual": "Operaciones · Organizaciones barriales",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Operativo"
     },
     {
       "tematica": "Aseo y medio ambiente",
-      "subtema": "Áreas verdes y arbolado"
+      "subtema": "Áreas verdes y arbolado",
+      "direccion_lider_referencial": "DIMAO",
+      "apoyo_habitual": "SECPLA",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Mantención"
     },
     {
       "tematica": "Aseo y medio ambiente",
-      "subtema": "Bienestar animal"
+      "subtema": "Bienestar animal",
+      "direccion_lider_referencial": "Higiene Ambiental",
+      "apoyo_habitual": "DIMAO · DIDECO",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Programa social"
     },
     {
       "tematica": "Infraestructura y espacio público",
-      "subtema": "Iluminación"
+      "subtema": "Iluminación",
+      "direccion_lider_referencial": "SECPLA",
+      "apoyo_habitual": "DIMAO · Empresa distribuidora",
+      "modalidad_gestion": "Municipal",
+      "instrumento_respuesta": "Mantención"
     },
     {
       "tematica": "Infraestructura y espacio público",
-      "subtema": "Veredas y pavimentos"
+      "subtema": "Veredas y pavimentos",
+      "direccion_lider_referencial": "SECPLA",
+      "apoyo_habitual": "SERVIU · Obras",
+      "modalidad_gestion": "Municipal / externa",
+      "instrumento_respuesta": "Proyecto de inversión"
     },
     {
       "tematica": "Infraestructura y espacio público",
-      "subtema": "Espacio público y equipamiento"
+      "subtema": "Espacio público y equipamiento",
+      "direccion_lider_referencial": "SECPLA",
+      "apoyo_habitual": "DIMAO · DIDECO",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Proyecto de inversión"
     },
     {
       "tematica": "Movilidad y transporte",
-      "subtema": "Movilidad, tránsito y transporte"
+      "subtema": "Movilidad, tránsito y transporte",
+      "direccion_lider_referencial": "Tránsito",
+      "apoyo_habitual": "SECPLA · UOCT",
+      "modalidad_gestion": "Municipal / interinstitucional",
+      "instrumento_respuesta": "Gestión intersectorial"
     },
     {
       "tematica": "Movilidad y transporte",
-      "subtema": "Estacionamientos"
+      "subtema": "Estacionamientos",
+      "direccion_lider_referencial": "Tránsito",
+      "apoyo_habitual": "Seguridad Humana",
+      "modalidad_gestion": "Municipal",
+      "instrumento_respuesta": "Fiscalización"
     },
     {
       "tematica": "Vivienda y entorno urbano",
-      "subtema": "Vivienda y habitabilidad"
+      "subtema": "Vivienda y habitabilidad",
+      "direccion_lider_referencial": "DIDECO",
+      "apoyo_habitual": "SERVIU · Vivienda",
+      "modalidad_gestion": "Gestión externa / interinstitucional",
+      "instrumento_respuesta": "Programa social"
     },
     {
       "tematica": "Vivienda y entorno urbano",
-      "subtema": "Patrimonio y entorno construido"
+      "subtema": "Patrimonio y entorno construido",
+      "direccion_lider_referencial": "SECPLA",
+      "apoyo_habitual": "Cultura · DOM",
+      "modalidad_gestion": "Gestión compartida",
+      "instrumento_respuesta": "Proyecto de inversión"
     },
     {
       "tematica": "Actividad económica y comercio",
-      "subtema": "Comercio y actividad económica"
+      "subtema": "Comercio y actividad económica",
+      "direccion_lider_referencial": "Patentes",
+      "apoyo_habitual": "Seguridad · DIDECO",
+      "modalidad_gestion": "Municipal + gestión compartida",
+      "instrumento_respuesta": "Fiscalización"
     },
     {
       "tematica": "Desarrollo social y comunitario",
-      "subtema": "Personas en situación de calle"
+      "subtema": "Personas en situación de calle",
+      "direccion_lider_referencial": "DIDECO",
+      "apoyo_habitual": "Salud · Seguridad Humana",
+      "modalidad_gestion": "Gestión externa / interinstitucional",
+      "instrumento_respuesta": "Programa social"
     },
     {
       "tematica": "Desarrollo social y comunitario",
-      "subtema": "Organización y vida comunitaria"
+      "subtema": "Organización y vida comunitaria",
+      "direccion_lider_referencial": "DIDECO",
+      "apoyo_habitual": "Participación Ciudadana",
+      "modalidad_gestion": "Autogestión comunitaria con apoyo municipal",
+      "instrumento_respuesta": "Programa social"
     }
   ]
 }
