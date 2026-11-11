@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "corte_fuente": "2026-11-11",
+  "hoja_origen": "Matriz_Congreso_Barrial_fusionada / DATOS",
+  "criterio": "Sólo tipos Problema y Oportunidad de los cinco subtemas donde CAT_SUBTEMAS identifica DIMAO como referencia o apoyo; conteos de aud_estado agregados. No incluir IDs, descripciones, ubicación, coordenadas ni datos personales.",
+  "denominadores": "Cada bloque cuenta problemas y oportunidades del universo/rol indicado. No incorpora actores/lugares, aunque aparezcan como contexto en el dashboard.",
+  "alcances": {
+    "kit": {
+      "both": {
+        "total": 276,
+        "CONSISTENTE": 182,
+        "REQUIERE_RELECTURA": 7,
+        "SIN_AUDITAR": 87
+      },
+      "lead": {
+        "total": 140,
+        "CONSISTENTE": 92,
+        "REQUIERE_RELECTURA": 5,
+        "SIN_AUDITAR": 43
+      },
+      "support": {
+        "total": 136,
+        "CONSISTENTE": 90,
+        "REQUIERE_RELECTURA": 2,
+        "SIN_AUDITAR": 44
+      }
+    },
+    "all": {
+      "both": {
+        "total": 479,
+        "CONSISTENTE": 380,
+        "REQUIERE_RELECTURA": 12,
+        "SIN_AUDITAR": 87
+      },
+      "lead": {
+        "total": 234,
+        "CONSISTENTE": 184,
+        "REQUIERE_RELECTURA": 7,
+        "SIN_AUDITAR": 43
+      },
+      "support": {
+        "total": 245,
+        "CONSISTENTE": 196,
+        "REQUIERE_RELECTURA": 5,
+        "SIN_AUDITAR": 44
+      }
+    }
+  },
+  "piloto_UV15_referencia": {
+    "total": 10,
+    "CONSISTENTE": 5,
+    "REQUIERE_RELECTURA": 5,
+    "SIN_AUDITAR": 0,
+    "asociaciones_cartografia_propuestas": 7,
+    "sin_asociacion_propuesta": 3,
+    "cartografias_con_confirmacion_humana": 0,
+    "ubicacion_escrita": 10
+  },
+  "advertencias": [
+    "CONSISTENTE es una categoría de auditoría de datos, no una certificación de correspondencia física con el post-it o la cartografía.",
+    "La ausencia de marca de revisión de privacidad no constituye autorización de publicación.",
+    "Los estados de auditoría no deben presentarse como plazos, compromisos, prioridades ni acciones municipales.",
+    "Los cortes por UV o subtema distintos del piloto no se exponen para evitar desagregaciones excesivas."
+  ],
+  "validacion_competencias": "Confirmación preliminar del usuario sobre el entendimiento de competencias DIMAO el 11-11-2026; pendiente de ratificación/validación institucional según corresponda."
+}
