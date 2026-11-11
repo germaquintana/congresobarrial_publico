@@ -30,6 +30,9 @@ La taxonomía incluye exactamente cinco subtemas DIMAO:
 - Matriz completa, roles unidos: 307 problemas y 172 oportunidades.
 - El piloto UV15 con liderazgo referencial: 3 problemas y 7 oportunidades de dos subtemas; 3 problemas + 3 oportunidades corresponden a aseo/residuos y 4 oportunidades a áreas verdes/arbolado.
 
+## Revisión documental de lectura — piloto UV15 (11-11-2026)
+Se leyeron las hojas DATOS y MAPAS_UV, sin modificarlas. Se filtraron la UV15 y los dos subtemas de dirección referencial DIMAO, tipos Problema u Oportunidad: 10 registros, 10 ID únicos, tres grupos; 5 registros con aud_estado CONSISTENTE y 5 REQUIERE RELECTURA (estado_dato COMPLETO en los diez); 10 con ubicación escrita, ninguno con foto_ref; 7/10 tienen grupo con correspondencia propuesta UV+grupo en MAPAS_UV, 3/10 sin tal cruce; 0 filas MAPAS_UV de UV15 con confirmado_por_y_fecha. Este control no acredita el lugar exacto ni la procedencia de cada cartografía, y no autoriza publicar el texto de post-it.
+
 ## Pruebas verificadas
 - Script nuevo y scripts embebidos de portada, temáticas, cruces y trazabilidad compilan sintácticamente en motor JavaScript.
 - Reconciliación de clasificación entre 15 subtemas × cuatro tipos × 25 UV contra totales de datos-agregados.json sin diferencias.
