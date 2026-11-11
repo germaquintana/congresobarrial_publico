@@ -140,7 +140,7 @@ const actionCols=["id_punto","uv","tipo","tema_principal","subtema","descripcion
 function downloadActions(items){
 if(!items.length)return;const reveal=$("revealFlagged").checked,lines=[actionCols.map(csvSafe).join(",")];
 for(const r of items){const m=mInfo(r),hidden=flagged(r)&&!reveal;
-const fields=[r.id_punto,r.uv,r.tipo,r.tema_principal,r.subtema,hidden?"[RESTRINGIDO_POR_REVISION_PRIVACIDAD]":r.descripcion,hidden?"[RESTRINGIDO]":r.ubicacion,hidden?"":r.latitud,hidden?"":r.longitud,"COORDENADA_DATOS_SIN_COTEJO_CARTOGRAFICO",r.grupo,m?.clave_mapa||m?.mapa_propuesto||"",m?"PROPUESTA_NO_VALIDADA: "+(m.estado||"SIN_ESTADO"):"SIN_VINCULO_CONCILIADO",r.aud_estado,flagged(r)?"Sí":"Sin marca",r.origen_dato,r.fecha_asamblea,"","","","","","","","","","",""];
+const fields=[r.id_punto,r.uv,r.tipo,r.tema_principal,r.subtema,hidden?"[RESTRINGIDO_POR_REVISION_PRIVACIDAD]":r.descripcion,hidden?"[RESTRINGIDO]":r.ubicacion,hidden?"":r.latitud,hidden?"":r.longitud,"COORDENADA_DATOS_SIN_COTEJO_CARTOGRAFICO",r.grupo,m?.clave_mapa||m?.mapa_propuesto||"",m?"PROPUESTA_NO_VALIDADA: "+(m.estado||"SIN_ESTADO"):"SIN_VINCULO_CONCILIADO",r.aud_estado,flagged(r)?"Sí":"Sin marca",r.origen_dato,r.fecha_asamblea,"","","","","","","","","","","" ,"" ];
 lines.push(fields.map(csvSafe).join(","))}
 const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="congreso_barrial_matriz_acciones_interna_"+new Date().toISOString().slice(0,10)+".csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
 }
