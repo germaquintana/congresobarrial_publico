@@ -11,3 +11,10 @@
 - Validación pendiente: prueba manual responsive y comprobación de despliegue GitHub Pages/HTTPS tras propagación. La lectura de GitHub es la validación de escritura.
 - Estado: cambio de interfaz implementado; revisión editorial/institucional de resultados continúa pendiente.
 - Próxima acción: revisión humana en navegador de torta, barras, siete temas y enlaces por UV.
+
+## Comprobaciones posteriores a las escrituras
+
+- Se recuperaron nuevamente desde `main` los dos HTML y su fuente agregada; los scripts embebidos de `index.html` y `tematicas.html` superaron compilación sintáctica con el motor JavaScript (`new Function`), sin ejecutarse en un navegador.
+- Cotejo independiente del filtro Entrega 01: 15 UV y 872 registros, con totales temáticos 284 + 165 + 170 + 123 + 56 + 51 + 23 = 872.
+- Cotejo de matriz completa: 25 etiquetas UV y 1.570 registros.
+- No se pudo comprobar el despliegue HTTPS mediante el lector web externo, que devolvió error de acceso; publicación visual y funcionamiento en navegador quedan `POR_VERIFICAR`.
