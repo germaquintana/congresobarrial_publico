@@ -25,6 +25,12 @@ El botón **«Abrir modo presentación»** aparece destacado en [la portada gene
 
 La fuente primaria digitalizada no equivale a un post-it físico o cartografía cotejada. El repositorio canónico mantiene publicación individual y revisión de privacidad pendientes; no se añaden microdatos al portal público.
 
+## Visualizaciones recuperadas para presentación (11-11-2026)
+
+La [vista ejecutiva de tres capas](presentacion.html) recupera de `index.html` la **torta de distribución temática** y las **columnas apiladas por UV con la misma paleta fija de siete temáticas**. También incorpora una torta por tipo de registro, una torta temática en la vista UV y columnas apiladas rojo/verde de problemas y oportunidades por dirección municipal. El desglose textual por barras se conserva en secciones desplegables para accesibilidad y lectura detallada.
+
+Los cortes son interactivos (15 UV / 872 registros y 25 etiquetas UV / 1.570 registros). La leyenda, los totales y los porcentajes se recalculan desde `datos-agregados.json`; las columnas por UV usan **escala común de altura** y sus segmentos conducen al cruce territorial correspondiente. La torta UV15 agrupa sus 42 registros por temática. No se confunden tipos, temas, votos ni número de personas.
+
 ## Dashboard
 
 - `index.html` — dashboard general y fichas por UV; admite enlaces `?uv=25`.
