@@ -204,7 +204,7 @@ nodes+='<g class="node" role="button" tabindex="0" data-theme="" data-type="'+es
 svg.innerHTML='<text class="hintsvg" x="217" y="15" text-anchor="end">7 temáticas</text><text class="hintsvg" x="865" y="15">4 dimensiones</text>'+paths+nodes;
 svg.querySelectorAll("[data-theme]").forEach(el=>{const handle=()=>{const item={};if(el.dataset.theme)item.theme=el.dataset.theme;if(el.dataset.type)item.type=el.dataset.type;choose(item)};el.onclick=handle;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();handle()}}});
 }
-function detailURL(uv,theme,type){let p=new URLSearchParams();if(uv)p.set("uv",uv);if(theme)p.set("tema",theme);if(type)p.set("tipo",type);if(state.subtheme)p.set("subtema",state.subtheme);if(state.scope==="kit")p.set("corte","entrega01");return "trazabilidad.html?"+p}
+function detailURL(uv,theme,type){let p=new URLSearchParams();if(uv)p.set("uv",uv);if(theme)p.set("tema",theme);if(type)p.set("tipo",type);if(state.subtheme)p.set("subtema",state.subtheme);if(state.scope==="kit")p.set("corte","entrega01");return "uv-grupos.html?"+p}
 function buildIntersections(){
 intersections=[];const rows=geographicRows();
 for(const u of rows)for(const t of topics){if(state.theme&&state.theme!==t)continue;
