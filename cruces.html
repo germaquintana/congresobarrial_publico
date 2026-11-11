@@ -215,7 +215,7 @@ if(tax.pares?.length!==15)throw Error("Taxonomía incompleta");
 const m=new Map();for(const x of tax.pares){if(m.has(x.subtema)&&m.get(x.subtema)!==x.tematica)throw Error("Subtema con doble temática: "+x.subtema);m.set(x.subtema,x.tematica)}
 const allTopics=d.distribucion_tematica.map(x=>x.etiqueta);if(tax.pares.some(x=>!allTopics.includes(x.tematica)))throw Error("Temática no incluida en datos");
 let mismatch=0,total=0;
-for(const u of d.uvs){let sumKind=0;for(const ty of types){const v=u.por_tipo[ty];if(!v)throw Error("Falta tipo "+ty);sumKind+=u.tipo[ty]||0;
+for(const u of d.uvs){let sumKind=0;for(const ty of types){const v=u.por_tipo[ty];if(!v){if(u.tipo[ty])throw Error("Falta tipo con registros: "+ty);continue}sumKind+=u.tipo[ty]||0;
 const sums={};for(const x of v.subtemas){const th=m.get(x.etiqueta);if(!th)throw Error("Subtema sin correspondencia: "+x.etiqueta);sums[th]=(sums[th]||0)+x.n}
 for(const x of v.temas)if((sums[x.etiqueta]||0)!==x.n)mismatch++;}
 if(sumKind!==u.total)mismatch++;total+=u.total}
