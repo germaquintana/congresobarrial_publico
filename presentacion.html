@@ -34,6 +34,33 @@ button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #edb
 @media(max-width:700px){.tabs,.metrics,.groupgrid,.flow,.filters{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:500px){.tabs,.metrics,.groupgrid,.flow,.filters,.uvList{grid-template-columns:1fr}.card{padding:15px}.cut{flex-direction:column;align-items:stretch}.barrow{grid-template-columns:120px minmax(50px,1fr) 38px;gap:5px}.cut select{width:100%}}
 @media print{body{background:#fff}header{print-color-adjust:exact}main{padding:0}.card{box-shadow:none;break-inside:avoid}nav,.tabs,.cut select,.action,#print,.actions{display:none!important}header{padding:12px}.hidden{display:none!important}footer{padding:5px}}
+
+/* Gráficos recuperados de la versión anterior: misma paleta temática */
+.pie-layout{display:grid;grid-template-columns:minmax(155px,220px) minmax(0,1fr);gap:16px;align-items:center;margin:12px 0 16px}
+.pie-graphic{width:min(100%,220px);aspect-ratio:1;border-radius:50%;border:3px solid white;box-shadow:0 0 0 1px #d4e3e9,0 4px 13px #1d4d5d12;margin:auto;flex-shrink:0}
+.pie-legend{display:grid;gap:8px;align-content:center}
+.pie-line{display:flex;align-items:flex-start;gap:7px;font-size:.8rem;line-height:1.3;color:#365b6d}
+.pie-line a{color:#175b75;font-weight:650}
+.pie-line small{font-size:.76rem;color:#617887;white-space:nowrap}
+.color-dot{display:inline-block;flex:none;width:11px;height:11px;border-radius:3px;margin-top:3px}
+.chart-details{margin-top:10px;border-top:1px solid #e5eef2;padding-top:10px}
+.chart-details summary{cursor:pointer;color:#186982;font-size:.82rem;font-weight:700}
+.chart-details>div{margin-top:12px}
+.color-legend{display:flex;flex-wrap:wrap;gap:7px 17px;margin:12px 0;color:#3c6172}
+.legend-key{display:inline-flex;align-items:flex-start;gap:6px;font-size:.78rem}
+.stack-scroller{overflow-x:auto;max-width:100%;padding-bottom:5px}
+.stack-plot{display:flex;gap:12px;align-items:flex-end;min-width:max-content;padding:12px 9px 8px 12px;min-height:303px;border-bottom:2px solid #bdd0d9;background:linear-gradient(to top,transparent 24.8%,#e6eff3 25%,transparent 25.2%,transparent 49.8%,#e6eff3 50%,transparent 50.2%,transparent 74.8%,#e6eff3 75%,transparent 75.2%);background-size:100% 270px;background-position:bottom 28px left 0;background-repeat:no-repeat}
+.stack-column{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;width:57px;min-width:57px;height:292px}
+.stack-total{display:block;min-height:18px;font-size:.76rem;color:#204c60;font-variant-numeric:tabular-nums;font-weight:750}
+.stack-shell{height:248px;width:47px;display:flex;align-items:flex-end}
+.stack-tower{width:100%;display:flex;flex-direction:column-reverse;overflow:hidden;border-radius:4px 4px 0 0;min-height:2px;box-shadow:0 0 0 1px #103b4d0b}
+.stack-segment{display:block;width:100%;flex:none;min-height:0;cursor:pointer;transition:filter .12s}
+.stack-segment:hover{filter:brightness(.81)}
+.stack-segment:focus-visible{outline:3px solid #f3ad36;outline-offset:-3px;position:relative;z-index:1}
+.stack-uv-label{display:block;white-space:nowrap;font-size:.77rem;margin-top:5px;font-weight:750;color:#185a74}
+@media(max-width:640px){.pie-layout{grid-template-columns:1fr}.pie-legend{grid-template-columns:repeat(2,minmax(0,1fr))}.pie-graphic{width:190px}.stack-column{width:52px;min-width:52px}.stack-shell{width:42px}}
+@media(max-width:390px){.pie-legend{grid-template-columns:1fr}}
+@media print{.stack-scroller{overflow:visible}.stack-plot{transform-origin:top left;transform:scale(.74);margin-bottom:-65px}.pie-graphic,.stack-segment,.color-dot{print-color-adjust:exact;-webkit-print-color-adjust:exact}.chart-details{display:none}}
 </style>
 </head><body>
 <header><div class="meta">Observatorio territorial · Congreso Barrial de Recoleta</div>
@@ -51,9 +78,10 @@ button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #edb
 <section id="view-comuna" aria-label="Panorama comunal" role="tabpanel">
 <div class="card"><h2>Panorama del conjunto seleccionado</h2><div id="communeKpis" class="metrics"></div></div>
 <div class="columns">
-<section class="card"><h2>Distribución temática</h2><p class="small muted">Registros agrupados por temática. Las barras no representan votos ni importancia relativa de necesidades.</p><div id="themesBars"></div></section>
-<section class="card"><h2>Tipos de registro</h2><p class="small muted">Problemas, oportunidades, actores y lugares constituyen categorías documentales diferentes.</p><div id="typeBars"></div></section>
+<section class="card"><h2>Distribución temática</h2><p class="small muted">Proporción de menciones por temática. Recuperamos los colores del dashboard original. No representa votos, urgencia ni prevalencia.</p><div id="themesPie" class="pie-layout"></div><details class="chart-details"><summary>Ver también barras temáticas</summary><div id="themesBars"></div></details></section>
+<section class="card"><h2>Tipos de registro</h2><p class="small muted">Problemas, oportunidades, actores y lugares son cuatro categorías de registro distintas; la torta suma el total del corte.</p><div id="typesPie" class="pie-layout"></div><details class="chart-details"><summary>Ver también barras por tipo</summary><div id="typeBars"></div></details></section>
 </div>
+<div class="card"><h2>Columnas apiladas por Unidad Vecinal y temática</h2><p class="small muted">Cada columna muestra la cantidad total de registros de una UV. Sus segmentos mantienen el color de cada temática en toda la presentación; pulsa un segmento para explorar su cruce temático o la etiqueta UV para abrir el territorio. Las columnas se comparan mediante una misma escala y pueden desplazarse horizontalmente.</p><div id="stackLegend" class="color-legend"></div><div class="stack-scroller"><div id="uvStacks" class="stack-plot"></div></div><p id="stackNote" class="small muted"></p></div>
 <div class="card"><h2>Unidades Vecinales comparadas</h2><p class="small muted">Selecciona una UV para abrir su panorama. Más menciones no implican necesariamente más necesidades.</p><div id="uvCards" class="uvList"></div></div>
 </section>
 <section id="view-uv" class="hidden" role="tabpanel" aria-label="Detalle de Unidad Vecinal">
@@ -61,14 +89,14 @@ button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #edb
 <div id="uvKpis" class="metrics"></div><p id="uvThemes" class="small muted"></p>
 <div class="actions"><a id="uvFull" class="action secondary" href="index.html">Ver informe UV B01–B10</a><a id="uvRead" class="action" href="uv-grupos.html">Explorar grupos y post-it</a></div></section>
 <div class="card"><h2>Grupos documentados</h2><p class="small muted">Son etiquetas de la matriz DATOS. Los enlaces hacia las cartografías originales deben cotejarse antes de considerarse verificados.</p><div id="uvGroups" class="groupgrid"></div><p id="uvWarning" class="small muted"></p></div>
-<div class="card"><h2>Temáticas mencionadas en esta UV</h2><div id="uvThemeBars"></div></div>
+<div class="card"><h2>Temáticas mencionadas en esta UV</h2><p class="small muted">La torta utiliza la misma paleta del panorama comunal, y el total corresponde únicamente a la UV elegida.</p><div id="uvThemePie" class="pie-layout"></div><details class="chart-details"><summary>Ver recuento por temática</summary><div id="uvThemeBars"></div></details></div>
 </section>
 <section id="view-direcciones" class="hidden" role="tabpanel" aria-label="Perspectiva de direcciones municipales">
 <div class="card"><h2>Observación por dirección y relación funcional</h2><p class="small muted">Clasificación referencial de CAT_SUBTEMAS: no asigna tareas, compromisos, presupuestos ni competencia formal. La interpretación requiere validación de la dirección involucrada.</p>
 <div class="filters"><div><label for="directionSelect">Dirección de referencia</label><select id="directionSelect"></select></div><div><label for="roleSelect">Relación con la materia</label><select id="roleSelect"><option value="both">Liderazgo referencial o apoyo</option><option value="lead">Solo liderazgo referencial</option><option value="support">Solo apoyo habitual</option></select></div></div><div id="directionKpis" class="metrics"></div>
 <div class="actions"><a id="directionDeep" class="action secondary" href="carteras.html">Abrir carteras detalladas</a></div></div>
 <div class="columns"><div class="card"><h2>Problemas y oportunidades por subtema</h2><div class="legend"><span>Problemas</span><span class="good">Oportunidades</span></div><div id="directionTopics"></div></div>
-<div class="card"><h2>Distribución territorial</h2><p class="small muted">Cada UV conduce a los grupos y registros de esa categoría, bajo consulta autorizada.</p><div id="directionUVs"></div></div></div></section>
+<div class="card"><h2>Distribución territorial</h2><p class="small muted">Cada UV conduce a los grupos y registros de esa categoría, bajo consulta autorizada.</p><div id="directionUVs"></div></div></div><div class="card"><h2>Columnas apiladas de problemas y oportunidades por UV</h2><p class="small muted">Se conservan dos colores: problemas en rojo y oportunidades en verde. La altura indica cantidad de menciones vinculadas con la dirección y el rol seleccionado, no prioridad de gestión. Cada segmento conduce a los registros de ese tipo en la UV.</p><div class="color-legend"><span class="legend-key"><span class="color-dot" style="background:#c35b57"></span>Problemas</span><span class="legend-key"><span class="color-dot" style="background:#21887b"></span>Oportunidades</span></div><div class="stack-scroller"><div id="directionStacks" class="stack-plot"></div></div><p id="directionStackNote" class="small muted"></p></div></section>
 <section class="card">
 <span class="eyebrow">De los indicadores a la evidencia</span><h2>Una ficha de post-it, con acceso según permisos</h2>
 <div class="flow"><div><b>1 · Identificar</b><span>Comuna, temática, UV o dirección municipal.</span></div><div><b>2 · Explorar</b><span>Grupo, tipo y subtema de la mención.</span></div><div><b>3 · Leer fuente</b><span>Descripción digitalizada por ID en consulta autorizada.</span></div><div><b>4 · Validar</b><span>Cotejar post-it y mapa originales, privacidad y competencia.</span></div></div>
