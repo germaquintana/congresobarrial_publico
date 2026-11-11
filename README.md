@@ -20,6 +20,15 @@ Los CSV históricos con 872 filas **no son el origen numérico principal** y no 
 - `resultados-territoriales.json` — diez dimensiones B01–B10 por UV y categorías de la hoja madre; material cualitativo complementario del proyecto permanece identificado como preliminar.
 
 
+## Panel DIMAO — vista sectorial y piloto territorial (11-11-2026)
+
+- [Panel DIMAO](dimao.html): botón destacado desde la portada y acceso desde las páginas de carteras, temáticas y cruces. Diferencia asuntos en que DIMAO figura como dirección líder referencial y como apoyo habitual, sin atribuir competencias automáticamente.
+- [Lógica del panel](dimao.js): cinco subtemas de CAT_SUBTEMAS (dos de referencia y tres de apoyo), filtros por corte/rol/tipo/UV/subtema, barras apiladas, mapa de calor UV×subtema, tarjetas de gestión y matriz exportable.
+- [Protocolo del panel](docs/PROTOCOLO_PANEL_DIMAO_V1.md): interpretación, roles, privacidad, conteos de control y etapas de cotejo humano.
+- [Piloto UV15](dimao.html?corte=entrega01&rol=lead&uv=15): 3 problemas + 3 oportunidades de aseo/residuos y 4 oportunidades de áreas verdes/arbolado. Desde el panel se llega al visor local de registros (requiere CSV autorizado), pero todavía no se acredita post-it ni cartografía original.
+- La clasificación DIMAO abarca, en las 15 UV de Entrega 01, **176 problemas y 100 oportunidades** (101/39 con rol líder referencial; 75/61 como apoyo); en matriz completa, **307 problemas y 172 oportunidades**.
+- Esta página es una **exploración agregada pública**, no un catálogo de denuncias verificadas ni un sistema oficial de órdenes de trabajo.
+
 ## Carteras de problemas y oportunidades y guías de lectura (11-11-2026)
 
 - [Inicio del dashboard](index.html): cuatro accesos visibles a temáticas, cruces multidimensionales, carteras por dirección y visor de evidencia.
