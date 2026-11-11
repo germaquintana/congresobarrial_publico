@@ -45,7 +45,7 @@ footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#me
 <div><label for="group">Grupo / cartografía</label><select id="group"><option value="">Todos</option></select></div>
 <div><label for="subtopic">Subtema</label><select id="subtopic"><option value="">Todos</option></select></div>
 </div><div style="margin-top:12px"><label for="search">Buscar por ID o contenido de la transcripción</label><input id="search" type="search" placeholder="Ej.: basura, esquina, nombre de calle, ID…" autocomplete="off"></div>
-<div class="checks"><label class="check"><input type="checkbox" id="includeFlagged">Incluir registros marcados para revisar privacidad</label><label class="check"><input type="checkbox" id="revealFlagged">Mostrar su descripción, bajo revisión específica</label></div>
+<div class="checks"><label class="check"><input type="checkbox" id="kitOnly">Solo entrega 01 · 15 UV</label><label class="check"><input type="checkbox" id="includeFlagged">Incluir registros marcados para revisar privacidad</label><label class="check"><input type="checkbox" id="revealFlagged">Mostrar su descripción, bajo revisión específica</label></div>
 <p class="small muted">Las marcas de privacidad provienen de DATOS. Un registro sin marca <strong>no equivale</strong> a un dato autorizado para difusión.</p>
 <div id="kpis" class="kpis"></div>
 <div class="actions"><button id="exportActions" class="primary" type="button">Exportar matriz de plan de acción (.csv)</button><button id="clearFilters" type="button">Limpiar filtros</button><span class="small muted" id="shown"></span></div>
@@ -82,6 +82,7 @@ footer{color:#5b7487;font-size:.81rem;line-height:1.55;padding:12px 2px 28px}#me
 const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])),fmt=n=>Number(n||0).toLocaleString("es-CL");
 const baseSheet="https://docs.google.com/spreadsheets/d/1KecTjqU4Kx5tJLNPl4Z5D1sxlgC05PxWHh5xwuI0jpQ/edit#gid=1996552213&range=";
 let records=[],maps=new Map(),filtered=[],current=null;
+const kitIDs=new Set(["15","21","22","26A","26B","25","29","28","27","30","31","32","33","34","35"]);
 const required=["id_punto","uv","tipo","tema_principal","subtema","descripcion","grupo"];
 const sorted=(vals)=>[...new Set(vals.map(x=>String(x??"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es",{numeric:true}));
 function parseCsv(t){
@@ -104,13 +105,16 @@ function mInfo(r){return maps.get(key(r.uv,r.grupo))}
 function fill(id,values){const el=$(id),keep=el.value;el.innerHTML='<option value="">Todos</option>'+sorted(values).map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join("");if([...el.options].some(o=>o.value===keep))el.value=keep}
 function initialize(){
 fill("theme",records.map(r=>r.tema_principal));fill("uv",records.map(r=>r.uv));fill("kind",records.map(r=>r.tipo));fill("group",records.map(r=>r.grupo));fill("subtopic",records.map(r=>r.subtema));
-const incomingTopic=new URLSearchParams(location.search).get("tema");if(incomingTopic&&[...$("theme").options].some(o=>o.value===incomingTopic))$("theme").value=incomingTopic;
+const q=new URLSearchParams(location.search);const incomingTopic=q.get("tema");if(incomingTopic&&[...$("theme").options].some(o=>o.value===incomingTopic))$("theme").value=incomingTopic;
+for(const [param,id] of [["uv","uv"],["tipo","kind"],["subtema","subtopic"]]){const v=q.get(param);if(v&&[...$(id).options].some(o=>o.value===v))$(id).value=v;}
+$("kitOnly").checked=q.get("corte")==="entrega01";
 $("workspace").hidden=false;apply();
 }
 function apply(){
 const q=$("search").value.trim().toLocaleLowerCase("es"),withFlag=$("includeFlagged").checked,reveal=$("revealFlagged").checked;
 filtered=records.filter(r=>{
 if(flagged(r)&&!withFlag)return false;
+if($("kitOnly").checked&&!kitIDs.has(r.uv))return false;
 for(const [f,c] of [["tema_principal","theme"],["uv","uv"],["tipo","kind"],["grupo","group"],["subtema","subtopic"]])if($(c).value&&r[f]!==$(c).value)return false;
 if(!q)return true;
 const parts=[r.id_punto,r.uv,r.tema_principal,r.subtema,r.tipo,r.grupo];
@@ -219,8 +223,8 @@ if(!consent)return;tilesEnabled=true;paintGeo()
 };
 window.addEventListener("resize",()=>{if(!$("workspace").hidden)paintGeo()});
 
-for(const id of ["theme","uv","kind","group","subtopic","search","includeFlagged","revealFlagged"])$(id).addEventListener("input",apply);
-$("clearFilters").onclick=()=>{for(const id of ["theme","uv","kind","group","subtopic","search"])$(id).value="";$("includeFlagged").checked=$("revealFlagged").checked=false;apply()};
+for(const id of ["theme","uv","kind","group","subtopic","search","kitOnly","includeFlagged","revealFlagged"])$(id).addEventListener("input",apply);
+$("clearFilters").onclick=()=>{for(const id of ["theme","uv","kind","group","subtopic","search"])$(id).value="";$("kitOnly").checked=$("includeFlagged").checked=$("revealFlagged").checked=false;apply()};
 $("exportActions").onclick=()=>downloadActions(filtered);
 </script>
 </body></html>
