@@ -28,7 +28,7 @@ Estos enlaces representan una ruta analítica y no prueban derivaciones administ
 - Los indicadores cuentan registros o menciones, no personas, votos ni hechos comprobados.
 - La clasificación del subtema y la dirección de referencia es metodológica: no constituye designación de funciones, aceptación, instrucción o compromiso municipal.
 - El portal público no contiene textos originales, fotografías, ubicaciones exactas, coordenadas ni datos personales. Los registros sensibles requieren una herramienta de acceso institucional autenticado.
-- Cuando se selecciona una UV, ciertos valores menores a tres se muestran como «<3» y en la exportación se marcan como SUPRIMIDO_MENOR_A_3. Es una mitigación parcial, no una certificación de anonimato.
+- En tarjetas, filas y exportaciones de celdas UV-subtema, los valores positivos menores a tres se muestran como «<3» o se marcan como SUPRIMIDO_MENOR_A_3, incluso sin seleccionar una única UV. Es una mitigación parcial, no una certificación de anonimato.
 - No identificar como comprobados domicilios ocupados, puntos delictivos, asentamientos o situaciones personales a partir de testimonios de jornadas.
 
 ## Ciclo institucional propuesto
