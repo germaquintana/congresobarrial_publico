@@ -91,7 +91,7 @@ function renderCards(a){
 const merged=new Map();for(const r of a){const id=r.lead+"|"+r.sub;
 const z=merged.get(id)||{...r,uvs:new Set(),p:0,o:0,a:0,l:0};z.p+=r.p;z.o+=r.o;z.a+=r.a;z.l+=r.l;z.uvs.add(r.uv);merged.set(id,z)}
 const arr=[...merged.values()].filter(r=>r.p+r.o>0).sort((a,b)=>((state.view==="opportunities"?b.o:state.view==="problems"?b.p:b.p+b.o)-(state.view==="opportunities"?a.o:state.view==="problems"?a.p:a.p+a.o))||sortText(a.sub,b.sub));
-const display=n=>state.uv&&n>0&&n<3?"<3":fmt(n);
+const display=n=>n>0&&n<3?"<3":fmt(n);
 $("cards").innerHTML=arr.map(r=>{
 const bad=state.uv?"UV "+r.uv:fmt(r.uvs.size)+" UV";
 const pathP=state.uv?urlToRecord(r,"Problema"):urlToAnalysis(r,"Problema");
@@ -101,7 +101,7 @@ return '<article class="workcard"><h3>'+esc(r.sub)+'</h3><span class="pill">'+es
 }
 function renderTable(a){
 const list=a.filter(r=>r.total>0).sort((x,y)=>y.total-x.total||sortText(x.uv,y.uv)||sortText(x.sub,y.sub));
-const show=list.slice(0,visible),masked=n=>state.uv&&n>0&&n<3?"<3":fmt(n);
+const show=list.slice(0,visible),masked=n=>n>0&&n<3?"<3":fmt(n);
 $("rows").innerHTML=show.map(r=>'<tr><td>UV '+esc(r.uv)+'</td><td>'+esc(r.sub)+'</td><td>'+esc(r.lead)+'</td><td>'+masked(r.p)+'</td><td>'+masked(r.o)+'</td><td>'+masked(r.context)+'</td><td><a href="'+urlToRecord(r)+'">Consultar</a></td></tr>').join("")||'<tr><td colspan="7">No se encontraron intersecciones.</td></tr>';
 $("rowCount").textContent=fmt(show.length)+" de "+fmt(list.length)+" cruces UV-subtema con problemas u oportunidades.";
 $("more").hidden=visible>=list.length;
@@ -111,7 +111,7 @@ const columns=["uv","tematica","subtema","direccion_referencia_sin_asignar","apo
 function csvEsc(v){let s=String(v??"");if(/^\s*[=+\-@]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}
 function exportCSV(){
 const a=relevant().filter(x=>x.total>0),lines=[columns.map(csvEsc).join(",")];
-for(const r of a){const safe=n=>state.uv&&n>0&&n<3?"SUPRIMIDO_MENOR_A_3":n;
+for(const r of a){const safe=n=>n>0&&n<3?"SUPRIMIDO_MENOR_A_3":n;
 const values=[r.uv,r.theme,r.sub,r.lead,r.help,r.instrument,r.method,safe(r.p),safe(r.o),safe(r.a),safe(r.l),"SOLO_ANALISIS_SIN_ASIGNACION","","","","","","","","","","",""];
 if(values.length!==columns.length)throw Error("Columnas inconsistentes");
 lines.push(values.map(csvEsc).join(","))}
