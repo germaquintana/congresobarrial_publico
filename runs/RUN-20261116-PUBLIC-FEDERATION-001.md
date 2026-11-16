@@ -1,0 +1,2 @@
+# RUN-20261116-PUBLIC-FEDERATION-001
+Inicio/término 2026-11-16T11:20:42-03:00 Chile. Repo germaquintana/congresobarrial_publico, fuente guía pública de concurrencia, estado de publicación propio. Cambio AGENTS.md SHA/commit d353cf0f81465f6bd5de31c4d6732e1a0e6cb56c. Verificación: readback GitHub. No datos de origen, dashboards ni permisos modificados. Resultado ADOPCION_DOCUMENTAL; pendiente verificar ciclo real y enlaces web si el usuario lo solicita.
