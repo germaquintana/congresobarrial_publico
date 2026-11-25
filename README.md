@@ -1,5 +1,9 @@
 # Congreso Barrial Recoleta — portal territorial público
 
+## Resumen ejecutivo comunal — 25/11/2026
+
+[Resumen ejecutivo comunal](resumen-ejecutivo.html): 1.954 aportes en 28 etiquetas UV (25/11), 479 asistencias en 15 jornadas del informe 07/10. 13 etiquetas sin dato histórico, no cero. Filtros por territorio/UV, perfil histórico, distribución temática, comparación y CSV agregado. Los cocientes entre cortes son exploratorios, pendientes de conciliación de sesión. No se publican fuentes privadas ni microdatos. El resto del portal conserva sus cortes históricos. 
+
 **Sitio web:** https://germaquintana.github.io/congresobarrial_publico/
 
 ## Fuente principal y corte
