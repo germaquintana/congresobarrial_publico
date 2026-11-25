@@ -1,0 +1,4189 @@
+{
+  "cut": "2026-11-25",
+  "attendance_cut": "2026-10-07",
+  "total": 1954,
+  "uv_labels": 28,
+  "attendance": 479,
+  "attendance_sessions": 15,
+  "linked_uv": 18,
+  "unlinked_uv": 10,
+  "shared": {
+    "29": [
+      "28",
+      "29",
+      "30"
+    ],
+    "26A": [
+      "26A",
+      "26B"
+    ]
+  },
+  "source": "DATOS and DIGITALIZACION_UV; historical attendance report",
+  "cube_columns": [
+    "uv",
+    "tipo",
+    "tema",
+    "subtema",
+    "n"
+  ],
+  "cube": [
+    [
+      "30",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      7
+    ],
+    [
+      "30",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      3
+    ],
+    [
+      "30",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "30",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      2
+    ],
+    [
+      "30",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "30",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "25",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "25",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "25",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      5
+    ],
+    [
+      "25",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "25",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "25",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      5
+    ],
+    [
+      "25",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "25",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      7
+    ],
+    [
+      "25",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "25",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "25",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      6
+    ],
+    [
+      "26B",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "26B",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "26B",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "26B",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "26B",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      2
+    ],
+    [
+      "26B",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "26B",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "26B",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "26B",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "26B",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "26A",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      9
+    ],
+    [
+      "26A",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      2
+    ],
+    [
+      "26B",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "26A",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      3
+    ],
+    [
+      "26A",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "26A",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "26A",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      5
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      3
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "26A",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "26A",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "26A",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "26A",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      5
+    ],
+    [
+      "26A",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "13",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      7
+    ],
+    [
+      "13",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "13",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "13",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "13",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      2
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "21",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      4
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      9
+    ],
+    [
+      "21",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "21",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      2
+    ],
+    [
+      "21",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      5
+    ],
+    [
+      "21",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      4
+    ],
+    [
+      "21",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "21",
+      "Actor",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "21",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "21",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "21",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "15",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      2
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "15",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "15",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      3
+    ],
+    [
+      "15",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "15",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      4
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "15",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      2
+    ],
+    [
+      "15",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      1
+    ],
+    [
+      "15",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "15",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "15",
+      "Actor",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "15",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "15",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "15",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "15",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "13",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "13",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "13",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "13",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "13",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      5
+    ],
+    [
+      "13",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      5
+    ],
+    [
+      "13",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "13",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "13",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "13",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      3
+    ],
+    [
+      "13",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      4
+    ],
+    [
+      "13",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      1
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      10
+    ],
+    [
+      "12",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      8
+    ],
+    [
+      "12",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "12",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      7
+    ],
+    [
+      "12",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      7
+    ],
+    [
+      "12",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      7
+    ],
+    [
+      "12",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      6
+    ],
+    [
+      "12",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      5
+    ],
+    [
+      "12",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      12
+    ],
+    [
+      "12",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      9
+    ],
+    [
+      "12",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      4
+    ],
+    [
+      "12",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      2
+    ],
+    [
+      "22",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      10
+    ],
+    [
+      "22",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "22",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      3
+    ],
+    [
+      "22",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      9
+    ],
+    [
+      "22",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      9
+    ],
+    [
+      "22",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "22",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      5
+    ],
+    [
+      "22",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "22",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      4
+    ],
+    [
+      "22",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "22",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      2
+    ],
+    [
+      "22",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "22",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "22",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "22",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "22",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "14",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      5
+    ],
+    [
+      "14",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      6
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "14",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "14",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "14",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      5
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "14",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      9
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      4
+    ],
+    [
+      "14",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "14",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      3
+    ],
+    [
+      "14",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "14",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "14",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "14",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "14",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      2
+    ],
+    [
+      "13",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "13",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "13",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "12",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "12",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "12",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "12",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "12",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "30",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "26B",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "30",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "26B",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "5",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      12
+    ],
+    [
+      "5",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      3
+    ],
+    [
+      "5",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "5",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      2
+    ],
+    [
+      "5",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "5",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "5",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "5",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "5",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      10
+    ],
+    [
+      "5",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "5",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "5",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      3
+    ],
+    [
+      "5",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      1
+    ],
+    [
+      "5",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "5",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "5",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "5",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "5",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "5",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "5",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      3
+    ],
+    [
+      "5",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "6",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "6",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "6",
+      "Lugar importante",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "6",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      3
+    ],
+    [
+      "6",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      13
+    ],
+    [
+      "6",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      6
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "6",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      2
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "6",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      4
+    ],
+    [
+      "6",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      4
+    ],
+    [
+      "6",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      4
+    ],
+    [
+      "6",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "6",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      3
+    ],
+    [
+      "6",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "6",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "6",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "6",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "6",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "6",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "6",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "10",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "10",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "10",
+      "Actor",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "10",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "10",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      13
+    ],
+    [
+      "10",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "10",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "10",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "10",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "10",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "10",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      8
+    ],
+    [
+      "10",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "10",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      5
+    ],
+    [
+      "10",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "10",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "10",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      2
+    ],
+    [
+      "10",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "11",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      5
+    ],
+    [
+      "11",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      9
+    ],
+    [
+      "11",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "11",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      9
+    ],
+    [
+      "11",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      9
+    ],
+    [
+      "11",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "11",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "11",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      11
+    ],
+    [
+      "11",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "11",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "11",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      7
+    ],
+    [
+      "11",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "11",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "11",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "11",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      2
+    ],
+    [
+      "11",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "11",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "11",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "11",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      1
+    ],
+    [
+      "11",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "7",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "7",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      5
+    ],
+    [
+      "7",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      9
+    ],
+    [
+      "7",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      7
+    ],
+    [
+      "7",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      11
+    ],
+    [
+      "7",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "7",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      7
+    ],
+    [
+      "7",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      3
+    ],
+    [
+      "7",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      15
+    ],
+    [
+      "7",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "7",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "7",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "7",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "7",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      8
+    ],
+    [
+      "7",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "7",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      2
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "7",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "25",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "25",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "25",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "9",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      11
+    ],
+    [
+      "9",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      7
+    ],
+    [
+      "9",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      5
+    ],
+    [
+      "9",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      4
+    ],
+    [
+      "9",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "9",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "9",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "9",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      6
+    ],
+    [
+      "9",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "9",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "9",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "9",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "9",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      4
+    ],
+    [
+      "9",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "9",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "9",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "9",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "9",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      1
+    ],
+    [
+      "9",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "9",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "9",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "35",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "35",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "35",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      4
+    ],
+    [
+      "35",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      7
+    ],
+    [
+      "35",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "35",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      7
+    ],
+    [
+      "35",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      13
+    ],
+    [
+      "35",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      4
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "35",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      4
+    ],
+    [
+      "35",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "35",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "35",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "35",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      7
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "35",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "35",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      7
+    ],
+    [
+      "35",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      7
+    ],
+    [
+      "35",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "35",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "35",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "35",
+      "Lugar importante",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      2
+    ],
+    [
+      "34",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      6
+    ],
+    [
+      "34",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "34",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      4
+    ],
+    [
+      "34",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      9
+    ],
+    [
+      "34",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      4
+    ],
+    [
+      "34",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "34",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      6
+    ],
+    [
+      "34",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "34",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "34",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "34",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      4
+    ],
+    [
+      "34",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "34",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      5
+    ],
+    [
+      "34",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "34",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      4
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "34",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "34",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "34",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "32",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      10
+    ],
+    [
+      "32",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      3
+    ],
+    [
+      "32",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      5
+    ],
+    [
+      "32",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "32",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "32",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "32",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "32",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "32",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "32",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "32",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "32",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "32",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "32",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      11
+    ],
+    [
+      "32",
+      "Lugar importante",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "32",
+      "Lugar importante",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "32",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "32",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "32",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "32",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "33",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "33",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      5
+    ],
+    [
+      "33",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      2
+    ],
+    [
+      "33",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "33",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      5
+    ],
+    [
+      "33",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "33",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      4
+    ],
+    [
+      "33",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "33",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      3
+    ],
+    [
+      "33",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      3
+    ],
+    [
+      "33",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "33",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      2
+    ],
+    [
+      "33",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      7
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      5
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      5
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      7
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      5
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "29",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      12
+    ],
+    [
+      "29",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "29",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      3
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "29",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      3
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      1
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "29",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      11
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      4
+    ],
+    [
+      "29",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      3
+    ],
+    [
+      "29",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      2
+    ],
+    [
+      "29",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      3
+    ],
+    [
+      "29",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      2
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "29",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "29",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      5
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "31",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "31",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      8
+    ],
+    [
+      "31",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "31",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      4
+    ],
+    [
+      "31",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "31",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      7
+    ],
+    [
+      "31",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "31",
+      "Actor",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "31",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      9
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "31",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      3
+    ],
+    [
+      "31",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      11
+    ],
+    [
+      "26A",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "26A",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "26A",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "26A",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "31",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "27",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "31",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "27",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "27",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      5
+    ],
+    [
+      "27",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      4
+    ],
+    [
+      "27",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      4
+    ],
+    [
+      "27",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      5
+    ],
+    [
+      "27",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "27",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "27",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "27",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "27",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "27",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "27",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "27",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "27",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "27",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "27",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "27",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "27",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "27",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "27",
+      "Actor",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "28",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      2
+    ],
+    [
+      "28",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      8
+    ],
+    [
+      "28",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "28",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      5
+    ],
+    [
+      "28",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "28",
+      "Actor",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      1
+    ],
+    [
+      "28",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "28",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "28",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "28",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "28",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "28",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "28",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "28",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "28",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "28",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "28",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      1
+    ],
+    [
+      "20",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      8
+    ],
+    [
+      "20",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "20",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      8
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      3
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      3
+    ],
+    [
+      "20",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "20",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      8
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      4
+    ],
+    [
+      "20",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "20",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "20",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "20",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "20",
+      "Actor",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      2
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "20",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "20",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "20",
+      "Lugar importante",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      2
+    ],
+    [
+      "20",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      2
+    ],
+    [
+      "23",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      11
+    ],
+    [
+      "23",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      4
+    ],
+    [
+      "23",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      18
+    ],
+    [
+      "23",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      6
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "23",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "23",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      7
+    ],
+    [
+      "23",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      2
+    ],
+    [
+      "23",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "23",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      5
+    ],
+    [
+      "23",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      4
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      4
+    ],
+    [
+      "23",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "23",
+      "Lugar importante",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      3
+    ],
+    [
+      "23",
+      "Actor",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      2
+    ],
+    [
+      "23",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      6
+    ],
+    [
+      "23",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "23",
+      "Actor",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "23",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "23",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Patrimonio y entorno construido",
+      1
+    ],
+    [
+      "23",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "23",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "16",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      12
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      8
+    ],
+    [
+      "16",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      5
+    ],
+    [
+      "16",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "16",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Personas en situación de calle",
+      3
+    ],
+    [
+      "16",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "16",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      10
+    ],
+    [
+      "16",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      9
+    ],
+    [
+      "16",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      15
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      3
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "16",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      2
+    ],
+    [
+      "16",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "16",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      7
+    ],
+    [
+      "16",
+      "Lugar importante",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      1
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      1
+    ],
+    [
+      "16",
+      "Problema",
+      "Movilidad y transporte",
+      "Estacionamientos",
+      3
+    ],
+    [
+      "16",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "16",
+      "Problema",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      1
+    ],
+    [
+      "16",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      11
+    ],
+    [
+      "16",
+      "Problema",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      1
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      5
+    ],
+    [
+      "16",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "33",
+      "Actor",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      1
+    ],
+    [
+      "33",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      4
+    ],
+    [
+      "33",
+      "Actor",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      1
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Vivienda y entorno urbano",
+      "Vivienda y habitabilidad",
+      2
+    ],
+    [
+      "33",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      1
+    ],
+    [
+      "33",
+      "Lugar importante",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "17",
+      "Problema",
+      "Movilidad y transporte",
+      "Movilidad, tránsito y transporte",
+      2
+    ],
+    [
+      "17",
+      "Problema",
+      "Seguridad y convivencia",
+      "Ruidos y convivencia",
+      5
+    ],
+    [
+      "17",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Iluminación",
+      3
+    ],
+    [
+      "17",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Veredas y pavimentos",
+      6
+    ],
+    [
+      "17",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      6
+    ],
+    [
+      "17",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "17",
+      "Actor",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      14
+    ],
+    [
+      "17",
+      "Problema",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      11
+    ],
+    [
+      "17",
+      "Problema",
+      "Aseo y medio ambiente",
+      "Bienestar animal",
+      1
+    ],
+    [
+      "17",
+      "Problema",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      4
+    ],
+    [
+      "17",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      4
+    ],
+    [
+      "17",
+      "Oportunidad",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      2
+    ],
+    [
+      "17",
+      "Oportunidad",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ],
+    [
+      "17",
+      "Oportunidad",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      3
+    ],
+    [
+      "17",
+      "Lugar importante",
+      "Desarrollo social y comunitario",
+      "Organización y vida comunitaria",
+      9
+    ],
+    [
+      "17",
+      "Lugar importante",
+      "Infraestructura y espacio público",
+      "Espacio público y equipamiento",
+      3
+    ],
+    [
+      "17",
+      "Problema",
+      "Actividad económica y comercio",
+      "Comercio y actividad económica",
+      2
+    ],
+    [
+      "17",
+      "Lugar importante",
+      "Aseo y medio ambiente",
+      "Áreas verdes y arbolado",
+      2
+    ],
+    [
+      "17",
+      "Oportunidad",
+      "Aseo y medio ambiente",
+      "Aseo, residuos y salubridad",
+      1
+    ],
+    [
+      "17",
+      "Actor",
+      "Seguridad y convivencia",
+      "Seguridad y prevención",
+      1
+    ]
+  ]
+}
