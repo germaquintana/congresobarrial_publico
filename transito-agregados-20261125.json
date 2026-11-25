@@ -1,0 +1,191 @@
+{
+  "version": "V01",
+  "fecha_corte": "2026-11-25",
+  "universo_comunal": 1957,
+  "directos": 134,
+  "complementarios": 31,
+  "uv_con_aportes": 27,
+  "tipos": [
+    [
+      "Problema",
+      110
+    ],
+    [
+      "Oportunidad",
+      19
+    ],
+    [
+      "Lugar importante",
+      4
+    ],
+    [
+      "Actor",
+      1
+    ]
+  ],
+  "subtemas": [
+    [
+      "Movilidad, tránsito y transporte",
+      108
+    ],
+    [
+      "Estacionamientos",
+      26
+    ]
+  ],
+  "ejes": [
+    [
+      "Velocidad y seguridad vial",
+      30
+    ],
+    [
+      "Señalización, cruces y semáforos",
+      29
+    ],
+    [
+      "Estacionamiento y ocupación vial",
+      28
+    ],
+    [
+      "Transporte público y conectividad",
+      26
+    ],
+    [
+      "Accesibilidad, circulación y otros",
+      13
+    ],
+    [
+      "Movilidad activa",
+      7
+    ],
+    [
+      "Reclasificación por revisar",
+      1
+    ]
+  ],
+  "uv_totales": [
+    [
+      "12",
+      15
+    ],
+    [
+      "14",
+      12
+    ],
+    [
+      "6",
+      10
+    ],
+    [
+      "16",
+      9
+    ],
+    [
+      "35",
+      9
+    ],
+    [
+      "7",
+      7
+    ],
+    [
+      "25",
+      7
+    ],
+    [
+      "27",
+      7
+    ],
+    [
+      "29",
+      6
+    ],
+    [
+      "9",
+      5
+    ],
+    [
+      "21",
+      5
+    ],
+    [
+      "10",
+      4
+    ],
+    [
+      "11",
+      4
+    ],
+    [
+      "15",
+      4
+    ],
+    [
+      "20",
+      4
+    ],
+    [
+      "33",
+      4
+    ],
+    [
+      "26A",
+      4
+    ],
+    [
+      "13",
+      3
+    ],
+    [
+      "22",
+      3
+    ],
+    [
+      "17",
+      2
+    ],
+    [
+      "23",
+      2
+    ],
+    [
+      "31",
+      2
+    ],
+    [
+      "34",
+      2
+    ],
+    [
+      "5",
+      1
+    ],
+    [
+      "28",
+      1
+    ],
+    [
+      "30",
+      1
+    ],
+    [
+      "32",
+      1
+    ]
+  ],
+  "complementarios_por_direccion": [
+    [
+      "Seguridad Humana",
+      16
+    ],
+    [
+      "SECPLA",
+      12
+    ],
+    [
+      "DIMAO",
+      3
+    ]
+  ],
+  "metodo": "Dirección líder Tránsito y dos subtemas de taxonomía; selección complementaria por palabras clave, no exhaustiva. Cifras agregadas; no se publican textos, identificadores ni coordenadas. Clasificación de ejes propuesta, no asignación formal."
+}
