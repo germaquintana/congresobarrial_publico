@@ -41,7 +41,7 @@ chooseOptions("sub",topics.filter(t=>state.role==="both"||state.role===t.role).m
 function query(){const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(state.role!=="both")q.set("rol",state.role);if(state.focus!=="all")q.set("foco",state.focus);if(state.uv)q.set("uv",state.uv);if(state.sub)q.set("subtema",state.sub);if(state.pattern!=="all")q.set("patron",state.pattern);history.replaceState({},"",location.pathname+"?"+q)}
 function choose(changes){Object.assign(state,changes);if(state.sub&&!topics.some(t=>t.subtema===state.sub&&(state.role==="both"||t.role===state.role)))state.sub="";sync();query();limit=40;render()}
 function recordLink(uv,t,type){
-const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"uv-grupos.html?"+q}
+const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);if(uv&&['Aseo, residuos y salubridad','Áreas verdes y arbolado'].includes(t.subtema||t.sub)){const v=new URLSearchParams({sector:'dimao',uv,subtema:t.subtema||t.sub});if(type)v.set('tipo',type);return 'explorador-sectorial.html?'+v+'#uv-detail'}return"uv-grupos.html?"+q}
 function crossLink(uv,t,type){
 const q=new URLSearchParams();q.set("corte",state.scope==="all"?"todo":"entrega01");if(uv)q.set("uv",uv);q.set("tema",t.tematica||t.theme);q.set("subtema",t.subtema||t.sub);if(type)q.set("tipo",type);return"cruces.html?"+q}
 function renderKPIs(rows){const v=totals(rows);
@@ -59,7 +59,7 @@ const label=key==="role"?(x.key==="lead"?"DIMAO · dirección de referencia":"DI
 const wP=(state.focus==="opportunities"?0:x.p/max*100).toFixed(3),wO=(state.focus==="problems"?0:x.o/max*100).toFixed(3);
 return'<div class="barrow"><div><button type="button" data-key="'+esc(key)+'" data-value="'+esc(x.key)+'">'+esc(label)+'</button></div><div class="track" role="img" aria-label="'+esc(label+" con "+fmt(x.p)+" problemas y "+fmt(x.o)+" oportunidades")+'"><i style="width:'+wP+'%;background:#b94f50"></i><i style="width:'+wO+'%;background:#218d81"></i></div><strong>'+fmt(x.n)+'</strong></div>';
 }).join("")||'<div class="empty">No hay registros para este filtro.</div>';
-$(id).querySelectorAll("button[data-key]").forEach(btn=>btn.onclick=()=>choose({[btn.dataset.key]:btn.dataset.value}));
+$(id).querySelectorAll("button[data-key]").forEach(btn=>btn.onclick=()=>{if(btn.dataset.key==="uv"){location.href="explorador-sectorial.html?sector=dimao&uv="+encodeURIComponent(btn.dataset.value)+"#uv-detail"}else choose({[btn.dataset.key]:btn.dataset.value})});
 }
 function renderHeat(rows){
 const subNames=topics.filter(t=>state.role==="both"||t.role===state.role).filter(t=>!state.sub||state.sub===t.subtema);
